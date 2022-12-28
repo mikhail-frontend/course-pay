@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
+
 import Header from "../components/Header";
 import About from "../components/About";
 import Cards from "../components/Cards";
@@ -27,4 +29,14 @@ export default function Home() {
         <Cards/>
     </>
   )
+}
+export const getServerSideProps: GetServerSideProps<{}> = async ({res,}) => {
+    res.setHeader(
+        'Cache-Control',
+        'public, max-age=31536000, immutable'
+    )
+
+    return {
+        props: {}
+    }
 }
