@@ -16,7 +16,7 @@ const About:React.FC<AboutType> = () => {
                 Udemy</span>  за вас.
             </h1>
             <p className={styles.aboutDescription}>
-                Оплачивай наш сервис покупки курсов на Udemy российской картой без ограничений.
+                Оплачивай наш сервис покупки курсов на Udemy российской&nbsp;картой без ограничений.
             </p>
             <RippleButton className={styles.aboutBtn} onClick={openUdemyLink}>Выбрать  курс</RippleButton>
         </section>

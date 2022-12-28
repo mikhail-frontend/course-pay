@@ -68,7 +68,7 @@ const Cards:React.FC<CardsType> = () => {
                     height={199}
                 />
                 <div className={styles.cardContent}>
-                    <h3 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата картой Российских банков</h3>
+                    <h3 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата картой <br/> Российских банков</h3>
                     <p className={styles.cardText} >Абсолютно любой российский банк</p>
                 </div>
             </section>
