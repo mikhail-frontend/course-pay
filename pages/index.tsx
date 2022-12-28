@@ -4,6 +4,8 @@ import About from "../components/About";
 import Cards from "../components/Cards";
 import UdemyAbout from "../components/UdemyAbout";
 import DescriptionLine from "../components/DescriptionLine";
+import HowBuy from "../components/HowBuy";
+import Faq from "../components/Faq";
 import React from "react";
 export default function Home() {
   return (
@@ -31,6 +33,8 @@ export default function Home() {
         <DescriptionLine text='Почему Udemy' color='#40C8E0'/>
         <UdemyAbout/>
         <DescriptionLine text='Шаги оплаты' color='#B59AFF'/>
+        <HowBuy/>
+        <Faq/>
 
     </>
   )

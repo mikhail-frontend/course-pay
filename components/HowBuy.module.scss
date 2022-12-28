@@ -1,0 +1,85 @@
+.howBuyWrap{
+  position: relative;
+  margin-bottom: 128px;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1189px;
+    height: 662px;
+    left: 0;
+    top: 260px;
+    max-width: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(120, 119, 198, 0.11) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+.howBuy{
+  position: relative;
+  z-index: 2;
+}
+.steps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+}
+
+.step{
+  width: 360px;
+  height: 271px;
+  background: linear-gradient(358.98deg, rgba(247, 248, 248, 0.05) 1.12%, rgba(247, 248, 248, 0) 99.39%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 26px 44px 41px 28px;
+  & > svg{
+    margin-bottom: 35px;
+  }
+  &:nth-of-type(2){
+    .stepTitle{
+      padding-bottom: 15px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.stepTitle, .stepText{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.additional{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #B59AFF;
+  margin-top: 25px;
+}
+
+.telegramLink{
+  width: 126px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 44px;
+  transition: .3s ease;
+  &:hover{
+    transform: scale(1.05);
+    background-color: #4C50BE;
+  }
+  svg{
+    margin-right: 10px;
+  }
+}

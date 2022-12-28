@@ -9,9 +9,14 @@
   -webkit-appearance: none;
   box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 html, body{
   background: #000212;
+  position: relative;
 }
+
 .container{
   width: 1173px;
   margin-left: auto;

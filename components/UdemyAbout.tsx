@@ -1,6 +1,29 @@
-import React from 'react';
-import styles from './UdemyAbout.module.scss'
+import React, {useState} from 'react';
+import styles from './UdemyAbout.module.scss';
+type AboutItem = {
+    id: number,
+    title: string,
+    text: string
+}
+const aboutItems:AboutItem[] = [
+    {
+        id: 1,
+        title: 'на 70% дешевле',
+        text: 'чем у популярных российских курсов'
+    },
+    {
+        id: 2,
+        title: 'Сертификат',
+        text: 'получите международный сертификат'
+    },
+    {
+        id: 3,
+        title: 'Настоящие эксперты',
+        text: 'выбирайте курсы от экспертов с реальным опытом'
+    },
+]
 const UdemyAbout = () => {
+    const [aboutList]:[AboutItem[], React.Dispatch<React.SetStateAction<AboutItem[]>>] = useState(aboutItems)
     return (
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
@@ -12,18 +35,14 @@ const UdemyAbout = () => {
                 </p>
             </div>
             <div className={styles.udemyBlocks}>
-                <div className={styles.udemyBlock}>
-                    <h3 className={styles.udemyBlockTitle}>на 70% дешевле</h3>
-                    <p className={styles.udemyBlockText}>чем у популярных российских курсов</p>
-                </div>
-                <div className={styles.udemyBlock}>
-                    <h3 className={styles.udemyBlockTitle}>Сертификат</h3>
-                    <p className={styles.udemyBlockText}>получите международный сертификат</p>
-                </div>
-                <div className={styles.udemyBlock}>
-                    <h3 className={styles.udemyBlockTitle}>Настоящие эксперты</h3>
-                    <p className={styles.udemyBlockText}>выбирайте курсы от экспертов с реальным опытом</p>
-                </div>
+                {aboutList.map(item => {
+                    return (
+                        <div className={styles.udemyBlock} key={item.id}>
+                            <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
+                            <p className={styles.udemyBlockText}>{item.text}</p>
+                        </div>
+                    )
+                })}
             </div>
         </section>
     );
