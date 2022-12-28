@@ -38,13 +38,10 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
         if(!blockPath) return;
         const element:HTMLElement|null = document.getElementById(blockPath);
         if(!element) return;
-        const coords:DOMRect = element.getBoundingClientRect()
-        const offset = 100;
-        window.scrollTo({
-            top: coords.top + offset,
-            left: 100,
-            behavior: 'smooth'
-        })
+        // const coords:DOMRect = element.getBoundingClientRect()
+        // const offset = 100;
+        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+
     }
     return (
         <header className={styles.header}>
