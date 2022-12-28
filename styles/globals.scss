@@ -19,4 +19,12 @@ html, body{
   max-width: calc(100% - 30px);
 }
 
+.heading{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+
+}
 @import "RippleButton";

@@ -1,0 +1,14 @@
+.descriptionLine {
+  padding-top: 2.5px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(180, 188, 208, 0.2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  svg{
+    margin-right: 6px;
+  }
+}

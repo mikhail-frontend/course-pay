@@ -1,9 +1,25 @@
+.cardsWrapper{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1189px;
+    height: 662px;
+    left: 0;
+    top: 165px;
+    max-width: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(120, 119, 198, 0.11) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
 .cards{
   display: grid;
   grid-template-columns: 623px 1fr;
   grid-gap: 32px;
   margin-top: 124px;
   margin-bottom: 128px;
+  position: relative;
+  z-index: 2;
 }
 .card{
   height: 367px;
@@ -12,6 +28,9 @@
   border-radius: 12px;
   &:first-of-type{
     padding: 60px 0 60px 57px;
+  }
+  &:last-of-type{
+    position: relative;
   }
 }
 .cardCourses{
@@ -33,6 +52,7 @@
   font-size: 18px;
   color: #F7F8F8;
   transition: .2s ease;
+  user-select: none;
   span{
     width: 26px;
     height: 25px;
@@ -51,6 +71,7 @@
       background-color: #4C50BE ;
     }
   }
+
 }
 .cardTitle{
   font-weight: 500;
@@ -70,4 +91,39 @@
 }
 .cardContent{
   padding: 0 0 0 60px;
+}
+.cardCarts{
+  position: absolute;
+  top: 39px;
+  right: 0;
+  width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.cartItem{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F7F8F8;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 48px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  &:nth-of-type(2) {
+    margin-right: 0;
+    width: 129px;
+    border-radius: 14px 0 0 14px;
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
 }

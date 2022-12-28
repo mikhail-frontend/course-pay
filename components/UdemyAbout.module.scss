@@ -1,0 +1,52 @@
+.udemyAbout{
+  margin-bottom: 117px;
+}
+
+.udemyAboutMain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  align-items: flex-start;
+}
+.udemyAboutHeading{
+  width: 640px;
+  span{
+    display: block;
+    color: #40C8E0;
+    margin-top: 5px;
+  }
+}
+
+.udemyAboutText{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B4BCD0;
+  width: 420px;
+  margin-left: 60px;
+}
+.udemyBlocks{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.udemyBlock{
+  &:nth-of-type(2n) {
+    margin-left: 106px;
+    margin-right: 106px;
+  }
+}
+.udemyBlockTitle{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+
+.udemyBlockText{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #BABABA;
+}

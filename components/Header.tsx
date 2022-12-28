@@ -15,7 +15,7 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
         {
             id: '1',
             text: 'о Udemy',
-            blockPath: 'about'
+            blockPath: 'udemyAbout'
         },
         {
             id: '2',
@@ -33,8 +33,19 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
             blockPath: 'telegram',
             isButton: true
         },
-
-    ])
+    ]);
+    const buttonClickHandler = (blockPath:string) => {
+        if(!blockPath) return;
+        const element:HTMLElement|null = document.getElementById(blockPath);
+        if(!element) return;
+        const coords:DOMRect = element.getBoundingClientRect()
+        const offset = 100;
+        window.scrollTo({
+            top: coords.top + offset,
+            left: 100,
+            behavior: 'smooth'
+        })
+    }
     return (
         <header className={styles.header}>
             <div className={`${styles.headerContainer} container`}>
@@ -44,6 +55,7 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
                         return (
                             <RippleButton
                                 key={link.id}
+                                onClick={() => buttonClickHandler(link.blockPath)}
                                 className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn}`}>
                                 {link.text}
                             </RippleButton>

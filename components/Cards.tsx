@@ -10,6 +10,10 @@ type Course = {
     text: string,
     openLink?: string
 }
+type Cart = {
+    id: number,
+    text: string
+}
 const courses:Course[] = [
     {
         id: 1,
@@ -36,42 +40,63 @@ const courses:Course[] = [
         text: 'Обработка и анализ данных',
         openLink: 'https://www.udemy.com/ru/topic/data-science/'
     },
+];
+const Carts:Cart[] = [
+    {
+        id: 1,
+        text: 'МИР'
+    },
+    {
+        id: 2,
+        text: 'VISA'
+    },
+    {
+        id: 3,
+        text: 'MASTERCARD'
+    },
 ]
 const Cards:React.FC<CardsType> = () => {
     const [coursesList]:[Course[], React.Dispatch<React.SetStateAction<Course[]>>] = useState(courses);
+    const [cartsList]:[Cart[], React.Dispatch<React.SetStateAction<Course[]>>] = useState(Carts);
+
     const openCourse = (url:string = '') => window.open(url)
 
     return (
-        <div className={`${styles.cards} container`}>
-            <section className={styles.card}>
-                <div className={styles.cardCourses}>
-                    {coursesList.map(course => {
-                        return (
-                            <div key={course.id}
-                                 className={styles.cardCourse}
-                                 onClick={() => openCourse(course.openLink)}>
-                                {course.text}
-                                <span>→</span>
-                            </div>
-                        )
-                    })}
-                </div>
-                <h3 className={styles.cardTitle}>Большой выбор курсов</h3>
-                <p className={styles.cardText}>Изучайте востребованные навыки с помощью более 213 000 видеокурсов на Udemy</p>
-            </section>
-            <section className={styles.card}>
-                <Image
-                    src="/lighting.svg"
-                    className={styles.cardImage}
-                    alt="Udemy для России, Udemy купить России, Udemy российской картой, IT курсы, Оплатить Udemy российской картой"
-                    width={165}
-                    height={199}
-                />
-                <div className={styles.cardContent}>
-                    <h3 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата картой <br/> Российских банков</h3>
-                    <p className={styles.cardText} >Абсолютно любой российский банк</p>
-                </div>
-            </section>
+        <div className={styles.cardsWrapper}>
+            <div className={`${styles.cards} container`}>
+                <section className={styles.card}>
+                    <div className={styles.cardCourses}>
+                        {coursesList.map(course => {
+                            return (
+                                <div key={course.id}
+                                     className={styles.cardCourse}
+                                     onClick={() => openCourse(course.openLink)}>
+                                    {course.text}
+                                    <span>→</span>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <h2 className={styles.cardTitle}>Большой выбор курсов</h2>
+                    <p className={styles.cardText}>Изучайте востребованные навыки с помощью более 213 000 видеокурсов на Udemy</p>
+                </section>
+                <section className={styles.card}>
+                    <Image
+                        src="/lighting.svg"
+                        className={styles.cardImage}
+                        alt="Udemy для России, Udemy купить России, Udemy российской картой, IT курсы, Оплатить Udemy российской картой"
+                        width={165}
+                        height={199}
+                    />
+                    <div className={styles.cardContent}>
+                        <h2 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата картой <br/> Российских банков</h2>
+                        <p className={styles.cardText} >Абсолютно любой российский банк</p>
+                    </div>
+                    <div className={styles.cardCarts}>
+                        {cartsList.map(item => (<strong className={styles.cartItem} key={item.id}>{item.text}</strong>))}
+                    </div>
+                </section>
+            </div>
         </div>
     );
 };
