@@ -6,6 +6,7 @@
   cursor: pointer;
   border-radius: 999px;
   transition: transform .2s ease;
+  user-select: none;
   &:hover{
     transform: scale(1.02);
   }
@@ -20,7 +21,7 @@
   content: "";
   border-radius: 9999px;
   opacity: 1;
-  animation: 0.9s ease 1 forwards ripple-effect;
+  animation: 0.4s ease 1 forwards ripple-effect;
 }
 
 @keyframes ripple-effect {

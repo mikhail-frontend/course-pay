@@ -2,6 +2,7 @@ import React from 'react';
 
 const Logo:React.FC<{className?: string, onClick?: () => void & Record<string, string>}> = ({className, onClick = () => {}, ...rest}) => {
     const style:Record<string, string> = {'mask-type': 'alpha'}
+    
     return (
         <svg width="150" height="48" viewBox="0 0 150 48" fill="none" xmlns="http://www.w3.org/2000/svg"
              {...rest}

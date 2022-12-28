@@ -7,7 +7,7 @@ const About:React.FC<AboutType> = () => {
         window.open('https://www.udemy.com/')
     }, [])
     return (
-        <section className={`${styles.about} container`}>
+        <section className={`${styles.about} container`} id='about'>
             <div className={styles.aboutLabel}>
                 комиссия за покупку курса от 20-30 % <span>→</span>
             </div>
