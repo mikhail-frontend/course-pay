@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "rimraf out && rimraf .next && next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -21,6 +21,7 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0"
   }

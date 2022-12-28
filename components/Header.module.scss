@@ -1,0 +1,45 @@
+.header {
+  margin-top: 10px;
+  min-height: 67px;
+  position: sticky;
+  z-index: 99;
+}
+.headerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.headerLogo{
+  transition: .3s ease;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.headerButton{
+  padding: 8px 14px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #F7F8F8;
+  background-color: transparent;
+  margin-right: 39px;
+  transition: .3s ease;
+  cursor: pointer;
+  border-radius: 999px;
+  user-select: none;
+  min-height: 35px;
+  &:last-of-type{
+    margin-right: 0;
+  }
+  &:hover{
+    background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
+    transform: scale(1.02);
+  }
+  &.headerMainBtn{
+    background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
+  }
+}
+
