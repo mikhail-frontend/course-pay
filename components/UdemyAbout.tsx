@@ -1,4 +1,5 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, { useState} from 'react';
+import useAnimation from "../hooks/useAnimation";
 import styles from './UdemyAbout.module.scss';
 
 type AboutItem = {
@@ -31,40 +32,10 @@ const aboutItems:AboutItem[] = [
         animated: false
     },
 ]
+
 const UdemyAbout = () => {
     const [aboutList, setAboutList]: [AboutItem[], React.Dispatch<React.SetStateAction<AboutItem[]>>] = useState(aboutItems);
-    const [animated, setAnimated]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false);
-    const wrapRef:React.Ref<HTMLDivElement> = useRef<HTMLDivElement>(null)
-
-    const setElementIsAnimated = useCallback(() => {
-        const globalCopy = [...aboutList];
-        globalCopy.forEach((item, index) => {
-            const timer = (index + 1) * 100;
-            setTimeout(() => {
-                setAboutList((prevValue) => {
-                    const copy = [...prevValue];
-                    copy[index] = {...copy[index], animated: true};
-                    return copy
-                })
-            }, timer)
-        })
-    }, [aboutList]);
-
-    useEffect(() => {
-        const target: Element | null = wrapRef!.current;
-        const handleIntersection = (entries: IntersectionObserverEntry[]):void => {
-            if (animated) return;
-            for (let entry of entries) {
-                if (entry.isIntersecting) {
-                    setElementIsAnimated();
-                    setAnimated(() => true)
-                }
-            }
-        }
-        const observer: IntersectionObserver = new IntersectionObserver(handleIntersection);
-        if (animated) observer.disconnect()
-        observer.observe(target as Element);
-    }, [animated, setElementIsAnimated])
+    const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
 
     return (
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
@@ -77,10 +48,10 @@ const UdemyAbout = () => {
                     сотрудников.
                 </p>
             </div>
-            <div className={styles.udemyBlocks} ref={wrapRef}>
+            <ul className={styles.udemyBlocks} ref={wrapRef}>
                 {aboutList.map(item => {
                     return (
-                        <div className={`${styles.udemyBlock} ${item.animated ? styles.active : ''}`} key={item.id}>
+                        <li className={`${styles.udemyBlock} ${item.animated ? styles.active : ''}`} key={item.id}>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={item.icon}
                                  alt={item.text}
@@ -90,10 +61,10 @@ const UdemyAbout = () => {
                                  loading={'lazy'}/>
                             <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
                             <p className={styles.udemyBlockText}>{item.text}</p>
-                        </div>
+                        </li>
                     )
                 })}
-            </div>
+            </ul>
         </section>
     );
 };

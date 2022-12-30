@@ -1,15 +1,13 @@
 import React, {useCallback, useEffect, useRef, useState} from "react";
 
-type animationType<T> = (list: T[], setList: React.Dispatch<React.SetStateAction<T[]>>) => void
-
-const useAnimation:animationType<any> = (list, setList) => {
+export default function useAnimation<T>(list: T[], setList: React.Dispatch<React.SetStateAction<T[]>>): React.RefObject<HTMLUListElement> | null {
     const [animated, setAnimated]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false);
-    const wrapRef:React.Ref<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const wrapRef: React.RefObject<HTMLUListElement> = useRef<HTMLUListElement>(null)
 
-    const setElementIsAnimated = useCallback(() => {
-        const globalCopy = [...list];
+    const setElementIsAnimated:React.EffectCallback = useCallback(() => {
+        const globalCopy:T[] = [...list];
         globalCopy.forEach((item, index) => {
-            const timer = (index + 1) * 100;
+            const timer:number = (index + 1) * 100;
             setTimeout(() => {
                 setList((prevValue) => {
                     const copy = [...prevValue];
@@ -18,7 +16,7 @@ const useAnimation:animationType<any> = (list, setList) => {
                 })
             }, timer)
         })
-    }, [list]);
+    }, [list, setList]);
 
     useEffect(() => {
         const target: Element | null = (wrapRef)!.current;
@@ -34,8 +32,7 @@ const useAnimation:animationType<any> = (list, setList) => {
         const observer: IntersectionObserver = new IntersectionObserver(handleIntersection);
         if (animated) observer.disconnect()
         observer.observe(target as Element);
-    }, [animated, setElementIsAnimated])
+    }, [animated, setElementIsAnimated]);
 
     return wrapRef;
 }
-export default useAnimation;
