@@ -37,7 +37,7 @@ const items:AccordionType[] = [
         content: `После поступления денег на наш счет в течении 15 минут мы предоставим  ваш новый аккаунт на Udemy c  вашей покупкой` ,
     },
 ];
-const Faq: React.FC<{}> = () => {
+const Faq = () => {
     const [listOfFaq, setListOfFaq]: [AccordionType[], React.Dispatch<React.SetStateAction<AccordionType[]>>] = useState(items);
     const wrapRef = useAnimation<AccordionType>(listOfFaq, setListOfFaq)
     return (

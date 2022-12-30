@@ -1,7 +1,7 @@
 import React from 'react';
 import RippleButton from "./RippledButton";
 import styles from './Contacts.module.scss'
-const Contacts:React.FC<{}> = () => {
+const Contacts = () => {
     return (
         <section className={`${styles.contacts}`} id='contacts'>
             <h2 className={`heading container ${styles.contactsHeading}`}>Хотите задать вопрос? <br/>

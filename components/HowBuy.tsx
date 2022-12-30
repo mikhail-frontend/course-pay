@@ -2,7 +2,7 @@ import React from 'react';
 import aboutStyles from "./UdemyAbout.module.scss";
 import styles from './HowBuy.module.scss'
 import RippleButton from "./RippledButton";
-const HowBuy: React.FC<{}> = () => {
+const HowBuy = () => {
     return (
         <div className={styles.howBuyWrap}>
             <section className={`${styles.howBuy} container`} id='howBuy'>

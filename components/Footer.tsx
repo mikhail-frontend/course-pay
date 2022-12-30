@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from "./Logo";
 import styles from './Footer.module.scss'
-const Footer:React.FC<{}> = () => {
+const Footer = () => {
     const scrollToTop = () => {
         console.log(23)
         window.scrollTo({
