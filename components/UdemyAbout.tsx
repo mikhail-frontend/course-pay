@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Image from "next/image";
 import styles from './UdemyAbout.module.scss';
 type AboutItem = {
     id: number,
@@ -43,7 +42,7 @@ const UdemyAbout = () => {
                 {aboutList.map(item => {
                     return (
                         <div className={styles.udemyBlock} key={item.id}>
-                            <Image src={item.icon} alt={item.text} width={46} height={46} />
+                            <img src={item.icon} alt={item.text} width={'46px'} height={'46px'} loading={'lazy'} />
                             <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
                             <p className={styles.udemyBlockText}>{item.text}</p>
                         </div>
