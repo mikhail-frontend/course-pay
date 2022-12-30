@@ -7,7 +7,6 @@
 .accordion {
   height: 76px;
   cursor: pointer;
-  padding: 24px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -22,6 +21,7 @@
   color: #F7F8F8;
   justify-content: flex-start;
   text-align: left;
+  padding: 24px 55px 24px 24px ;
   &:after {
     content: '';
     position: absolute;

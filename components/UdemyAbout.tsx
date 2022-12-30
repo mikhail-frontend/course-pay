@@ -19,7 +19,7 @@ const aboutItems:AboutItem[] = [
     },
     {
         id: 2,
-        title: 'Сертификат',
+        title: ' Сертификат и советы по трудоустройству',
         text: 'Получите международный сертификат и скилл-гайд',
         icon: '/icon2.png',
         animated: false
@@ -33,8 +33,8 @@ const aboutItems:AboutItem[] = [
     },
     {
         id: 3,
-        title: 'Настоящие эксперты',
-        text: 'Выбирайте курсы от экспертов с реальным опытом',
+        title: 'Топ-преподаватели',
+        text: 'Курсы от экспертов с реальным опытом работы в международных корпорациях',
         icon: '/icon3.png',
         animated: false
     },
@@ -48,11 +48,14 @@ const UdemyAbout = () => {
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
                 <h2 className={`${styles.udemyAboutHeading} heading`}>
-                    Udemy <span>международный проект</span>
+                    Udemy <span>глобальный лидер онлайн обучения</span>
                 </h2>
                 <p className={styles.udemyAboutText}>
-                    Ведущие компании пользуются курсами Udemy, чтобы поддерживать актуальность навыков своих
-                    сотрудников.
+                    Udemy предоставляет доступ к востребованным программам обучения,
+                    которые расширят ваши карьерные возможности.
+                    Из-за санкций Udemy не принимает карты российских банков к оплате.
+                    Поэтому мы создали этот сервис, чтобы вы совершали покупки на Udemy, двигаясь к вашей цели.
+
                 </p>
             </div>
             <ul className={styles.udemyBlocks} ref={wrapRef}>
