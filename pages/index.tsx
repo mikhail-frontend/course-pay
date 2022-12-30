@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <>
         <Head>
+            <meta charSet="UTF-8"/>
             <title>Udemy для России</title>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="icon" href="/favicon.ico"/>
@@ -29,7 +30,6 @@ export default function Home() {
             <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
             <link rel="canonical" href="https://course-pay-1ac3e.web.app/"/>
             <link rel="manifest" href="/manifest.json" />
-            <meta charSet="UTF-8"/>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="theme-color" content="#000212" />
             <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
