@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Image from 'next/image'
 
 import styles from './Cards.module.scss'
+
 type CardsType = {
     children?: React.ReactNode
 }

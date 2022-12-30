@@ -2,6 +2,9 @@
   margin-bottom: 117px;
   position: relative;
   z-index: 2;
+  @media (max-width: 1200px) {
+    margin-bottom: 75px;
+  }
 }
 
 .udemyAboutMain {
@@ -9,6 +12,9 @@
   justify-content: space-between;
   margin-bottom: 65px;
   align-items: flex-start;
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .udemyAboutHeading{
   width: 660px;
@@ -16,6 +22,9 @@
     display: block;
     color: #40C8E0;
     margin-top: 5px;
+  }
+  @media (max-width: 1200px) {
+    width: 550px;
   }
 }
 
@@ -26,12 +35,21 @@
   color: #B4BCD0;
   width: 420px;
   margin-left: 60px;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .udemyBlocks{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   list-style: none;
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px 60px;
+  }
 }
 .udemyBlock{
   opacity: 0;
@@ -45,6 +63,13 @@
     opacity: 1;
     transform: none;
   }
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+  }
 }
 .udemyBlockTitle{
   font-weight: 500;
@@ -52,6 +77,10 @@
   color: #FFFFFF;
   line-height: 1.2;
   margin: 13px 0 10px;
+  @media (max-width: 1200px){
+    font-size: 30px;
+    margin: 10px 0 8px;
+  }
 }
 
 .udemyBlockText{

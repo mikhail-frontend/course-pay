@@ -22,6 +22,11 @@
   margin-bottom: 128px;
   position: relative;
   z-index: 3;
+  @media (max-width: 1200px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    margin: 75px 0;
+  }
 }
 .card{
   height: 367px;
@@ -32,9 +37,15 @@
   z-index: 3;
   &:first-of-type{
     padding: 60px 0 60px 57px;
+    @media (max-width: 1200px) {
+      padding: 35px 15px 35px 35px;
+    }
   }
   &:last-of-type{
     position: relative;
+  }
+  @media (max-width: 1200px) {
+    height: 300px;
   }
 }
 .cardCourses{
@@ -79,6 +90,13 @@
       background-color: #4C50BE ;
     }
   }
+  
+  @media (max-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding: 4px 4px 4px 12px;
+    font-size: 14px;
+  }
 
 }
 .cardTitle{
@@ -89,15 +107,26 @@
   margin-bottom: 16px;
   position: relative;
   z-index: 3;
+  @media (max-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 .cardText{
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #B4BCD0;
+  @media (max-width: 1200px){
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 .cardImage{
   margin: 3px 22px 13px 27px;
+  @media (max-width: 1200px) {
+    max-height: 150px;
+  }
 }
 .cardContent{
   padding: 0 0 0 60px;
@@ -136,6 +165,13 @@
   &:last-of-type{
     margin-bottom: 0;
     margin-right: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 1;
+    width: 125px;
+    height: 40px;
   }
 
 }

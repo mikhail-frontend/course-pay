@@ -1,6 +1,7 @@
 .about{
   padding-top: 78px;
-  width: 705px;
+  max-width: 705px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +16,12 @@
     height: 657px;
     user-select: none;
     pointer-events: none;
+  }
+  @media (max-width: 1200px) {
+    padding-top: 50px;
+    &:before{
+      height: 600px;
+    }
   }
 }
 .aboutLabel{
@@ -42,13 +49,13 @@
     margin-left: 10px;
     justify-content: center;
     align-items: center;
-
   }
+
 }
 .aboutHeading {
   font-weight: 600;
   font-size: 70px;
-  line-height: 70px;
+  line-height: 1;
   text-align: center;
   letter-spacing: -0.02em;
   color: #FFFFFF;
@@ -60,17 +67,26 @@
     width: 100%;
     display: contents;
   }
+  @media (max-width: 1200px) {
+    font-size: 60px;
+    margin: 0 auto 25px;
+  }
 }
+
 .aboutDescription{
   font-weight: 400;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 1.35;
   text-align: center;
   letter-spacing: 0.01em;
   color: #B4BCD0;
   margin: 0 auto 40px;
   position: relative;
   z-index: 2;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    margin: 0 auto 30px;
+  }
 }
 .aboutBtn{
   width: 154px;

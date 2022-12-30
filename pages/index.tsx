@@ -17,6 +17,7 @@ export default function Home() {
             <title>Udemy для России</title>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="icon" href="/favicon.ico"/>
+            <link rel="preload" href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap' as="font" type="font/woff2" crossOrigin={''}/>
             <meta data-rh="true" property="og:locale" content="ru_RU"/>
             <meta name="theme-color" content="#000212"/>
             <meta property="og:type" content="website" />

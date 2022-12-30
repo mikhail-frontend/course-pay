@@ -34,8 +34,6 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
             isButton: true
         },
     ]);
-    // const [isScrolling, setIsScrolling] = useState(false);
-
 
     const buttonClickHandler = (blockPath: string) => {
         if (!blockPath) return;
@@ -43,17 +41,6 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
         if (!element) return;
         element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     }
-
-    // useEffect(() => {
-    //     let isScrollingNow: ReturnType<typeof setTimeout>;
-    //     window.addEventListener('scroll', () => {
-    //         setIsScrolling(() => true)
-    //         clearTimeout(isScrollingNow as ReturnType<typeof setTimeout>);
-    //         isScrollingNow = setTimeout(() => {
-    //             setIsScrolling(() => false)
-    //         }, 100);
-    //     }, {passive: true})
-    // }, []);
 
     return (
         <header className={styles.header} >
