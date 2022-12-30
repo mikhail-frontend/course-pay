@@ -1,25 +1,30 @@
 import React, {useState} from 'react';
+import Image from "next/image";
 import styles from './UdemyAbout.module.scss';
 type AboutItem = {
     id: number,
     title: string,
-    text: string
+    text: string,
+    icon: string
 }
 const aboutItems:AboutItem[] = [
     {
         id: 1,
         title: 'на 70% дешевле',
-        text: 'чем у популярных российских курсов'
+        text: 'чем у популярных российских курсов',
+        icon: '/icon1.svg'
     },
     {
         id: 2,
         title: 'Сертификат',
-        text: 'получите международный сертификат'
+        text: 'получите международный сертификат',
+        icon: '/icon2.svg'
     },
     {
         id: 3,
         title: 'Настоящие эксперты',
-        text: 'выбирайте курсы от экспертов с реальным опытом'
+        text: 'выбирайте курсы от экспертов с реальным опытом',
+        icon: '/icon3.svg'
     },
 ]
 const UdemyAbout = () => {
@@ -38,6 +43,7 @@ const UdemyAbout = () => {
                 {aboutList.map(item => {
                     return (
                         <div className={styles.udemyBlock} key={item.id}>
+                            <Image src={item.icon} alt={item.text} width={46} height={46} />
                             <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
                             <p className={styles.udemyBlockText}>{item.text}</p>
                         </div>

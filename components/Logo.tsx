@@ -1,15 +1,20 @@
 import React from 'react';
 
-const Logo:React.FC<{className?: string, onClick?: () => void & Record<string, string>}> = ({className, onClick = () => {}, ...rest}) => {
-    const style:Record<string, string> = {'mask-type': 'alpha'}
-    
-    return (
-        <svg width="150" height="48" viewBox="0 0 150 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-             {...rest}
-             className={className}>
-            <g clipPath="url(#clip0_21_612)">
+const Logo: React.FC<{ className?: string, onClick?: () => void }> =
+    ({
+         className, onClick = () => {
+        }, ...rest
+     }) => {
+        const style: Record<string, string> = {'mask-type': 'alpha'}
 
-                <mask id="mask0_21_612" style={style}  maskUnits="userSpaceOnUse" x="0" y="9" width="29" height="30">
+        return (
+            <svg width="150" height="48" viewBox="0 0 150 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 {...rest}
+                 onClick={onClick}
+                 className={className}>
+                <g clipPath="url(#clip0_21_612)">
+
+                    <mask id="mask0_21_612" style={style} maskUnits="userSpaceOnUse" x="0" y="9" width="29" height="30">
                     <path d="M17.4807 9.24111C21.9834 9.9282 25.988 12.1482 28.9554 15.3579C28.982 15.8263 28.9956 16.2983 28.9956 16.7734C28.9956 26.732 23.0263 35.2832 14.5018 38.9807C13.4232 38.5131 12.3855 37.9673 11.3959 37.3509L11.399 37.3527L20.635 19.8942L14.1625 23.2534L17.4807 9.24111ZM14.5018 9.01562C15.3485 9.01562 16.1834 9.06906 17.0019 9.17413L5.95529 30.2807L10.9489 28.2135L9.46235 36.0101C3.71709 31.5971 0.0078125 24.6229 0.0078125 16.7734C0.0078125 16.2983 0.021445 15.8261 0.0482968 15.3577C3.65595 11.4554 8.79663 9.01562 14.5018 9.01562Z" fill="url(#paint0_linear_21_612)"/>
                 </mask>
                 <g mask="url(#mask0_21_612)">

@@ -1,5 +1,7 @@
 .udemyAbout{
   margin-bottom: 117px;
+  position: relative;
+  z-index: 2;
 }
 
 .udemyAboutMain {
@@ -40,8 +42,8 @@
   font-weight: 500;
   font-size: 36px;
   color: #FFFFFF;
-  margin-bottom: 10px;
   line-height: 1.2;
+  margin: 13px 0 10px;
 }
 
 .udemyBlockText{

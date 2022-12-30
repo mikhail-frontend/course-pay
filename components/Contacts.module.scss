@@ -10,6 +10,8 @@
     transform: translate(-50%, -50%);
     width: 480px;
     height: 480px;
+    user-select: none;
+    pointer-events: none;
     background: radial-gradient(50% 50% at 50% 50%, rgba(181, 154, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   }
 }

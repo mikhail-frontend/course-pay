@@ -56,9 +56,9 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
     }, []);
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} >
             <div className={`${styles.headerContainer} container`}>
-                <Logo className={styles.headerLogo}/>
+                <Logo className={styles.headerLogo} onClick={() => buttonClickHandler('about')}/>
                 <div className="header-links">
                     {links.map(link => {
                         return (

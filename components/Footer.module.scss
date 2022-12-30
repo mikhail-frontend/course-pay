@@ -5,3 +5,13 @@
   position: relative;
   z-index: 2;
 }
+.footerLogo{
+  position: relative;
+  z-index: 2;
+  display: block;
+  transition: .2s ease;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.02);
+  }
+}
