@@ -14,29 +14,25 @@ const aboutItems:AboutItem[] = [
         id: 1,
         title: 'на 70% дешевле',
         text: 'Чем популярные российские курсы',
-        icon: '/icon1.png',
-        animated: false
+        icon: '/icon1.png'
     },
     {
         id: 2,
         title: ' Сертификат и советы по трудоустройству',
         text: 'Получите международный сертификат и скилл-гайд',
-        icon: '/icon2.png',
-        animated: false
+        icon: '/icon2.png'
     },
     {
         id: 4,
         title: 'Выбор курса',
         text: '213000 видеокурсов',
-        icon: '/icon3.png',
-        animated: false
+        icon: '/icon3.png'
     },
     {
         id: 3,
         title: 'Топ-преподаватели',
         text: 'Курсы от экспертов с реальным опытом работы в международных корпорациях',
-        icon: '/icon3.png',
-        animated: false
+        icon: '/icon3.png'
     },
 ]
 

@@ -8,9 +8,9 @@ const About:React.FC<AboutType> = () => {
     }, [])
     return (
         <section className={`${styles.about} container`} id='about'>
-            <div className={styles.aboutLabel}>
-                комиссия за покупку курса от 20-30 % <span>→</span>
-            </div>
+            {/*<div className={styles.aboutLabel}>*/}
+            {/*    комиссия за покупку курса от 20-30 % <span>→</span>*/}
+            {/*</div>*/}
             <h1 className={styles.aboutHeading}>
                 Купим любые <span>курсы
                 Udemy</span>  за вас.

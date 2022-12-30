@@ -32,6 +32,9 @@ export default function useAnimation<T>(list: T[], setList: React.Dispatch<React
         const observer: IntersectionObserver = new IntersectionObserver(handleIntersection);
         if (animated) observer.disconnect()
         observer.observe(target as Element);
+        return () => {
+            observer.disconnect();
+        }
     }, [animated, setElementIsAnimated]);
 
     return wrapRef;
