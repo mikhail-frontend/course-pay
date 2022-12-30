@@ -1,0 +1,41 @@
+.contacts{
+  position: relative;
+  padding-bottom: 97px;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(181, 154, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+.contactsHeading{
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contactsButton{
+  width: 179px;
+  height: 50px;
+  background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
+  border-radius: 999px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg{
+    margin-left: 10px;
+  }
+}

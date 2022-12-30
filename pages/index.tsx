@@ -6,6 +6,8 @@ import UdemyAbout from "../components/UdemyAbout";
 import DescriptionLine from "../components/DescriptionLine";
 import HowBuy from "../components/HowBuy";
 import Faq from "../components/Faq";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 import React from "react";
 export default function Home() {
   return (
@@ -35,7 +37,8 @@ export default function Home() {
         <DescriptionLine text='Шаги оплаты' color='#B59AFF'/>
         <HowBuy/>
         <Faq/>
-
+        <Contacts/>
+        <Footer/>
     </>
   )
 }

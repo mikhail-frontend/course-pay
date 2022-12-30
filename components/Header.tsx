@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Logo from "./Logo";
 import RippleButton from "./RippledButton";
 import styles from './Header.module.scss';
@@ -30,19 +30,31 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
         {
             id: '4',
             text: 'Задать вопрос',
-            blockPath: 'telegram',
+            blockPath: 'contacts',
             isButton: true
         },
     ]);
-    const buttonClickHandler = (blockPath:string) => {
-        if(!blockPath) return;
-        const element:HTMLElement|null = document.getElementById(blockPath);
-        if(!element) return;
-        // const coords:DOMRect = element.getBoundingClientRect()
-        // const offset = 100;
-        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    const [isScrolling, setIsScrolling] = useState(false);
 
+
+    const buttonClickHandler = (blockPath: string) => {
+        if (!blockPath || isScrolling) return;
+        const element: HTMLElement | null = document.getElementById(blockPath);
+        if (!element) return;
+        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     }
+
+    useEffect(() => {
+        let isScrollingNow: ReturnType<typeof setTimeout>;
+        window.addEventListener('scroll', () => {
+            setIsScrolling(() => true)
+            clearTimeout(isScrollingNow as ReturnType<typeof setTimeout>);
+            isScrollingNow = setTimeout(() => {
+                setIsScrolling(() => false)
+            }, 100);
+        })
+    }, []);
+
     return (
         <header className={styles.header}>
             <div className={`${styles.headerContainer} container`}>

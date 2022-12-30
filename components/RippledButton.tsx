@@ -1,9 +1,10 @@
-import React, {ReactNode, useEffect, useState} from "react";
+import React, {ReactNode, useCallback, useEffect, useState} from "react";
 
 type ButtonType = {
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
     children: ReactNode,
-    className?: string
+    className?: string,
+    to?: string
 };
 
 type Coords = {
@@ -11,7 +12,7 @@ type Coords = {
     y: number
 }
 
-const RippleButton: React.FC<ButtonType> = ({onClick, children, className}) => {
+const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) => {
 
     const [coords, setCoords]: [Coords, React.Dispatch<React.SetStateAction<Coords>>]
         = useState({x: -1, y: -1});
@@ -30,6 +31,10 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className}) => {
         if (!isRippling) setCoords({x: -1, y: -1});
     }, [isRippling]);
 
+    const openLink = useCallback(() => {
+        if(!to) return;
+        window.open(to)
+    }, [to])
     return (
         <button
             className={`ripple-button ${className || ''}`}
@@ -38,6 +43,7 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className}) => {
                 const rect = button.getBoundingClientRect();
                 setCoords({x: e.clientX - rect.left, y: e.clientY - rect.top});
                 onClick && onClick(e);
+                openLink();
             }}
         >
             {isRippling ? (

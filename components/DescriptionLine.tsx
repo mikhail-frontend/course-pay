@@ -5,7 +5,7 @@ type DescriptionLineType = {
     color?: string,
     text: string
 }
-const DescriptionLine:React.FC<DescriptionLineType> = ({color, children, text}) => {
+const DescriptionLine:React.FC<DescriptionLineType> = ({color, text}) => {
     return (
         <div style={{color: color || '#40C8E0'}} className={`${styles.descriptionLine} container`}>
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">

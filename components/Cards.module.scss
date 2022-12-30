@@ -19,13 +19,15 @@
   margin-top: 124px;
   margin-bottom: 128px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .card{
   height: 367px;
   background: linear-gradient(358.98deg, rgba(247, 248, 248, 0.05) 1.12%, rgba(247, 248, 248, 0) 99.39%);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
+  position: relative;
+  z-index: 3;
   &:first-of-type{
     padding: 60px 0 60px 57px;
   }
@@ -35,6 +37,8 @@
 }
 .cardCourses{
   margin-bottom: 35px;
+  position: relative;
+  z-index: 3;
 }
 .cardCourse{
   display: inline-flex;
@@ -53,6 +57,8 @@
   color: #F7F8F8;
   transition: .2s ease;
   user-select: none;
+  position: relative;
+  z-index: 3;
   span{
     width: 26px;
     height: 25px;
@@ -79,6 +85,8 @@
   line-height: 31px;
   color: #40C8E0;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 3;
 }
 .cardText{
   font-weight: 500;
@@ -116,6 +124,8 @@
   height: 48px;
   margin-right: 12px;
   margin-bottom: 12px;
+  position: relative;
+  z-index: 3;
   &:nth-of-type(2) {
     margin-right: 0;
     width: 129px;
