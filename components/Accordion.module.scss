@@ -1,7 +1,5 @@
-/* .accordion_section[aria-expanded='true'] .accordion {
-  color: #957029;
-} */
-.accordion_section {
+
+.accordionSection {
   display: flex;
   flex-direction: column;
   margin: 17px;
@@ -74,7 +72,7 @@
   font-weight: 400;
   padding: 10px;
 }
-.accordion_section[aria-expanded='true'] {
+.accordionSection.isActive {
   .accordion_content {
     opacity: 1;
   }

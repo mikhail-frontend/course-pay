@@ -12,19 +12,19 @@ const aboutItems:AboutItem[] = [
         id: 1,
         title: 'на 70% дешевле',
         text: 'чем у популярных российских курсов',
-        icon: '/icon1.svg'
+        icon: '/icon1.png'
     },
     {
         id: 2,
         title: 'Сертификат',
         text: 'получите международный сертификат',
-        icon: '/icon2.svg'
+        icon: '/icon2.png'
     },
     {
         id: 3,
         title: 'Настоящие эксперты',
         text: 'выбирайте курсы от экспертов с реальным опытом',
-        icon: '/icon3.svg'
+        icon: '/icon3.png'
     },
 ]
 const UdemyAbout = () => {

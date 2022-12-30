@@ -23,9 +23,9 @@ const Accordion:React.FC<AccordionType> = ({curIndex, content, title}) => {
     }
 
     return (
-        <div className={styles['accordion_section']} aria-expanded={isActive}>
+        <div className={`${styles.accordionSection} ${isActive ? styles.isActive : ''}`}>
             <RippleButton className={`${styles.accordion} ${isActive ? styles.active : ""}`} onClick={toggleAccordion}>
-                <h4 className={styles.accordion_title}>{title}</h4>
+                <h3 className={styles.accordion_title}>{title}</h3>
             </RippleButton>
             <div
                 ref={ref}
