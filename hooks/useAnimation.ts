@@ -7,7 +7,7 @@ export default function useAnimation<T>(list: T[], setList: React.Dispatch<React
     const setElementIsAnimated:React.EffectCallback = useCallback(() => {
         const globalCopy:T[] = [...list];
         globalCopy.forEach((item, index) => {
-            const timer:number = (index + 1) * 100;
+            const timer:number = (index + 1) * 70;
             setTimeout(() => {
                 setList((prevValue) => {
                     const copy = [...prevValue];

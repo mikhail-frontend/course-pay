@@ -7,3 +7,13 @@
   text-align: center;
   margin-bottom: 60px;
 }
+
+.faqBlock{
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: .3s ease-in-out;
+  &.active{
+    opacity: 1;
+    transform: none;
+  }
+}

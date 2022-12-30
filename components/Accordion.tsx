@@ -5,9 +5,11 @@ export type AccordionType = {
     curIndex: number
     content: string
     title: string
+    className?: string
+    animated?: boolean
     children?: React.ReactNode
 }
-const Accordion:React.FC<AccordionType> = ({curIndex, content, title}) => {
+const Accordion:React.FC<AccordionType> = ({curIndex, className = '', content, title}) => {
 
     const [heightState, setHeightState]:[string, React.Dispatch<React.SetStateAction<string>>] = useState("0px");
 
@@ -23,7 +25,7 @@ const Accordion:React.FC<AccordionType> = ({curIndex, content, title}) => {
     }
 
     return (
-        <div className={`${styles.accordionSection} ${isActive ? styles.isActive : ''}`}>
+        <div className={`${styles.accordionSection} ${isActive ? styles.isActive : ''} ${className}`}>
             <RippleButton className={`${styles.accordion} ${isActive ? styles.active : ""}`} onClick={toggleAccordion}>
                 <h3 className={styles.accordion_title}>{title}</h3>
             </RippleButton>
