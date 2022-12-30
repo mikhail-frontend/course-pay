@@ -42,6 +42,7 @@ const UdemyAbout = () => {
                 {aboutList.map(item => {
                     return (
                         <div className={styles.udemyBlock} key={item.id}>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={item.icon} alt={item.text} width={'46px'} height={'46px'} loading={'lazy'} />
                             <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
                             <p className={styles.udemyBlockText}>{item.text}</p>

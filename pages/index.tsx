@@ -27,7 +27,19 @@ export default function Home() {
             <meta name='keywords' content='Udemy для России, Udemy купить России, Udemy российской картой, IT курсы, Оплатить Udemy российской картой'/>
             <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
             <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+            <link rel="canonical" href="https://course-pay-1ac3e.web.app/"/>
+            <link rel="manifest" href="/manifest.json" />
             <meta charSet="UTF-8"/>
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="theme-color" content="#000212" />
+            <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
+            <link rel="apple-touch-icon" href="/icons/icon-48x48.png" sizes='48x48'/>
+            <link rel="apple-touch-icon" href="/icons/icon-72x72.png" sizes='72x72'/>
+            <link rel="apple-touch-icon" href="/icons/icon-96x96.png" sizes='96x96'/>
+            <link rel="apple-touch-icon" href="/icons/icon-144x144.png" sizes='144x144'/>
+            <link rel="apple-touch-icon" href="/icons/icon-152x152.png" sizes='152x152'/>
+            <link rel="apple-touch-icon" href="/icons/icon-384x384.png" sizes='192x192'/>
+            <link rel="apple-touch-icon" href="/icons/icon-512x512.png" sizes='512x512'/>
         </Head>
         <Header/>
         <About/>

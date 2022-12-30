@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withPWA = require('next-pwa')({
+  dest: 'public',
+})
+
+module.exports = withPWA({
   reactStrictMode: false,
   images: {
     loader: 'akamai',
     path: '',
   }
-}
+})
 
-module.exports = nextConfig
