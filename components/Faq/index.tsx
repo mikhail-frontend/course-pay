@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import styles from './Faq.module.scss';
-import type {AccordionType} from "./Accordion";
-import Accordion from "./Accordion";
-import useAnimation from "../hooks/useAnimation";
+import type {AccordionType} from "../UI/Accordion/";
+import Accordion from "../UI/Accordion/";
+import useAnimation from "../../hooks/useAnimation";
 const items:AccordionType[] = [
     {
         id: 1,
@@ -37,7 +37,7 @@ const items:AccordionType[] = [
         content: `После поступления денег на наш счет в течении 15 минут мы предоставим  ваш новый аккаунт на Udemy c  вашей покупкой` ,
     },
 ];
-const Faq = () => {
+const Index = () => {
     const [listOfFaq, setListOfFaq]: [AccordionType[], React.Dispatch<React.SetStateAction<AccordionType[]>>] = useState(items);
     const wrapRef = useAnimation<AccordionType>(listOfFaq, setListOfFaq)
     return (
@@ -58,4 +58,4 @@ const Faq = () => {
     );
 };
 
-export default Faq;
+export default Index;

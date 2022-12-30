@@ -1,9 +1,8 @@
 import React from 'react';
-import Logo from "./Logo";
+import Logo from "../Logo";
 import styles from './Footer.module.scss'
 const Footer = () => {
     const scrollToTop = () => {
-        console.log(23)
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

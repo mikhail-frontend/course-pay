@@ -3,12 +3,12 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Cards from "../components/Cards";
 import UdemyAbout from "../components/UdemyAbout";
-import DescriptionLine from "../components/DescriptionLine";
+import DescriptionLine from "../components/UI/DescriptionLine";
 import HowBuy from "../components/HowBuy";
 import Faq from "../components/Faq";
 import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
 import React from "react";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>

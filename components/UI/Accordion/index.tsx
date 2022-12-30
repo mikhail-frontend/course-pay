@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
 import styles from './Accordion.module.scss'
-import RippleButton from "./RippledButton";
+import RippleButton from "../RippledButton";
 export type AccordionType = {
     id: number
     content: string

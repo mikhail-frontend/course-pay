@@ -1,5 +1,5 @@
 import React from 'react';
-import RippleButton from "./RippledButton";
+import RippleButton from "../UI/RippledButton";
 import styles from './Contacts.module.scss'
 const Contacts = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
-import Logo from "./Logo";
-import RippleButton from "./RippledButton";
+import Logo from "../Logo";
+import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';
 
 type Link = {

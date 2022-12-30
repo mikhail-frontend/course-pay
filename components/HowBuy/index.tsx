@@ -1,7 +1,7 @@
 import React from 'react';
-import aboutStyles from "./UdemyAbout.module.scss";
+import aboutStyles from "../UdemyAbout/UdemyAbout.module.scss";
 import styles from './HowBuy.module.scss'
-import RippleButton from "./RippledButton";
+import RippleButton from "../UI/RippledButton";
 const HowBuy = () => {
     return (
         <div className={styles.howBuyWrap}>
