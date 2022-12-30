@@ -41,11 +41,12 @@
   }
 }
 .udemyBlocks{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 35px 60px;
   @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     gap: 35px 60px;
@@ -55,19 +56,15 @@
   opacity: 0;
   transform: translateX(-80px);
   transition: .3s ease-in-out;
-  &:nth-of-type(2n) {
-    margin-left: 106px;
-    margin-right: 106px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &.active{
     opacity: 1;
     transform: none;
   }
   @media (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 350px;
   }
 }
@@ -77,6 +74,7 @@
   color: #FFFFFF;
   line-height: 1.2;
   margin: 13px 0 10px;
+  text-align: center;
   @media (max-width: 1200px){
     font-size: 30px;
     margin: 10px 0 8px;
@@ -88,4 +86,5 @@
   font-size: 14px;
   line-height: 20px;
   color: #BABABA;
+  text-align: center;
 }

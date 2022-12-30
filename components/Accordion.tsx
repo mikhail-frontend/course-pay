@@ -2,25 +2,25 @@ import React, {useRef, useState} from "react";
 import styles from './Accordion.module.scss'
 import RippleButton from "./RippledButton";
 export type AccordionType = {
-    curIndex: number
+    id: number
     content: string
     title: string
     className?: string
     animated?: boolean
     children?: React.ReactNode
 }
-const Accordion:React.FC<AccordionType> = ({curIndex, className = '', content, title}) => {
+const Accordion:React.FC<AccordionType> = ({id, className = '', content, title}) => {
 
     const [heightState, setHeightState]:[string, React.Dispatch<React.SetStateAction<string>>] = useState("0px");
 
     const [activeTab, setActiveTab]:[number, React.Dispatch<React.SetStateAction<number>>] = useState(-1);
 
-    const isActive = activeTab === curIndex;
+    const isActive = activeTab === id;
 
     const ref = useRef<HTMLDivElement>(null);
 
     const toggleAccordion = () => {
-        setActiveTab(() => activeTab === curIndex ? -1 : curIndex);
+        setActiveTab(() => activeTab === id ? -1 : id);
         setHeightState(() => isActive ? "0px" : `${ref.current!.scrollHeight}px`);
     }
 
