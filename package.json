@@ -8,6 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ],
   "dependencies": {
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",

@@ -8,6 +8,12 @@ module.exports = withPWA({
   images: {
     loader: 'akamai',
     path: '',
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 })
 
