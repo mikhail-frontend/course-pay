@@ -21,9 +21,13 @@
   @media (max-width: 900px) {
     margin-bottom: 40px;
   }
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 .udemyAboutHeading{
   width: 660px;
+  max-width: 100%;
   span{
     display: block;
     color: #40C8E0;
@@ -42,6 +46,7 @@
   color: #B4BCD0;
   width: 420px;
   margin-left: 60px;
+  max-width: 100%;
   @media (max-width: 1200px) {
     font-size: 14px;
     line-height: 22px;

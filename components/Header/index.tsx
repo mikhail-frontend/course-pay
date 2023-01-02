@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Logo from "../Logo";
 import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';
-
+import useMobile from "../../hooks/useMobile";
 type Link = {
     id: number | string,
     text: string,
@@ -34,11 +34,8 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
             isButton: true
         },
     ]);
-    const [isMobile, setIsMobile] = useState(false)
 
-    useEffect(() => {
-        if(window.innerWidth < 767) setIsMobile(() => true)
-    }, [])
+    const isMobile = useMobile();
 
     const buttonClickHandler = (blockPath: string) => {
         if (!blockPath) return;

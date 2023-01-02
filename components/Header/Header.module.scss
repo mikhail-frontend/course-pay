@@ -22,6 +22,9 @@
   @media (max-width: 900px) {
     min-height: 55px;
   }
+  @media (max-width: 767px) {
+    min-height: 67px;
+  }
 }
 .headerContainer{
   display: flex;

@@ -9,6 +9,9 @@
   -webkit-appearance: none;
   box-sizing: border-box;
 }
+div, section{
+  max-width: 100%;
+}
 html{
   overflow-x: hidden;
 }
@@ -25,6 +28,9 @@ html, body{
   @media (max-width: 900px) {
     max-width: calc(100% - 30px);
   }
+  @media (max-width: 767px) {
+    max-width: calc(100% - 50px);
+  }
 }
 
 .heading{
@@ -38,6 +44,10 @@ html, body{
   }
   @media (max-width: 900px) {
     font-size: 40px;
+  }
+  @media (max-width: 767px) {
+    font-size: 46px;
+    line-height: 56px;
   }
 }
 @import "RippleButton";
