@@ -36,5 +36,8 @@ html, body{
   @media (max-width: 1200px) {
     font-size: 45px;
   }
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
 }
 @import "RippleButton";

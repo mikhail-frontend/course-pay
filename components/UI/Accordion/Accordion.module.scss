@@ -1,8 +1,13 @@
-
 .accordionSection {
   display: flex;
   flex-direction: column;
-  margin: 17px;
+  margin-bottom: 17px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  @media (max-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 .accordion {
   height: 76px;
@@ -46,6 +51,17 @@
   }
   &:hover{
     transform: none;
+  }
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 20px 55px 20px 20px ;
+  }
+  @media (max-width: 900px) {
+    height: 65px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
   }
 }
 .active {

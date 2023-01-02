@@ -15,8 +15,12 @@
     -webkit-backdrop-filter: saturate(80%) blur(5px);
     background: rgb(0 2 18 / 30%);
   }
+
   @media (max-width: 1200px) {
     min-height: 60px;
+  }
+  @media (max-width: 900px) {
+    min-height: 55px;
   }
 }
 .headerContainer{
@@ -31,6 +35,10 @@
   @media (max-width: 1200px) {
     padding-top: 12px;
     padding-bottom: 8px;
+  }
+  @media (max-width: 900px){
+    padding-top: 10px;
+    padding-bottom: 7px;
   }
 }
 .headerLogo{
@@ -62,6 +70,12 @@
   }
   &.headerMainBtn{
     background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
+  }
+  @media (max-width: 900px){
+    min-height: 33px;
+    margin-right: 30px;
+    padding: 7px 13px;
+
   }
 }
 

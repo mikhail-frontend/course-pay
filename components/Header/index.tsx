@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from "../Logo";
 import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';

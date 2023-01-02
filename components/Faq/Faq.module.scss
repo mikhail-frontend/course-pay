@@ -2,10 +2,16 @@
   margin-bottom: 110px;
   position: relative;
   z-index: 2;
+  @media (max-width: 1200px) {
+    margin-bottom: 90px;
+  }
 }
 .faqHeading{
   text-align: center;
   margin-bottom: 60px;
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .faqBlock{

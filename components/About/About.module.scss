@@ -23,6 +23,11 @@
       height: 600px;
     }
   }
+  @media (max-width: 900px) {
+    &:before{
+      height: 450px;
+    }
+  }
 }
 .aboutLabel{
   padding: 0 5px 0 12px;
@@ -71,6 +76,10 @@
     font-size: 60px;
     margin: 0 auto 25px;
   }
+  @media (max-width: 900px) {
+    font-size: 50px;
+    margin: 0 auto 20px;
+  }
 }
 
 .aboutDescription{
@@ -86,6 +95,10 @@
   @media (max-width: 1200px) {
     font-size: 18px;
     margin: 0 auto 30px;
+  }
+  @media (max-width: 900px) {
+    font-size: 16px;
+    margin: 0 auto 25px;
   }
 }
 .aboutBtn{

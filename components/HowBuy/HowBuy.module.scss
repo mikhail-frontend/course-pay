@@ -22,6 +22,14 @@
       top: 120px;
     }
   }
+  @media (max-width: 900px) {
+    margin-bottom: 60px;
+    &:before{
+      width: 100%;
+      height: 400px;
+      top: 100px;
+    }
+  }
 }
 .howBuy{
   position: relative;
@@ -36,6 +44,9 @@
   list-style: none;
   @media (max-width: 1200px) {
     gap: 30px;
+  }
+  @media (max-width: 900px) {
+    gap: 25px;
   }
 }
 
@@ -64,7 +75,16 @@
     }
   }
   @media (max-width: 1200px) {
-    height: auto;
+    height: 240px;
+    padding: 25px 30px 30px 25px;
+  }
+  @media (max-width: 900px) {
+    height: 220px;
+    img {
+      max-width: 45px;
+      max-height: 45px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -73,6 +93,10 @@
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
+  @media (max-width: 1200px){
+    font-size: 16px;
+    line-height: 1.3;
+  }
 }
 .additional{
   font-weight: 500;
@@ -80,6 +104,10 @@
   line-height: 27px;
   color: #B59AFF;
   margin-top: 25px;
+  @media (max-width: 1200px){
+    font-size: 16px;
+    line-height: 1.3;
+  }
 }
 
 .telegramLink{

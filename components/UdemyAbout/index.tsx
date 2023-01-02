@@ -18,7 +18,7 @@ const aboutItems:AboutItem[] = [
     },
     {
         id: 2,
-        title: ' Сертификат и советы по трудоустройству',
+        title: ' Сертификат и советы по&nbsp;трудоустройству',
         text: 'Получите международный сертификат и скилл-гайд',
         icon: '/icon2.png'
     },
@@ -37,7 +37,7 @@ const aboutItems:AboutItem[] = [
 ]
 
 const UdemyAbout = () => {
-    const [aboutList, setAboutList]: [AboutItem[], React.Dispatch<React.SetStateAction<AboutItem[]>>] = useState(aboutItems);
+    const [aboutList, setAboutList] = useState(aboutItems);
     const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
 
     return (
@@ -65,7 +65,7 @@ const UdemyAbout = () => {
                                  height={'46px'}
                                  className={`${styles.udemyBlockImage}`}
                                  loading={'lazy'}/>
-                            <h3 className={styles.udemyBlockTitle}>{item.title}</h3>
+                            <h3 className={styles.udemyBlockTitle} dangerouslySetInnerHTML={{__html: item.title}}/>
                             <p className={styles.udemyBlockText}>{item.text}</p>
                         </li>
                     )

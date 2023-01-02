@@ -14,6 +14,13 @@
     pointer-events: none;
     background: radial-gradient(50% 50% at 50% 50%, rgba(181, 154, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   }
+  @media (max-width: 1200px) {
+    padding-bottom: 80px;
+    &:before{
+      width: 390px;
+      height: 390px;
+    }
+  }
 }
 
 .contactsHeading{
@@ -21,6 +28,9 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .contactsButton{

@@ -5,6 +5,9 @@
   @media (max-width: 1200px) {
     margin-bottom: 75px;
   }
+  @media (max-width: 900px) {
+    margin-bottom: 60px;
+  }
 }
 
 .udemyAboutMain {
@@ -14,6 +17,9 @@
   align-items: flex-start;
   @media (max-width: 1200px) {
     margin-bottom: 50px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 40px;
   }
 }
 .udemyAboutHeading{
@@ -25,6 +31,7 @@
   }
   @media (max-width: 1200px) {
     width: 550px;
+    max-width: 100%;
   }
 }
 
@@ -38,6 +45,10 @@
   @media (max-width: 1200px) {
     font-size: 14px;
     line-height: 22px;
+    margin-left: 50px;
+  }
+  @media (max-width: 900px) {
+    margin-left: 20px;
   }
 }
 .udemyBlocks{
@@ -77,6 +88,10 @@
   text-align: center;
   @media (max-width: 1200px){
     font-size: 30px;
+    margin: 10px 0 8px;
+  }
+  @media (max-width: 900px){
+    font-size: 24px;
     margin: 10px 0 8px;
   }
 }
