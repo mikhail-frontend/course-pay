@@ -34,6 +34,11 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
             isButton: true
         },
     ]);
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        if(window.innerWidth < 767) setIsMobile(() => true)
+    }, [])
 
     const buttonClickHandler = (blockPath: string) => {
         if (!blockPath) return;
@@ -49,7 +54,12 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
                 <div className="header-links">
                     {links.map(link => {
                         return (
-                            <RippleButton
+                            !isMobile ? <RippleButton
+                                key={link.id}
+                                onClick={() => buttonClickHandler(link.blockPath)}
+                                className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn}`}>
+                                {link.text}
+                            </RippleButton> : isMobile && link.isButton && <RippleButton
                                 key={link.id}
                                 onClick={() => buttonClickHandler(link.blockPath)}
                                 className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn}`}>

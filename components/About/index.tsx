@@ -13,7 +13,7 @@ const About:React.FC<AboutType> = () => {
             {/*</div>*/}
             <h1 className={styles.aboutHeading}>
                 Купим любые <span>курсы
-                Udemy</span>  за&nbsp;вас.
+                Udemy</span>  за&nbsp;вас
             </h1>
             <p className={styles.aboutDescription}>
                 Оплачивай наш сервис покупки курсов на&nbsp;Udemy российской&nbsp;картой без&nbsp;ограничений.
