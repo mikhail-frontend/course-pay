@@ -20,7 +20,7 @@ const SiteHead = () => {
             <meta name='keywords' content='Udemy для России, Udemy купить России, Udemy российской картой, IT курсы, Оплатить Udemy российской картой'/>
             <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
             <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
-            <link rel="canonical" href="https://course-pay-1ac3e.web.app/"/>
+            <link rel="canonical" href="https://rusudemy.com/"/>
             <link rel="manifest" href="/manifest.json" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="theme-color" content="#000212" />
