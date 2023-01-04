@@ -1,8 +1,8 @@
 import React, {useCallback, useEffect, useRef, useState} from "react";
 
 export default function useAnimation<T>(list: T[], setList: React.Dispatch<React.SetStateAction<T[]>>): React.RefObject<HTMLUListElement> | null {
-    const [animated, setAnimated]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] = useState(false);
-    const wrapRef: React.RefObject<HTMLUListElement> = useRef<HTMLUListElement>(null)
+    const [animated, setAnimated]= useState<boolean>(false);
+    const wrapRef = useRef<HTMLUListElement>(null)
 
     const setElementIsAnimated:React.EffectCallback = useCallback(() => {
         const globalCopy:T[] = [...list];

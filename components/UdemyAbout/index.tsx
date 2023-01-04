@@ -37,7 +37,7 @@ const aboutItems:AboutItem[] = [
 ]
 
 const UdemyAbout = () => {
-    const [aboutList, setAboutList] = useState(aboutItems);
+    const [aboutList, setAboutList] = useState<AboutItem[]>(aboutItems);
     const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
 
     return (

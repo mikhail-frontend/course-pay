@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Logo from "../Logo";
 import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';
 import useMobile from "../../hooks/useMobile";
+
 type Link = {
     id: number | string,
     text: string,
@@ -10,8 +11,8 @@ type Link = {
     isButton?: boolean
 }
 
-const Header: React.FC<Record<string, string>> = React.memo(() => {
-    const [links]: [Link[], React.Dispatch<React.SetStateAction<any>>] = useState([
+const Header = () => {
+    const [links] = useState<Link[]>([
         {
             id: '1',
             text: 'о Udemy',
@@ -45,7 +46,7 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
     }
 
     return (
-        <header className={styles.header} >
+        <header className={styles.header}>
             <div className={`${styles.headerContainer} container`}>
                 <Logo className={styles.headerLogo} onClick={() => buttonClickHandler('about')}/>
                 <div className="header-links">
@@ -68,8 +69,7 @@ const Header: React.FC<Record<string, string>> = React.memo(() => {
             </div>
         </header>
     );
-});
 
-Header.displayName = 'Header'
+}
 
 export default Header;

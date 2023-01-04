@@ -57,8 +57,8 @@ const Carts:Cart[] = [
     },
 ]
 const Cards:React.FC<CardsType> = () => {
-    const [coursesList]:[Course[], React.Dispatch<React.SetStateAction<Course[]>>] = useState(courses);
-    const [cartsList]:[Cart[], React.Dispatch<React.SetStateAction<Course[]>>] = useState(Carts);
+    const [coursesList] = useState<Course[]>(courses);
+    const [cartsList] = useState<Cart[]>(Carts);
 
     const openCourse = (url:string = '') => window.open(url)
 

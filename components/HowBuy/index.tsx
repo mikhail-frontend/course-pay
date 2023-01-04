@@ -36,7 +36,7 @@ const howBuySteps:howBuyStep[] = [
     }
 ]
 const HowBuy = () => {
-    const [steps, setSteps] = useState(howBuySteps);
+    const [steps, setSteps] = useState<howBuyStep[]>(howBuySteps);
     const wrapRef = useAnimation<howBuyStep>(steps, setSteps);
 
     return (

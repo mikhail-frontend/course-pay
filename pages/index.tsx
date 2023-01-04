@@ -9,6 +9,8 @@ import Faq from "../components/Faq";
 import Contacts from "../components/Contacts";
 import React from "react";
 import Footer from "../components/Footer";
+
+
 export default function Home() {
   return (
     <>

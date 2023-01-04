@@ -14,11 +14,9 @@ type Coords = {
 
 const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) => {
 
-    const [coords, setCoords]: [Coords, React.Dispatch<React.SetStateAction<Coords>>]
-        = useState({x: -1, y: -1});
+    const [coords, setCoords] = useState<Coords>({x: -1, y: -1});
 
-    const [isRippling, setIsRippling]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] =
-        useState(false);
+    const [isRippling, setIsRippling] = useState<boolean>(false);
 
     const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>):void => {
         const button = e.target as HTMLButtonElement;

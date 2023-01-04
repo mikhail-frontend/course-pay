@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import styles from './Accordion.module.scss'
 import RippleButton from "../RippledButton";
+
 export type AccordionType = {
     id: number
     content: string
@@ -11,9 +12,9 @@ export type AccordionType = {
 }
 const Accordion:React.FC<AccordionType> = ({id, className = '', content, title}) => {
 
-    const [heightState, setHeightState]:[string, React.Dispatch<React.SetStateAction<string>>] = useState("0px");
+    const [heightState, setHeightState] = useState<string>("0px");
 
-    const [activeTab, setActiveTab]:[number, React.Dispatch<React.SetStateAction<number>>] = useState(-1);
+    const [activeTab, setActiveTab] = useState<number>(-1);
 
     const isActive = activeTab === id;
 
