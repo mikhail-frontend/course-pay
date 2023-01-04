@@ -38,7 +38,7 @@ const items:AccordionType[] = [
     },
 ];
 const Index = () => {
-    const [listOfFaq, setListOfFaq]: [AccordionType[], React.Dispatch<React.SetStateAction<AccordionType[]>>] = useState(items);
+    const [listOfFaq, setListOfFaq] = useState<AccordionType[]>(items);
     const wrapRef = useAnimation<AccordionType>(listOfFaq, setListOfFaq)
     return (
         <section className={`container ${styles.faq}`} id='faq' ref={wrapRef}>

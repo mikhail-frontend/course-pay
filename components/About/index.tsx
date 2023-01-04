@@ -13,8 +13,8 @@ const About:React.FC<AboutType> = () => {
             {/*    комиссия за покупку курса от 20-30 % <span>→</span>*/}
             {/*</div>*/}
             <h1 className={`${styles.aboutHeading}`}>
-                Купим любые <span>курсы
-                Udemy</span>  за&nbsp;вас
+                Купим любые <div>курсы
+                Udemy</div>  за&nbsp;вас
             </h1>
             <p className={`${styles.aboutDescription}`}>
                 Оплачивай наш сервис покупки курсов на&nbsp;Udemy российской&nbsp;картой без&nbsp;ограничений.

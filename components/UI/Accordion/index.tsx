@@ -28,7 +28,7 @@ const Accordion:React.FC<AccordionType> = ({id, className = '', content, title})
     return (
         <div className={`${styles.accordionSection} ${isActive ? styles.isActive : ''} ${className}`}>
             <RippleButton className={`${styles.accordion} ${isActive ? styles.active : ""}`} onClick={toggleAccordion}>
-                <h3 className={styles.accordion_title} dangerouslySetInnerHTML={{__html: title}}/>
+                <span className={styles.accordion_title} dangerouslySetInnerHTML={{__html: title}}/>
             </RippleButton>
             <div
                 ref={ref}

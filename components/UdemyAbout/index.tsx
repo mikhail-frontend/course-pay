@@ -44,7 +44,7 @@ const UdemyAbout = () => {
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
                 <h2 className={`${styles.udemyAboutHeading} heading`}>
-                    Udemy <span>глобальный лидер онлайн обучения</span>
+                    Udemy <div>глобальный лидер онлайн обучения</div>
                 </h2>
                 <p className={styles.udemyAboutText}>
                     Udemy предоставляет доступ к&nbsp;востребованным программам обучения,
@@ -60,8 +60,8 @@ const UdemyAbout = () => {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={item.icon}
                                  alt={item.text}
-                                 width={'46px'}
-                                 height={'46px'}
+                                 width={46}
+                                 height={46}
                                  className={`${styles.udemyBlockImage}`}
                                  loading={'lazy'}/>
                             <h3 className={styles.udemyBlockTitle} dangerouslySetInnerHTML={{__html: item.title}}/>

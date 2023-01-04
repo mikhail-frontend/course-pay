@@ -82,10 +82,10 @@
   margin: 0 auto 32px;
   position: relative;
   z-index: 2;
-  span{
+  div{
     color: #6F519B;
     width: 100%;
-    display: contents;
+    display: inline;
   }
   @media (max-width: 1200px) {
     font-size: 60px;

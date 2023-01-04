@@ -6,7 +6,7 @@ const Contacts = () => {
         <section className={`${styles.contacts}`} id='contacts'>
             <h2 className={`heading container ${styles.contactsHeading}`}>Хотите задать вопрос? <br/>
                 Мы всегда доступны  в телеграмм</h2>
-            <RippleButton  to="https://t.me/udemy_rus" className={styles.contactsButton}>
+            <RippleButton to="https://t.me/rus_udemy" className={styles.contactsButton}>
                 @udemy_rus
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_77_669)">
