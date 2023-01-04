@@ -8,6 +8,9 @@
   @media (max-width: 900px) {
     margin-bottom: 60px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 90px;
+  }
 }
 
 .udemyAboutMain {
@@ -28,14 +31,20 @@
 .udemyAboutHeading{
   width: 660px;
   max-width: 100%;
-  span{
+
+  span {
     display: block;
     color: #40C8E0;
     margin-top: 5px;
   }
+
   @media (max-width: 1200px) {
     width: 550px;
     max-width: 100%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -55,6 +64,12 @@
   @media (max-width: 900px) {
     margin-left: 20px;
   }
+  @media (max-width: 767px) {
+    margin-left: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 .udemyBlocks{
   display: grid;
@@ -65,7 +80,10 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px 60px;
+    grid-gap: 35px 60px;
+  }
+  @media (max-width: 767px) {
+    grid-gap: 30px;
   }
 }
 .udemyBlock{
@@ -76,15 +94,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &.active{
-    opacity: 1;
-    transform: none;
-  }
+
   @media (max-width: 1200px) {
     width: 350px;
   }
   @media (max-width: 800px) {
     width: 310px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(80px);
+    transition: .3s ease-out;
+  }
+
+  &.active {
+    opacity: 1;
+    transform: none;
   }
 }
 .udemyBlockTitle{
@@ -94,20 +121,29 @@
   line-height: 1.2;
   margin: 13px 0 10px;
   text-align: center;
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     font-size: 30px;
     margin: 10px 0 8px;
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     font-size: 24px;
     margin: 10px 0 8px;
   }
+  @media (max-width: 767px) {
+    text-align: left;
+    margin: 13px 0;
+    line-height: 1.4;
+    font-size: 22px;
+  }
 }
 
-.udemyBlockText{
+.udemyBlockText {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #BABABA;
   text-align: center;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
 }

@@ -1,8 +1,8 @@
-import React, {ReactNode, useCallback, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 
 type ButtonType = {
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
-    children: ReactNode,
+    children: React.ReactNode,
     className?: string,
     to?: string
 };
@@ -40,10 +40,10 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) 
     }, [isRippling]);
 
 
-    const openLink = useCallback(() => {
+    const openLink = () => {
         if(!to) return;
         window.open(to)
-    }, [to])
+    }
     return (
         <button
             className={`ripple-button ${className}`}

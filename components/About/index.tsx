@@ -1,13 +1,12 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import RippleButton from "../UI/RippledButton";
 import styles from './About.module.scss'
 // import useMobile from "../../hooks/useMobile";
 type AboutType = {children?: React.ReactNode}
 const About:React.FC<AboutType> = () => {
-    const openUdemyLink = useCallback(() => {
+    const openUdemyLink = () => {
         window.open('https://www.udemy.com/')
-    }, [])
-    // const isMobile = useMobile();
+    }
 
     return (
         <section className={`${styles.about} container`} id='about'>

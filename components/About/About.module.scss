@@ -32,6 +32,9 @@
     max-width: calc(100% - 50px);
     &:before{
       height: 300px;
+      top: 72px;
+      width: calc(100% - 52px);
+      left: 26px;
     }
   }
 }

@@ -63,6 +63,17 @@
     padding-bottom: 15px;
     font-size: 16px;
   }
+  @media (max-width: 767px) {
+    min-height: 88px;
+    height: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F7F8F8;
+    h3{
+      font: inherit;
+    }
+  }
 }
 .active {
   background-color: #4C50BE ;
