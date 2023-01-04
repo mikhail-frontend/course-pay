@@ -13,6 +13,9 @@
     margin-bottom: 90px;
     overflow: hidden;
   }
+  @media (max-width: 370px) {
+    margin-bottom: 70px;
+  }
 }
 
 .udemyAboutMain {
@@ -71,6 +74,10 @@
     width: 100%;
     font-size: 16px;
     line-height: 26px;
+  }
+  @media (max-width: 370px) {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .udemyBlocks{

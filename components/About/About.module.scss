@@ -38,6 +38,9 @@
       max-width: 100vw;
     }
   }
+  @media (max-width: 370px) {
+    padding-top: 45px;
+  }
 }
 .aboutLabel{
   padding: 0 5px 0 12px;
@@ -94,6 +97,10 @@
     font-size: 46px;
     line-height: 50px;
   }
+  @media (max-width: 370px) {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 .aboutDescription{
@@ -119,6 +126,10 @@
     line-height: 25px;
     margin-bottom: 40px;
   }
+  @media (max-width: 370px){
+    font-size: 16px;
+    line-height: 1.35;
+  }
 }
 .aboutBtn{
   width: 154px;
@@ -136,5 +147,9 @@
     width: 100%;
     height: 52px;
     max-width: calc(100% - 50px);
+  }
+  @media (max-width: 370px){
+    height: 45px;
+    max-width: calc(100% - 40px);
   }
 }

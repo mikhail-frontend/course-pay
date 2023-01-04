@@ -79,7 +79,7 @@ const Cards:React.FC<CardsType> = () => {
                         })}
                     </div>
                     <h2 className={styles.cardTitle}>Большой выбор курсов</h2>
-                    <p className={styles.cardText}>Изучайте востребованные навыки с помощью более 213 000 видеокурсов на Udemy</p>
+                    <p className={styles.cardText}>Изучайте востребованные навыки с&nbsp;помощью более 213 000 видеокурсов на Udemy</p>
                 </section>
                 <section className={styles.card}>
                     <Image

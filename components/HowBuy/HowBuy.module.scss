@@ -66,6 +66,9 @@
   transition: .3s ease;
   opacity: 0;
   transform: translateX(-40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   & > svg{
     margin-bottom: 35px;
   }
@@ -95,6 +98,7 @@
   @media (max-width: 767px) {
     width: 100%;
     transform: translateX(40px);
+    height: auto;
   }
   &.active{
     opacity: 1;

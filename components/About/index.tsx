@@ -1,7 +1,6 @@
 import React from 'react';
 import RippleButton from "../UI/RippledButton";
 import styles from './About.module.scss'
-// import useMobile from "../../hooks/useMobile";
 type AboutType = {children?: React.ReactNode}
 const About:React.FC<AboutType> = () => {
     const openUdemyLink = () => {
