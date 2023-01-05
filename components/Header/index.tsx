@@ -20,7 +20,7 @@ const Header = () => {
         },
         {
             id: '2',
-            text: 'как купить ?',
+            text: 'Как купить ?',
             blockPath: 'howBuy'
         },
         {

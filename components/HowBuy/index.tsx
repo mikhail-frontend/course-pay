@@ -17,23 +17,24 @@ type howBuyStep = {
 }
 const howBuySteps:howBuyStep[] = [
     {
-        id: 1,
+        id: 4,
         image: '/1.svg',
-        title: 'Написать нам в телеграмм',
-        hasButton: true
+        title: 'Выберите курс на&nbsp;сайте Udemy.com',
+        text: 'Скопируйте ссылку на&nbsp;курс, который хотите купить'
     },
     {
-        id: 2,
+        id: 5,
         image: '/2.svg',
-        title: 'Прислать ссылку на выбранный вами курс на площадке Udemy',
-        text: 'Прислать почту Gmail'
+        title: ' Отправьте заявку в&nbsp;telegram',
+        hasButton: true,
+        text: 'Пришлите ссылку на&nbsp;курс и e&#8209;mail, либо доступ к аккаунту Udemy'
     },
     {
-        id: 3,
+        id: 6,
         image: '/3.svg',
-        title: 'Оплатить',
-        additional: 'Мы заводим аккаунт на Вашу почту и приобретаем курс.'
-    }
+        title: 'Оплатите картой российского банка',
+        text: 'Наш специалист сообщит номер электронного кошелька. После перевода средств вы получите доступ к&nbsp;курсу.'
+    },
 ]
 const HowBuy = () => {
     const [steps, setSteps] = useState<howBuyStep[]>(howBuySteps);
@@ -56,7 +57,7 @@ const HowBuy = () => {
                             return (
                                 <li key={step.id} className={`${styles.step} ${step.animated ? styles.active : ''}`}>
                                     <Image src={step.image} alt={step.title} width={55} height={55} loading={'lazy'}/>
-                                    <h3 className={styles.stepTitle}>{step.title}</h3>
+                                    <h3 className={styles.stepTitle} dangerouslySetInnerHTML={{__html: step.title}}/>
                                     {!!step.hasButton &&  <RippleButton to="https://t.me/rus_udemy" className={styles.telegramLink}>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clipPath="url(#clip0_21_364)">
@@ -70,8 +71,8 @@ const HowBuy = () => {
                                         </svg>
                                         @udemy_rus
                                     </RippleButton>}
-                                    {!!step.text && <p className={styles.stepText}>{step.text}</p>}
-                                    {!!step.additional && <p className={styles.additional}>{step.additional}</p>}
+                                    {!!step.text && <p className={styles.stepText} dangerouslySetInnerHTML={{__html: step.text}}/>}
+                                    {!!step.additional && <p className={styles.additional} dangerouslySetInnerHTML={{__html: step.additional}}/>}
                                 </li>
                             )
                         })
