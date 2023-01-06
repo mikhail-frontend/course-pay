@@ -69,7 +69,7 @@ const HowBuy = () => {
                                                 </clipPath>
                                             </defs>
                                         </svg>
-                                        @udemy_rus
+                                        @rus_udemy
                                     </RippleButton>}
                                     {!!step.text && <p className={styles.stepText} dangerouslySetInnerHTML={{__html: step.text}}/>}
                                     {!!step.additional && <p className={styles.additional} dangerouslySetInnerHTML={{__html: step.additional}}/>}
