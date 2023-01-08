@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import useAnimation from "../../hooks/useAnimation";
+import useMobile from "../../hooks/useMobile";
 import styles from './UdemyAbout.module.scss';
 
 type AboutItem = {
@@ -7,6 +8,7 @@ type AboutItem = {
     title: string,
     text: string,
     icon: string,
+    mobileTitle?: string,
     animated?: boolean
 }
 const aboutItems:AboutItem[] = [
@@ -19,6 +21,7 @@ const aboutItems:AboutItem[] = [
     {
         id: 2,
         title: ' Сертификат и советы по&nbsp;трудоустройству',
+        mobileTitle: 'Сертификат',
         text: 'Получите международный сертификат и скилл-гайд',
         icon: '/icon2.png'
     },
@@ -39,13 +42,13 @@ const aboutItems:AboutItem[] = [
 const UdemyAbout = () => {
     const [aboutList, setAboutList] = useState<AboutItem[]>(aboutItems);
     const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
-
+    const isMobile = useMobile();
     return (
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
-                <h2 className={`${styles.udemyAboutHeading} heading`}>
-                    Udemy <div>глобальный лидер онлайн обучения</div>
-                </h2>
+                <div className={`${styles.udemyAboutHeading} heading`}>
+                    Udemy &mdash;<h2> лидер онлайн обучения</h2>
+                </div>
                 <p className={styles.udemyAboutText}>
                     Udemy предоставляет доступ к&nbsp;востребованным программам обучения,
                     которые расширят ваши карьерные возможности.
@@ -63,8 +66,9 @@ const UdemyAbout = () => {
                                  width={46}
                                  height={46}
                                  className={`${styles.udemyBlockImage}`}
-                                 loading={'lazy'}/>
-                            <h3 className={styles.udemyBlockTitle} dangerouslySetInnerHTML={{__html: item.title}}/>
+                                 loading='lazy'/>
+                            <h3 className={styles.udemyBlockTitle}
+                                dangerouslySetInnerHTML={{__html: !isMobile ? item.title : item.mobileTitle ? item.mobileTitle : item.title}}/>
                             <p className={styles.udemyBlockText}>{item.text}</p>
                         </li>
                     )

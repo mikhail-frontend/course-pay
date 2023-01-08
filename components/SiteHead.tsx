@@ -4,15 +4,17 @@ import Script from "next/script";
 
 const SiteHead = () => {
 
+        // @ts-ignore
     return (
         <>
                 <Head>
                         <meta charSet="UTF-8"/>
                         <title>Udemy для России</title>
                         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                        <link rel="icon" href="/favicon.ico"/>
+                        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+                        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
                         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=''/>
                         <meta data-rh="true" property="og:locale" content="ru_RU"/>
                         <meta name="theme-color" content="#000212"/>
                         <meta property="og:type" content="website"/>
@@ -23,6 +25,7 @@ const SiteHead = () => {
                         <meta name='apple-mobile-web-app-title' content='Udemy для России'/>
                         <meta name='og:site_name' property='og:site_name' content='Udemy для России'/>
                         <meta name='og:title' property='og:title' content='Udemy для России'/>
+                        <meta property="og:image" content="/logo.jpg"/>
                         <meta name='keywords'
                               content='Udemy для России, Udemy купить России, Udemy российской картой, IT курсы, Оплатить Udemy российской картой'/>
                         <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>

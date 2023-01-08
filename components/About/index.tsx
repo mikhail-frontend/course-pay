@@ -12,14 +12,14 @@ const About:React.FC<AboutType> = () => {
             {/*<div className={styles.aboutLabel}>*/}
             {/*    комиссия за покупку курса от 20-30 % <span>→</span>*/}
             {/*</div>*/}
-            <h1 className={`${styles.aboutHeading}`}>
-                Купим любые <div>курсы
-                Udemy</div>  за&nbsp;вас
-            </h1>
+            <div className={`${styles.aboutHeading}`}>
+                Купим  <h1>курсы
+                Udemy</h1>  за&nbsp;вас
+            </div>
             <p className={`${styles.aboutDescription}`}>
-                Оплачивай наш сервис покупки курсов на&nbsp;Udemy российской&nbsp;картой без&nbsp;ограничений.
+                Наш&nbsp;сервис позволяет легко покупать курсы на&nbsp;Udemy с&nbsp;российской карты
             </p>
-            <RippleButton className={styles.aboutBtn} onClick={openUdemyLink}>Выбрать  курс</RippleButton>
+            <RippleButton className={styles.aboutBtn} onClick={openUdemyLink}>Перейти на сайт Udemy</RippleButton>
         </section>
     );
 };

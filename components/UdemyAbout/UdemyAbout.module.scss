@@ -37,9 +37,10 @@
   width: 660px;
   max-width: 100%;
 
-  div {
+  h2 {
     color: #40C8E0;
     margin-top: 5px;
+    font: inherit;
   }
 
   @media (max-width: 1200px) {

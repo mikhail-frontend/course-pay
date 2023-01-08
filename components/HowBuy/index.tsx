@@ -48,7 +48,8 @@ const HowBuy = () => {
                         Как приобрести курс?
                     </h2>
                     <p className={aboutStyles.udemyAboutText}>
-                        Учитесь в удобном темпе с помощью пожизненного доступа с мобильных устройств и ПК
+                        Вы можете учиться в&nbsp;своем&nbsp;собственном темпе,
+                        в&nbsp;любое время и&nbsp;в&nbsp;любом месте.
                     </p>
                 </div>
                 <ul className={styles.steps} ref={wrapRef}>

@@ -82,10 +82,11 @@
   margin: 0 auto 32px;
   position: relative;
   z-index: 2;
-  div{
+  h1{
     color: #6F519B;
     width: 100%;
     display: inline;
+    font: inherit;
   }
   @media (max-width: 1200px) {
     font-size: 60px;
@@ -136,7 +137,7 @@
   }
 }
 .aboutBtn{
-  width: 154px;
+  width: 215px;
   height: 44px;
   background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
   font-weight: 400;

@@ -79,7 +79,7 @@ const Cards:React.FC<CardsType> = () => {
                         })}
                     </div>
                     <h2 className={styles.cardTitle}>Большой выбор курсов</h2>
-                    <p className={styles.cardText}>Изучайте востребованные навыки с&nbsp;помощью более 213 000 видеокурсов на Udemy</p>
+                    <p className={styles.cardText}>Более&nbsp;чем 213&nbsp;000&nbsp;курсов для&nbsp;получения знаний</p>
                 </section>
                 <section className={styles.card}>
                     <Image
@@ -90,8 +90,9 @@ const Cards:React.FC<CardsType> = () => {
                         height={199}
                     />
                     <div className={styles.cardContent}>
-                        <h2 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата картой <br/> Российских банков</h2>
-                        <p className={styles.cardText} >Абсолютно любой российский банк</p>
+                        <h2 className={styles.cardTitle} style={{color: '#6F8EFF'}}>Оплата любой <br/>
+                            российской картой</h2>
+                        {/*<p className={styles.cardText} >Абсолютно любой российский банк</p>*/}
                     </div>
                     <div className={styles.cardCarts}>
                         {cartsList.map(item => (<strong className={styles.cartItem} key={item.id}>{item.text}</strong>))}
