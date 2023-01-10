@@ -16,9 +16,9 @@ const About:React.FC<AboutType> = () => {
                 Купим  <h1>курсы
                 Udemy</h1>  за&nbsp;вас
             </div>
-            <p className={`${styles.aboutDescription}`}>
-                Наш&nbsp;сервис позволяет легко покупать курсы на&nbsp;Udemy с&nbsp;российской карты
-            </p>
+            <div className={`${styles.aboutDescription}`}>
+                Наш&nbsp;сервис позволяет легко <h2> оплатить&nbsp;Udemy</h2> c российской карты
+            </div>
             <RippleButton className={styles.aboutBtn} onClick={openUdemyLink}>Перейти на сайт Udemy</RippleButton>
         </section>
     );

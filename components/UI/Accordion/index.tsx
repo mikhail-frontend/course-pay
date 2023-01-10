@@ -8,9 +8,10 @@ export type AccordionType = {
     title: string
     className?: string
     animated?: boolean
+    isHeading?: boolean
     children?: React.ReactNode
 }
-const Accordion:React.FC<AccordionType> = ({id, className = '', content, title}) => {
+const Accordion:React.FC<AccordionType> = ({id, className = '', content, title, isHeading}) => {
 
     const [heightState, setHeightState] = useState<string>("0px");
 
@@ -28,7 +29,8 @@ const Accordion:React.FC<AccordionType> = ({id, className = '', content, title})
     return (
         <div className={`${styles.accordionSection} ${isActive ? styles.isActive : ''} ${className}`}>
             <RippleButton className={`${styles.accordion} ${isActive ? styles.active : ""}`} onClick={toggleAccordion}>
-                <span className={styles.accordion_title} dangerouslySetInnerHTML={{__html: title}}/>
+                {!isHeading &&  <span className={styles.accordion_title} dangerouslySetInnerHTML={{__html: title}}/>}
+                {isHeading &&  <h2 className={styles.accordion_title} dangerouslySetInnerHTML={{__html: title}}/>}
             </RippleButton>
             <div
                 ref={ref}
