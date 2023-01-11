@@ -133,10 +133,15 @@
 .stepText {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #FFFFFF;
-  @media (max-width: 1200px) and (min-width: 768px) {
-    font-size: 16px;
+  strong{
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #4C50BE;
+    font-size: 20px;
+    display: block;
+    margin: 5px 0;
   }
 }
 
