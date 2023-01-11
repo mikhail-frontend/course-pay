@@ -14,8 +14,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-        <SiteHead/>
-        <Header/>
+
         <About/>
         <Cards/>
         <DescriptionLine text='Почему Udemy' color='#40C8E0'/>
@@ -24,7 +23,7 @@ export default function Home() {
         <HowBuy/>
         <Faq/>
         <Contacts/>
-        <Footer/>
+
     </>
 
   )
