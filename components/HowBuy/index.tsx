@@ -58,7 +58,7 @@ const HowBuy = () => {
                         steps.map(step => {
                             return (
                                 <li key={step.id} className={`${styles.step} ${step.animated ? styles.active : ''}`}>
-                                    <Image src={step.image} alt={step.title} width={55} height={55} loading={'lazy'}/>
+                                    <Image src={step.image} alt='RusUdemy. Udemy как купить' width={55} height={55} loading={'lazy'}/>
                                     <h3 className={styles.stepTitle} dangerouslySetInnerHTML={{__html: step.title}}/>
                                     {!!step.hasButton &&  <RippleButton to="https://t.me/rus_udemy" className={styles.telegramLink}>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">

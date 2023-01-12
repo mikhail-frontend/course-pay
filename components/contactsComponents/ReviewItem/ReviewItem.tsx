@@ -19,7 +19,7 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
                 <Image
                     src="/telegram.svg"
                     priority={false}
-                    alt="telegram"
+                    alt="RusUdemy. Udemy как купить"
                     className={styles.reviewSocial}
                     width={25}
                     height={25}
@@ -28,9 +28,14 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
                     <div className={styles.reviewItemName}>
                         {name}
                     </div>
+                    <div className={styles.reviewItemLink}>
+                        {link}
+                    </div>
                 </div>
+
             </div>
             <div className={styles.reviewItemText} dangerouslySetInnerHTML={{__html: text}}/>
+            <a href="#" target='_blank' />
         </div>
     );
 };

@@ -7,6 +7,9 @@
   border-radius: 999px;
   transition: transform .2s ease;
   user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   &:hover{
     transform: scale(1.02);
   }

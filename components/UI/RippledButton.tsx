@@ -41,6 +41,7 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) 
     const openLink = () => {
         if(!to) return;
         window.open(to)
+
     }
     return (
         <button

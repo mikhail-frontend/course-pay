@@ -8,7 +8,7 @@ const Logo: React.FC<{ className?: string, onClick?: () => void }> =
      }) => {
 
         return <Image src='/mainLogo.svg'
-                      alt='Udemy для России'
+                      alt='RusUdemy. Udemy как купить'
                       width={150}
                       height={48}
                       priority={true}

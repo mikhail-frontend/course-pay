@@ -6,16 +6,16 @@
   background: linear-gradient(358.98deg, rgba(247, 248, 248, 0.05) 1.12%, rgba(247, 248, 248, 0) 99.39%);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
-  transition: .3s ease !important;
+  transition: .3s ease ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   opacity: 0;
-  transform: translateY(40px) scale(1.1) !important;
+  transform: translateY(40px) scale(1.1) ;
   &.active{
     opacity: 1;
-    transform: none !important;
+    transform: none ;
   }
 }
 
@@ -28,18 +28,37 @@
 .reviewItemText {
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   color: #fff;
+  p{
+    margin-bottom: 16px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  strong {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5b60e5;
+  }
 }
 
-.reviewItemName {
+.reviewItemName, .reviewItemLink {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
   min-height: 20px;
   margin-bottom: 4px;
 }
+.reviewItemName{
+  color: #fff;
+}
+.reviewItemLink{
+  font-weight: 500;
+  margin-top: 3px;
+  color: #5b60e5;
+}
+
 
 
 .reviewItemPhoto {
