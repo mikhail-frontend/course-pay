@@ -6,12 +6,17 @@
   background: linear-gradient(358.98deg, rgba(247, 248, 248, 0.05) 1.12%, rgba(247, 248, 248, 0) 99.39%);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 12px;
-  transition: 0.3s ease;
-  opacity: 0;
-  transform: translateX(-40px);
+  transition: .3s ease !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px) scale(1.1) !important;
+  &.active{
+    opacity: 1;
+    transform: none !important;
+  }
 }
 
 .reviewItemTop {
@@ -24,14 +29,14 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #fff;
 }
 
 .reviewItemName {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #fff;
   min-height: 20px;
   margin-bottom: 4px;
 }
@@ -49,9 +54,10 @@
 }
 
 .reviewSocial{
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   background: no-repeat center center;
   background-size: cover;
+  position: absolute;
+  top: 61px;
+  left: 58px;
 }

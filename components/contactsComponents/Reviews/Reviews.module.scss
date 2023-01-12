@@ -1,0 +1,25 @@
+.reviews{
+  margin-top: 90px;
+  @media (max-width: 1200px) {
+    margin-top: 75px;
+  }
+  @media (max-width: 900px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 90px;
+    overflow: hidden;
+  }
+  @media (max-width: 370px) {
+    margin-top: 70px;
+  }
+}
+.reviewsHeading {
+  margin-bottom: 65px;
+  @media (max-width: 1200px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 40px;
+  }
+}

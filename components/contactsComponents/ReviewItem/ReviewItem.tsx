@@ -8,19 +8,21 @@ export type ReviewItemType = {
     photo?: string | null
     id: string|number
     link: string|number
+    animated?: boolean
 }
-const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, id, link}) => {
+const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}) => {
     return (
-        <div className={`${styles.reviewItem}`}>
+        <div className={`${styles.reviewItem} ${animated ? styles.active : ''}`}>
             <div className={styles.reviewItemTop}>
                 {!!photo && <div className={styles.reviewItemPhoto} style={{backgroundImage: `url(${photo})`}}/>}
+                {!photo && <div className={styles.reviewItemPhoto} style={{backgroundImage: `url(/user-default.svg)`}} />}
                 <Image
                     src="/telegram.svg"
-                    priority={true}
+                    priority={false}
                     alt="telegram"
-                    className={'reviewSocial'}
-                    width={30}
-                    height={30}
+                    className={styles.reviewSocial}
+                    width={25}
+                    height={25}
                 />
                 <div>
                     <div className={styles.reviewItemName}>

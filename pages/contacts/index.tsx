@@ -1,6 +1,6 @@
 import React from 'react';
 import MainInfo from "../../components/contactsComponents/MainInfo";
-import Reviews from "../../components/contactsComponents/Reviews";
+import Reviews from "../../components/contactsComponents/Reviews/Reviews";
 import styles from './styles/contacts.module.scss'
 const Contacts = () => {
     return (

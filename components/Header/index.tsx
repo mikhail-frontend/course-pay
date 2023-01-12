@@ -38,7 +38,6 @@ const Header = () => {
             id: '5',
             text: 'Контакты и отзывы',
             blockPath: '#',
-            isButton: true,
             link: '/contacts'
         },
         {
