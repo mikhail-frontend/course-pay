@@ -31,7 +31,7 @@ const reviewsListArray: ReviewItemType[] = [
         id: 2,
         name: 'Отзыв от Александра',
         text: `<p>Купил с помощью Михаила два курса  на Udemy: <strong>«WEB-разработчик 2022»</strong> 
-            и  <strong>«Верстка и создание веб сайтов 2022 - с нуля до результата!»</strong>. <p/> 
+            и  <strong>«Верстка и создание веб сайтов 2022 - с нуля до результата!»</strong>. </p> 
                <p>Все честно: Михаил завел мне аккаунт и купил курс, прислал скрин о покупке. </p>
                <p>Я перевел деньги на его кошелек и получил логин с паролем от личного кабинета. 7 минут! Рекомендую!</p>`,
         link: '@busheswillbetrimmed',
@@ -50,37 +50,37 @@ const reviewsListArray: ReviewItemType[] = [
         link: '@rikser123',
         photo: null
     },
-    {
-        id: 4,
-        name: 'Отзыв от Дениса',
-        text: `
-              <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-            provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-            quasi quis quo?
-        </div>
-        `,
-        link: '@votapil',
-        photo: '/denis.jpg'
-    },
-
-    {
-        id: 5,
-        name: 'Отзыв от Алены',
-        text: `<div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-            provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-            quasi quis quo?
-            </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-            provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-            quasi quis quo?
-        </div>
-`,
-        link: '@Umpa_lump_oO',
-        photo: '/umpa.jpg'
-    },
+//     {
+//         id: 4,
+//         name: 'Отзыв от Дениса',
+//         text: `
+//               <div>
+//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
+//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
+//             quasi quis quo?
+//         </div>
+//         `,
+//         link: '@votapil',
+//         photo: '/denis.jpg'
+//     },
+//
+//     {
+//         id: 5,
+//         name: 'Отзыв от Алены',
+//         text: `<div>
+//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
+//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
+//             quasi quis quo?
+//             </div>
+//           <div>
+//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
+//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
+//             quasi quis quo?
+//         </div>
+// `,
+//         link: '@Umpa_lump_oO',
+//         photo: '/umpa.jpg'
+//     },
 
 ];
 export default reviewsListArray

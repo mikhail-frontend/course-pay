@@ -1,5 +1,5 @@
 import React from 'react';
-import MainInfo from "../../components/contactsComponents/MainInfo";
+import MainInfo from "../../components/contactsComponents/MainInfo/MainInfo";
 import Reviews from "../../components/contactsComponents/Reviews/Reviews";
 import ContactsBlock from "../../components/Contacts";
 import styles from './styles/contacts.module.scss'

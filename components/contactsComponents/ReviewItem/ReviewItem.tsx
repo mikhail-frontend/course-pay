@@ -16,15 +16,16 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
         <div className={`${styles.reviewItem} ${animated ? styles.active : ''}`}>
             <div className={styles.reviewItemTop}>
                 <Link href="https://t.me/rus_udemy_review" target='_blank' className={styles.reviewItemSocialLink}/>
-                {!!photo && <Image src={photo} width={56} height={56}
-                                   priority={false}
-                                   alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
-                                   className={styles.reviewItemPhoto}/>}
-                {!photo && <Image src='/user-default.svg'
-                                  priority={false}
-                                  width={56} height={56}
-                                  alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
-                                  className={styles.reviewItemPhoto}/>}
+                {!!photo && <img src={photo}
+                                 width={56} height={56}
+                                 loading='lazy'
+                                 alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
+                                 className={styles.reviewItemPhoto}/>}
+                {!photo && <img src='/user-default.svg'
+                                loading='lazy'
+                                width={56} height={56}
+                                alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
+                                className={styles.reviewItemPhoto}/>}
                 <Image
                     src="/telegram.svg"
                     priority={false}

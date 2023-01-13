@@ -25,6 +25,8 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', 
         onClick && onClick(e);
     }
 
+
+
     useEffect(() => {
         if (coords.x !== -1 && coords.y !== -1) {
             setIsRippling(true);
@@ -77,4 +79,4 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', 
         </>
     );
 };
-export default RippleButton
+export default React.memo(RippleButton);

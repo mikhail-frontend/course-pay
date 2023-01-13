@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import Logo from "../Logo";
 import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';
-import useMobile from "../../hooks/useMobile";
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 
 type Link = {
     id: number | string
@@ -55,7 +54,7 @@ const Header = () => {
         },
     ]);
 
-    const isMobile = useMobile();
+
 
     const scrollToElement = (blockPath:string) => {
         const element: HTMLElement | null = document.getElementById(blockPath);
@@ -81,15 +80,10 @@ const Header = () => {
                 <div className="header-links">
                     {links.map(link => {
                         return (
-                            !isMobile ? <RippleButton
+                            <RippleButton
                                 key={link.id}
                                 onClick={() => buttonClickHandler(link.link, link.blockPath)}
-                                className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn}`}>
-                                {link.text}
-                            </RippleButton> : isMobile && link.isButton && <RippleButton
-                                key={link.id}
-                                onClick={() => buttonClickHandler(link.link, link.blockPath)}
-                                className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn}`}>
+                                className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn || ''}`}>
                                 {link.text}
                             </RippleButton>
                         )
