@@ -35,7 +35,7 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
 
             </div>
             <div className={styles.reviewItemText} dangerouslySetInnerHTML={{__html: text}}/>
-            <a href="#" target='_blank' />
+            <a href="#" target='_blank' className={styles.reviewItemSocialLink} />
         </div>
     );
 };

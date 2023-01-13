@@ -12,7 +12,7 @@ type Coords = {
     y: number
 }
 
-const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) => {
+const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', to}) => {
 
     const [coords, setCoords] = useState<Coords>({x: -1, y: -1});
 
@@ -23,7 +23,6 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) 
         const rect = button.getBoundingClientRect();
         setCoords({x: e.clientX - rect.left, y: e.clientY - rect.top});
         onClick && onClick(e);
-        openLink();
     }
 
     useEffect(() => {
@@ -37,29 +36,45 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className, to}) 
         if (!isRippling) setCoords({x: -1, y: -1});
     }, [isRippling]);
 
+    const tagName = to ? 'a' : 'button';
 
-    const openLink = () => {
-        if(!to) return;
-        window.open(to)
-
-    }
     return (
-        <button
-            className={`ripple-button ${className}`}
-            onClick={onClickHandler}>
-            {isRippling ? (
-                <span
-                    className="ripple"
-                    style={{
-                        left: coords.x,
-                        top: coords.y
-                    }}
-                />
-            ) : (
-                ''
-            )}
-            <span className="content">{children}</span>
-        </button>
+        <>
+            { tagName === 'button' && <button
+                className={`ripple-button ${className}`}
+                onClick={onClickHandler}>
+                {isRippling ? (
+                    <span
+                        className="ripple"
+                        style={{
+                            left: coords.x,
+                            top: coords.y
+                        }}
+                    />
+                ) : (
+                    ''
+                )}
+                <span className="content">{children}</span>
+            </button> }
+
+            { tagName === 'a' && <a href={to} target='_blank'
+                className={`ripple-button ${className}`} rel="noreferrer"
+                >
+                {isRippling ? (
+                    <span
+                        className="ripple"
+                        style={{
+                            left: coords.x,
+                            top: coords.y
+                        }}
+                    />
+                ) : (
+                    ''
+                )}
+
+                <span className="content">{children}</span>
+            </a> }
+        </>
     );
 };
 export default RippleButton
