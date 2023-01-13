@@ -8,8 +8,6 @@ import type {contactLink} from "../ContactLinks";
 import contactLinks from "../ContactLinks";
 import useAnimation from "../../../hooks/useAnimation";
 
-const meImg = require('/pages/contacts/me.jpeg');
-
 
 const MainInfo = () => {
     const [links, setLinks] = useState<contactLink[]>(contactLinks);
@@ -19,7 +17,7 @@ const MainInfo = () => {
             <section className={`${styles.about}`}>
                 <h1 className={`heading ${styles.aboutHeading}`}>Обо мне</h1>
                 <div className={`${styles.aboutContent}`}>
-                    <img src={meImg.default.src}
+                    <img src='/me.jpeg'
                          alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
                          className={styles.aboutImage}
                          loading='eager'
