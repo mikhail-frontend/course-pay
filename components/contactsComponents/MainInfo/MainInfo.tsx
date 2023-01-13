@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MainInfo.module.scss'
-
+import Link from "next/link";
 const meImg = require('/pages/contacts/me.jpeg')
 const MainInfo = () => {
     return (
@@ -16,7 +16,7 @@ const MainInfo = () => {
                 <div className={styles.aboutInfo}>
                     <p>
                         Друзья, привет! Давайте знакомиться! Меня зовут Михаил Харитонов, я &mdash;практикующий&nbsp;
-                        <strong>Senior&nbsp;Front-end &nbsp;разработчик</strong> (Vue, TypeScript)
+                        <strong>Senior&nbsp;Frontend &nbsp;разработчик</strong> (Vue, React, TypeScript)
                     </p>
 
                     <p>
@@ -26,13 +26,17 @@ const MainInfo = () => {
                     </p>
 
                     <p>
+                        Несколько месяцев назад я решил изучить <strong> React </strong> (мой основной фреймворк &mdash; <strong>Vue</strong>).
                         Буквально на днях завершил курс на платформе Udemy -Udemy React- и уже создал сайт по новой
-                        технологии! Из-за санкций в России сложилась плачевная ситуация с доступом к востребованным
+                        технологии!
+                    </p>
+
+                    <p>
+                        Из-за санкций в России сложилась плачевная ситуация с доступом к востребованным
                         программам образования. <strong>Купить курсы Udemy из&nbsp;России</strong> на сайте Udemy.com российской картой больше
-                        нельзя. Я считаю это несправедливым. Поэтому я создал этот сервис rusudemy.com, где каждый мой
-                        соотечественник теперь может оплачивать Udemy курсы без ограничений. Больше не нужно вводить
-                        запросы
-                        Udemy торрент или Udemy free! Образование должно быть доступным для всех!
+                        нельзя. Я считаю это несправедливым. Поэтому я создал этот сервис <Link href={'/'} target={'_blank'}>rusudemy.com</Link>,
+                        где каждый мой соотечественник теперь может оплачивать Udemy курсы без ограничений. Больше не нужно вводить
+                        запросы Udemy торрент или Udemy free! Образование должно быть доступным для всех!
                     </p>
                 </div>
             </div>

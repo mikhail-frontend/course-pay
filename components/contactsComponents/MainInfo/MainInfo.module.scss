@@ -1,13 +1,10 @@
 .aboutHeading{
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   @media (max-width: 1200px) {
-    margin-bottom: 50px;
-  }
-  @media (max-width: 900px) {
     margin-bottom: 40px;
   }
   @media (max-width: 767px) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   @media (max-width: 370px) {
     margin-bottom: 40px;
@@ -27,8 +24,8 @@
 
 .aboutInfo{
   color: #fff;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 26px;
   ::selection{
     background: #5b60e5;
     color: #fff;
@@ -36,8 +33,12 @@
   p:not(&:last-of-type){
     margin-bottom: 20px;
   }
-  strong {
+  strong, a {
     font-weight: 600;
     color: #5b60e5;
+  }
+  a{
+    padding-bottom: 2px;
+    text-decoration: underline;
   }
 }
