@@ -1,4 +1,7 @@
 .contacts{
   min-height: calc(100vh - 174px);
   padding: 40px 0;
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
 }

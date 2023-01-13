@@ -6,6 +6,36 @@ import reviewStyles from '../Reviews/Reviews.module.scss'
 
 const meImg = require('/pages/contacts/me.jpeg');
 
+const ExtraText:React.FC<{className: string}> = ({className}) => {
+    return (
+        <div className={className}>
+            <p>
+                В юности я очень хотел стать программистом и даже закончил университет в
+                России, но именно <strong> IT курсы </strong>, особенно <strong>Курсы Udemy</strong> и тяга к
+                новым знаниям, упорство сделали из меня
+                профессионала.
+            </p>
+            <p>
+                У Udemy есть масса преимуществ перед российскими
+                аналогами: начиная от относительно низкой стоимости и заканчивая качеством и уникальностью
+                контента. К примеру, Я долго искал курс по React на отечественном рынке, среди
+                разрекламированных проектов, но в итоге остановил свое внимание на Udemy: 470 уроков практики
+                почти за копейки - это самый полный гайд по теме, который когда-либо мне встречался!
+            </p>
+            <p>
+                Из-за санкций в России сложилась плачевная ситуация с доступом к востребованным
+                программам образования. <strong>Купить курсы Udemy из&nbsp;России</strong> на сайте Udemy.com
+                российской картой больше
+                нельзя. Я считаю это несправедливым. Поэтому я создал этот сервис <Link href={'/'}
+                                                                                        target={'_blank'}>rusudemy.com</Link>,
+                где каждый мой соотечественник теперь может оплачивать Udemy курсы без ограничений. Больше не
+                нужно вводить
+                запросы Udemy торрент или Udemy free! Образование должно быть доступным для всех!
+            </p>
+        </div>
+    )
+}
+
 const MainInfo = () => {
 
     return (
@@ -15,46 +45,23 @@ const MainInfo = () => {
                 <div className={`${styles.aboutContent}`}>
                     <img src={meImg.default.src}
                          alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                         className={styles.aboutImage}
                          loading='eager'
                          width={400}
                          height={500}
                     />
                     <div className={styles.aboutInfo}>
                         <p>
-                            Друзья, привет! Давайте знакомиться! Меня зовут Михаил Харитонов, я &mdash;практикующий&nbsp;
+                            Друзья, привет! Давайте знакомиться! Меня зовут Михаил Харитонов, я &mdash; создатель сервиса&nbsp;
+                            <Link href='/'>rusudemy.com</Link> и
+                            практикующий&nbsp;
                             <strong>Senior&nbsp;Frontend &nbsp;разработчик</strong> (Vue, React, TypeScript)
                         </p>
-
-                        <p>
-                            В юности я очень хотел стать программистом и даже закончил университет в
-                            России, но именно <strong> IT курсы </strong>, особенно <strong>Курсы Udemy</strong> и тяга к
-                            новым знаниям, упорство сделали из меня
-                            профессионала.
-                        </p>
-                        <p>
-                            У Udemy есть масса преимуществ перед российскими
-                            аналогами: начиная от относительно низкой стоимости и заканчивая качеством и уникальностью
-                            контента. К примеру, Я долго искал курс по React на отечественном рынке, среди
-                            разрекламированных проектов, но в итоге остановил свое внимание на Udemy: 470 уроков практики
-                            почти за копейки - это самый полный гайд по теме, который когда-либо мне встречался!
-                        </p>
-                        <p>
-                            Из-за санкций в России сложилась плачевная ситуация с доступом к востребованным
-                            программам образования. <strong>Купить курсы Udemy из&nbsp;России</strong> на сайте Udemy.com
-                            российской картой больше
-                            нельзя. Я считаю это несправедливым. Поэтому я создал этот сервис <Link href={'/'}
-                                                                                                    target={'_blank'}>rusudemy.com</Link>,
-                            где каждый мой соотечественник теперь может оплачивать Udemy курсы без ограничений. Больше не
-                            нужно вводить
-                            запросы Udemy торрент или Udemy free! Образование должно быть доступным для всех!
-                        </p>
-
-
-
+                        <ExtraText className={styles.extraText}/>
                     </div>
                 </div>
             </section>
-            <section className={reviewStyles.reviews}>
+            <section className={`${reviewStyles.reviews} ${styles.contacts}`}>
                 <h2 className={`${styles.aboutHeading} heading`}>Мои контакты</h2>
                 <div className={styles.aboutSocials}>
                     <a href="mailto:mikhail.kharitonov2016@yandex.ru" rel='noreferrer' className={styles.aboutSocialItem}>
