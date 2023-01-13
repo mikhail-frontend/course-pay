@@ -35,13 +35,19 @@ const Header = () => {
             link: '/'
         },
         {
+            id: '4',
+            text: 'Отзывы',
+            blockPath: 'reviews',
+            link: '/'
+        },
+        {
             id: '5',
-            text: 'Контакты и отзывы',
+            text: 'Контакты',
             blockPath: '#',
             link: '/contacts'
         },
         {
-            id: '4',
+            id: '6',
             text: 'Задать вопрос',
             blockPath: 'contacts',
             isButton: true,

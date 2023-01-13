@@ -1,5 +1,4 @@
-import SiteHead from "../components/SiteHead";
-import Header from "../components/Header";
+import React from "react";
 import About from "../components/About";
 import Cards from "../components/Cards";
 import UdemyAbout from "../components/UdemyAbout";
@@ -7,8 +6,7 @@ import DescriptionLine from "../components/UI/DescriptionLine";
 import HowBuy from "../components/HowBuy";
 import Faq from "../components/Faq";
 import Contacts from "../components/Contacts";
-import React from "react";
-import Footer from "../components/Footer";
+import Reviews from "../components/contactsComponents/Reviews/Reviews";
 
 
 export default function Home() {
@@ -21,9 +19,9 @@ export default function Home() {
         <UdemyAbout/>
         <DescriptionLine text='Шаги оплаты' color='#B59AFF'/>
         <HowBuy/>
+        <Reviews/>
         <Faq/>
         <Contacts/>
-
     </>
 
   )

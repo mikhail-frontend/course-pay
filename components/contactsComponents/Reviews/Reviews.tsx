@@ -4,13 +4,13 @@ import useAnimation from "../../../hooks/useAnimation";
 import styles from './Reviews.module.scss';
 import LinkButton from '../../UI/LinkButton/LinkButton'
 import reviewsListArray from './ReviewsListArray'
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Reviews = () => {
     const [reviewsList, setReviewsList] = useState<ReviewItemType[]>(reviewsListArray);
     const wrapRef = useAnimation<ReviewItemType>(reviewsList, setReviewsList);
     return (
-        <section ref={wrapRef} className={styles.reviews}>
+        <section ref={wrapRef} className={`${styles.reviews} container`} id='reviews'>
             <h2 className={`${styles.reviewsHeading} heading`}>Отзывы</h2>
             <ResponsiveMasonry
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
@@ -23,12 +23,9 @@ const Reviews = () => {
                     })}
                 </Masonry>
             </ResponsiveMasonry>
-            <div className={`${styles.reviewsButtonWrap} ${styles.buttonPulse}`}>
-                <span className={styles.pulsing}/>
-                <LinkButton text='Написать отзыв'
+            <LinkButton text='Написать отзыв'
                             className={styles.reviewsButton}
                             to='https://t.me/rus_udemy_review'/>
-            </div>
         </section>
     );
 };

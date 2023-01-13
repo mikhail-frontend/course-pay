@@ -14,6 +14,7 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
     return (
         <div className={`${styles.reviewItem} ${animated ? styles.active : ''}`}>
             <div className={styles.reviewItemTop}>
+                <a href="https://t.me/rus_udemy_review" target='_blank' className={styles.reviewItemSocialLink} />
                 {!!photo && <div className={styles.reviewItemPhoto} style={{backgroundImage: `url(${photo})`}}/>}
                 {!photo && <div className={styles.reviewItemPhoto} style={{backgroundImage: `url(/user-default.svg)`}} />}
                 <Image
@@ -32,10 +33,8 @@ const ReviewItem:React.FC<ReviewItemType> = ({name, text, photo, animated, link}
                         {link}
                     </div>
                 </div>
-
             </div>
             <div className={styles.reviewItemText} dangerouslySetInnerHTML={{__html: text}}/>
-            <a href="#" target='_blank' className={styles.reviewItemSocialLink} />
         </div>
     );
 };

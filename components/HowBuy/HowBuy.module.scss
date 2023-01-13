@@ -1,6 +1,5 @@
 .howBuyWrap{
   position: relative;
-  margin-bottom: 128px;
 
   &:before{
     content: '';
@@ -16,7 +15,6 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(120, 119, 198, 0.11) 0%, rgba(255, 255, 255, 0) 100%);
   }
   @media (max-width: 1200px) {
-    margin-bottom: 90px;
     &:before{
       width: 900px;
       height: 500px;
@@ -24,7 +22,6 @@
     }
   }
   @media (max-width: 900px) {
-    margin-bottom: 60px;
     overflow: hidden;
     &:before{
       width: 100%;
