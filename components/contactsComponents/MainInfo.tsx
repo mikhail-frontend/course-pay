@@ -6,7 +6,7 @@ const MainInfo = () => {
         <section className='about '>
             <h1>Обо мне</h1>
 
-            <img src={meImg.default.src} alt="RusUdemy. Udemy как купить. Михаил Харитонов" loading='eager' width={500}/>
+            <img src={meImg.default.src} alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" loading='eager' width={500}/>
         </section>
     );
 };
