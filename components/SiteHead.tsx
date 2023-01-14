@@ -11,6 +11,7 @@ const SiteHead = () => {
                         <meta charSet="UTF-8"/>
                         <title>Udemy как купить</title>
                         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                        <meta name="yandex-verification" content="d63dad1ef7418732" />
                         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
                         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
                         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -19,12 +20,12 @@ const SiteHead = () => {
                         <meta name="theme-color" content="#000212"/>
                         <meta property="og:type" content="website"/>
                         <meta name='description'
-                              content='Udemy как купить? Udemy купить из России? Udemy rus. Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
+                              content='Udemy как купить? Udemy купить из России? Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
                         <meta name='og:description'
-                              content='Udemy как купить? Udemy купить из России? Udemy rus. Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
-                        <meta name='apple-mobile-web-app-title' content='Udemy как купить'/>
-                        <meta name='og:site_name' property='og:site_name' content='Udemy как купить'/>
-                        <meta name='og:title' property='og:title' content='Udemy как купить'/>
+                              content='Udemy как купить? Udemy купить из России?  Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
+                        <meta name='apple-mobile-web-app-title' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
+                        <meta name='og:site_name' property='og:site_name' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
+                        <meta name='og:title' property='og:title' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
                         <meta property="og:image" content="/logo.jpg"/>
                         <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
                         <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>

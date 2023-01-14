@@ -19,7 +19,8 @@ const Reviews = () => {
                     {reviewsList.map(item => {
                         return <ReviewItem text={item.text} name={item.name}
                                            animated={item.animated}
-                                           photo={item.photo} id={item.id} link={item.link} key={item.id}/>
+                                           photo={item.photo}
+                                         link={item.link} key={item.id}/>
                     })}
                 </Masonry>
             </ResponsiveMasonry>

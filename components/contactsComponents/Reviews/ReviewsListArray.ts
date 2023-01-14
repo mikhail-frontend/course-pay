@@ -3,14 +3,14 @@ import {ReviewItemType} from "../ReviewItem/ReviewItem";
 const reviewsListArray: ReviewItemType[] = [
     {
         id: 6,
-        name: 'Отзыв от Федора',
+        name: 'Федор',
         text: `Буквально 5 минут назад Михаил помог приобрести курс на Udemy, заняло минут 10. Спасибо!`,
         link: '@nikshinavi',
         photo: '/fedor.jpg'
     },
     {
         id: 1,
-        name: 'Отзыв от Сергея',
+        name: 'Сергей',
         text: `
               <div>
 <p>
@@ -29,7 +29,7 @@ const reviewsListArray: ReviewItemType[] = [
     },
     {
         id: 2,
-        name: 'Отзыв от Александра',
+        name: 'Александр',
         text: `<p>Купил с помощью Михаила два курса  на Udemy: <strong>«WEB-разработчик 2022»</strong> 
             и  <strong>«Верстка и создание веб сайтов 2022 - с нуля до результата!»</strong>. </p> 
                <p>Все честно: Михаил завел мне аккаунт и купил курс, прислал скрин о покупке. </p>
@@ -40,7 +40,7 @@ const reviewsListArray: ReviewItemType[] = [
 
     {
         id: 3,
-        name: 'Отзыв от Леонида',
+        name: 'Леонид',
         text: `
         <p>Знаком с Михаилом с 2018 года. </p>
         <p>   По рекомендации Михаила обратил внимание на преподавателя Максимилиана Шварцмюллера и в итоге купил Udemy с его помощью: 
