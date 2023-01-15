@@ -12,10 +12,11 @@ export type ReviewItemType = {
     photo?: string | null
     id: string | number
     link: string | number
-    animated?: boolean
+    animated?: boolean,
+    publishDate: string
 }
 const ReviewItem =
-    ({name, text, photo, animated, link}) => {
+    ({name, text, photo, animated, link, publishDate}) => {
     return (
        <>
            <JsonLd<Review>
@@ -43,7 +44,9 @@ const ReviewItem =
                        "@type": "Person",
                        "name": name
                    },
-                   "datePublished": new Date().toLocaleDateString()
+                   "datePublished": publishDate,
+                   "discussionUrl": "https://t.me/rus_udemy_review",
+                   "isBasedOn": "https://t.me/rus_udemy_review",
                }}
            />
            <div className={`${styles.reviewItem} ${animated ? styles.active : ''}`}>
@@ -52,17 +55,20 @@ const ReviewItem =
                    {!!photo && <img src={photo}
                                     width={56} height={56}
                                     loading='lazy'
+                                    title={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
                                     alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
                                     className={styles.reviewItemPhoto}/>}
                    {!photo && <img src='/user-default.svg'
                                    loading='lazy'
                                    width={56} height={56}
+                                   title={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
                                    alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой`}
                                    className={styles.reviewItemPhoto}/>}
                    <Image
                        src="/telegram.svg"
                        priority={false}
-                       alt="RusUdemy. Udemy как купить"
+                       alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                       title="RusUdemy. Udemy как купить. Udemy российской картой. "
                        className={styles.reviewSocial}
                        width={25}
                        height={25}

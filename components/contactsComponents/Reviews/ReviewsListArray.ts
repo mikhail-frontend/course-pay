@@ -6,7 +6,9 @@ const reviewsListArray: ReviewItemType[] = [
         name: 'Федор',
         text: `Буквально 5 минут назад Михаил помог приобрести курс на Udemy, заняло минут 10. Спасибо!`,
         link: '@nikshinavi',
-        photo: '/fedor.jpg'
+        photo: '/fedor.jpg',
+        publishDate: '2023-01-12T19:42:00.649Z'
+
     },
     {
         id: 1,
@@ -25,7 +27,8 @@ const reviewsListArray: ReviewItemType[] = [
         </div>
         `,
         link: '@serjleo',
-        photo: '/sergey.jpg'
+        photo: '/sergey.jpg',
+        publishDate: '2023-01-13T11:00:00.649Z',
     },
     {
         id: 2,
@@ -35,7 +38,8 @@ const reviewsListArray: ReviewItemType[] = [
                <p>Все честно: Михаил завел мне аккаунт и купил курс, прислал скрин о покупке. </p>
                <p>Я перевел деньги на его кошелек и получил логин с паролем от личного кабинета. 7 минут! Рекомендую!</p>`,
         link: '@busheswillbetrimmed',
-        photo: '/sashulya.jpeg'
+        photo: '/sashulya.jpeg',
+        publishDate: '2023-01-12T19:59:00.649Z'
     },
 
     {
@@ -48,39 +52,20 @@ const reviewsListArray: ReviewItemType[] = [
          <p>  Прохождение курсов позволило мне значительно улучшить знания по этим темам. Планирую сотрудничать с Михаилом в дальнейшем.</p>
         `,
         link: '@rikser123',
-        photo: null
+        photo: null,
+        publishDate: '2023-01-12T14:06:00.649Z'
     },
-//     {
-//         id: 4,
-//         name: 'Отзыв от Дениса',
-//         text: `
-//               <div>
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-//             quasi quis quo?
-//         </div>
-//         `,
-//         link: '@votapil',
-//         photo: '/denis.jpg'
-//     },
-//
-//     {
-//         id: 5,
-//         name: 'Отзыв от Алены',
-//         text: `<div>
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-//             quasi quis quo?
-//             </div>
-//           <div>
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto minus pariatur possimus,
-//             provident quidem ratione sed ut! Cupiditate eveniet facilis harum magni nesciunt nostrum, possimus provident
-//             quasi quis quo?
-//         </div>
-// `,
-//         link: '@Umpa_lump_oO',
-//         photo: '/umpa.jpg'
-//     },
+    {
+        id: 5,
+        name: 'Alena Gordon',
+        text: `
+     Использую Udemy уже года три, очень нравится доступность курсов и постоянные скидки. И не приятно удивилась когда обнаружила, что не могу больше оплачивать ничего. О сайте узнала от Михаила, поэтому просто перевела деньги и получила нужный мне курс. Всё честно быстро и просто. 
+Спасибо за помощь 🐣
+        `,
+        link: '@Umpa_lump_oO',
+        photo: null,
+        publishDate: '2023-01-15T21:29:00.649Z'
+    },
 
 ];
 export default reviewsListArray

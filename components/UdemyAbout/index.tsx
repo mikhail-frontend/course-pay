@@ -63,6 +63,7 @@ const UdemyAbout = () => {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={item.icon}
                                  alt={item.text}
+                                 title={item.text}
                                  width={46}
                                  height={46}
                                  className={`${styles.udemyBlockImage}`}

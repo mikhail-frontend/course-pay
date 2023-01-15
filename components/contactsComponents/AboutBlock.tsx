@@ -31,6 +31,7 @@ const AboutBlock = () => {
                 <h1 className={`heading ${styles.aboutHeading}`}>Обо мне</h1>
                 <div className={`${styles.aboutContent}`}>
                     <img src='/me.jpeg'
+                         title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
                          alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
                          className={styles.aboutImage}
                          loading='eager'

@@ -1,17 +1,18 @@
 import React from 'react';
 import Head from "next/head";
 import Script from "next/script";
-import { Organization, Dataset } from "schema-dts";
+import {Dataset, Organization} from "schema-dts";
 import {JsonLd} from "react-schemaorg";
 import {useRouter} from "next/router";
+
 const SiteHead = () => {
     const {pathname} = useRouter();
     return (
         <>
                 <Head>
-                        <meta charSet="UTF-8"/>
-                        <title>Udemy как купить из России | Udemy как оплатить | RusUdemy</title>
-                        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta charSet="UTF-8"/>
+                    <title>Udemy для России | Udemy как купить из России | Udemy как оплатить | RusUdemy</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
                         <meta name="yandex-verification" content="d63dad1ef7418732" />
                         <meta name="robots" content="index, follow" />
                          <link rel="shortcut icon" type="image/png" href="/icons/icon-128x128.png"/>
@@ -23,12 +24,15 @@ const SiteHead = () => {
                         <meta property="og:type" content="website"/>
                         <meta name='description'
                               content='Udemy как купить? Udemy купить из России? Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
-                        <meta name='og:description'
-                              content='Udemy как купить? Udemy купить из России?  Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
-                        <meta name='apple-mobile-web-app-title' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
-                        <meta name='og:site_name' property='og:site_name' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
-                        <meta name='og:title' property='og:title' content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
-                        <meta property="og:image" content="/logo.jpg"/>
+                    <meta name='og:description'
+                          content='Udemy как купить? Udemy купить из России?  Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы'/>
+                    <meta name='apple-mobile-web-app-title'
+                          content='Udemy для России | Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
+                    <meta name='og:site_name' property='og:site_name'
+                          content='Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
+                    <meta name='og:title' property='og:title'
+                          content='Udemy для России | Udemy как купить из России | Udemy как оплатить | RusUdemy'/>
+                    <meta property="og:image" content="/logo.jpg"/>
                         <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
                         <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
                         <link rel="canonical" href={`https://rusudemy.com${pathname}`}/>
@@ -60,17 +64,17 @@ const SiteHead = () => {
                     <JsonLd<Dataset>
                         item={{
                             "@context": "https://schema.org",
-                            "@type":"Dataset",
-                            "name":"Udemy как купить из России | Udemy как оплатить | RusUdemy",
-                            "description":"Udemy как купить? Udemy купить из России? Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы",
-                            "url":"https://rusudemy.com/",
-                            "keywords":[
+                            "@type": "Dataset",
+                            "name": "Udemy для России | Udemy как купить из России | Udemy как оплатить | RusUdemy",
+                            "description": "Udemy как купить? Udemy купить из России? Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы",
+                            "url": "https://rusudemy.com/",
+                            "keywords": [
                                 "Udemy как купить > Udemy купить из России > Udemy купить из России российской картой",
                                 "Как оплатить Udemy > Как оплатить Udemy российской картой > Как оплатить Udemy российской картой МИР",
                                 "Udemy > Udemy курсы > Udemy курсы из России"
                             ],
-                            "isAccessibleForFree" : true,
-                            "creator":{
+                            "isAccessibleForFree": true,
+                            "creator": {
                                 "@type": "Person",
                                 "name": "Михаил Харитонов",
                                 "url": "https://t.me/rus_udemy",
@@ -102,6 +106,17 @@ const SiteHead = () => {
                 });
                         `}
                 </Script>
+
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFZLZ7KE6M" strategy='lazyOnload'/>
+            <Script id="google-analytics" strategy="lazyOnload">
+                {`
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZFZLZ7KE6M');
+        `}
+            </Script>
         </>
     );
 };

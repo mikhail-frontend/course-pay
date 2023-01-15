@@ -20,6 +20,7 @@ const Reviews = () => {
                         return <ReviewItem text={item.text} name={item.name}
                                            animated={item.animated}
                                            photo={item.photo}
+                                           publishDate={item.publishDate}
                                          link={item.link} key={item.id}/>
                     })}
                 </Masonry>
