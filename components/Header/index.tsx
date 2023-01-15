@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import Logo from "../Logo";
 import RippleButton from "../UI/RippledButton";
 import styles from './Header.module.scss';
+import BurgerMenu from "../UI/BurgerMenu/BurgerMenu";
 import {useRouter} from 'next/router';
-
-type Link = {
+import useMobile from "../../hooks/useMobile";
+export type Link = {
     id: number | string
     text: string
     blockPath: string
@@ -12,54 +13,69 @@ type Link = {
     link: string
 }
 
+export const LinksList:Link[] = [
+    {
+        id: '1',
+        text: 'о Udemy',
+        blockPath: 'udemyAbout',
+        link: '/'
+    },
+    {
+        id: '2',
+        text: 'Как купить ?',
+        blockPath: 'howBuy',
+        link: '/'
+    },
+    {
+        id: '3',
+        text: 'FAQ',
+        blockPath: 'faq',
+        link: '/'
+    },
+    {
+        id: '4',
+        text: 'Отзывы',
+        blockPath: 'reviews',
+        link: '/'
+    },
+    {
+        id: '5',
+        text: 'Контакты',
+        blockPath: '#',
+        link: '/contacts'
+    },
+    {
+        id: '6',
+        text: 'Задать вопрос',
+        blockPath: 'contacts',
+        isButton: true,
+        link: '/'
+    },
+];
 const Header = () => {
     const router = useRouter();
-    const [links] = useState<Link[]>([
-        {
-            id: '1',
-            text: 'о Udemy',
-            blockPath: 'udemyAbout',
-            link: '/'
-        },
-        {
-            id: '2',
-            text: 'Как купить ?',
-            blockPath: 'howBuy',
-            link: '/'
-        },
-        {
-            id: '3',
-            text: 'FAQ',
-            blockPath: 'faq',
-            link: '/'
-        },
-        {
-            id: '4',
-            text: 'Отзывы',
-            blockPath: 'reviews',
-            link: '/'
-        },
-        {
-            id: '5',
-            text: 'Контакты',
-            blockPath: '#',
-            link: '/contacts'
-        },
-        {
-            id: '6',
-            text: 'Задать вопрос',
-            blockPath: 'contacts',
-            isButton: true,
-            link: '/'
-        },
-    ]);
-
-
+    const [links] = useState<Link[]>(LinksList);
+    const isMobile = useMobile();
 
     const scrollToElement = (blockPath:string) => {
-        const element: HTMLElement | null = document.getElementById(blockPath);
-        if (!element) return;
-        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        if(isMobile) {
+            const element: HTMLElement | null = document.getElementById(blockPath);
+            const offset = 90;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            if (!element) return;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        } else {
+            const element: HTMLElement | null = document.getElementById(blockPath);
+            if (!element) return;
+            element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        }
+
     }
 
     const buttonClickHandler = (link: string, blockPath: string) => {
@@ -77,7 +93,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={`${styles.headerContainer} container`}>
                 <Logo className={styles.headerLogo} onClick={() => buttonClickHandler('/', 'about')}/>
-                <div className="header-links">
+                <div className={styles['header-links']}>
                     {links.map(link => {
                         return (
                             <RippleButton
@@ -89,6 +105,7 @@ const Header = () => {
                         )
                     })}
                 </div>
+                <BurgerMenu onClick={buttonClickHandler}/>
             </div>
         </header>
     );

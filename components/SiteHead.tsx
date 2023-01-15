@@ -1,19 +1,21 @@
 import React from 'react';
 import Head from "next/head";
 import Script from "next/script";
-
+import { Organization, Dataset } from "schema-dts";
+import {JsonLd} from "react-schemaorg";
+import {useRouter} from "next/router";
 const SiteHead = () => {
-
-        // @ts-ignore
+    const {pathname} = useRouter();
     return (
         <>
                 <Head>
                         <meta charSet="UTF-8"/>
-                        <title>Udemy как купить</title>
+                        <title>Udemy как купить из России | Udemy как оплатить | RusUdemy</title>
                         <meta name="viewport" content="width=device-width, initial-scale=1"/>
                         <meta name="yandex-verification" content="d63dad1ef7418732" />
-                        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-                        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+                        <meta name="robots" content="index, follow" />
+                         <link rel="shortcut icon" type="image/png" href="/icons/icon-128x128.png"/>
+                        <link rel="icon" type="image/png" href="/icons/icon-128x128.png" />
                         <link rel="preconnect" href="https://fonts.googleapis.com"/>
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=''/>
                         <meta data-rh="true" property="og:locale" content="ru_RU"/>
@@ -29,7 +31,7 @@ const SiteHead = () => {
                         <meta property="og:image" content="/logo.jpg"/>
                         <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
                         <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
-                        <link rel="canonical" href="https://rusudemy.com/"/>
+                        <link rel="canonical" href={`https://rusudemy.com${pathname}`}/>
                         <link rel="manifest" href="/manifest.json"/>
                         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
                         <meta name="theme-color" content="#000212"/>
@@ -41,7 +43,49 @@ const SiteHead = () => {
                         <link rel="apple-touch-icon" href="/icons/icon-152x152.png" sizes='152x152'/>
                         <link rel="apple-touch-icon" href="/icons/icon-384x384.png" sizes='192x192'/>
                         <link rel="apple-touch-icon" href="/icons/icon-512x512.png" sizes='512x512'/>
-
+                        <JsonLd<Organization>
+                            item={{
+                                    "@context": "https://schema.org",
+                                    "@type": "Organization",
+                                    "url": "https://rusudemy.com/",
+                                    "logo": "https://rusudemy.com/mainLogo.svg",
+                                    "brand": "Udemy как купить из России | Udemy как оплатить | RusUdemy",
+                                    "founder": "Михаил Харитонов",
+                                    "foundingDate": "2023-01-05T01:00:00+03:00",
+                                    "additionalType": "https://rusudemy.com/",
+                                    "description": "Udemy как купить? Udemy купить из России?  Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы",
+                                    "image": "https://rusudemy.com/mainLogo.svg"
+                            }}
+                        />
+                    <JsonLd<Dataset>
+                        item={{
+                            "@context": "https://schema.org",
+                            "@type":"Dataset",
+                            "name":"Udemy как купить из России | Udemy как оплатить | RusUdemy",
+                            "description":"Udemy как купить? Udemy купить из России? Как оплатить Udemy российской картой? Санкции - не повод отказывать себе в качественном образовании! Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы",
+                            "url":"https://rusudemy.com/",
+                            "keywords":[
+                                "Udemy как купить > Udemy купить из России > Udemy купить из России российской картой",
+                                "Как оплатить Udemy > Как оплатить Udemy российской картой > Как оплатить Udemy российской картой МИР",
+                                "Udemy > Udemy курсы > Udemy курсы из России"
+                            ],
+                            "isAccessibleForFree" : true,
+                            "creator":{
+                                "@type": "Person",
+                                "name": "Михаил Харитонов",
+                                "url": "https://t.me/rus_udemy",
+                                "contactPoint":{
+                                    "@type":"ContactPoint",
+                                    "contactType": "customer service",
+                                    "telephone":"+7-925-516-1592",
+                                    "image": [
+                                        "https://rusudemy.com/me.jpeg",
+                                    ],
+                                    "url": "https://t.me/rus_udemy"
+                                }
+                            },
+                        }}
+                    />
                 </Head>
                 <Script type="text/javascript" strategy='lazyOnload' id='yandex'>
                         {`

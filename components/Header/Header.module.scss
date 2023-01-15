@@ -47,6 +47,11 @@
   &:hover{
     transform: scale(1.02);
   }
+  @media (max-width: 767px) {
+    width: 110px;
+    height: auto !important;
+    object-fit: contain;
+  }
 }
 
 .headerButton{
@@ -83,3 +88,13 @@
   }
 }
 
+
+.header-links{
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 50%;
+    left: 140px;
+    transform: translateY(-50%);
+
+  }
+}
