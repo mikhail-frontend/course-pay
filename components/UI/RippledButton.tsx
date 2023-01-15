@@ -1,10 +1,11 @@
 import React, { useEffect, useState} from "react";
-
+import Link from "next/link";
 type ButtonType = {
-    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void,
+    onClick?: (e: React.MouseEvent<HTMLButtonElement|HTMLAnchorElement>) => void,
     children: React.ReactNode,
     className?: string,
-    to?: string
+    to?: string,
+    target?: string
 };
 
 type Coords = {
@@ -12,13 +13,13 @@ type Coords = {
     y: number
 }
 
-const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', to}) => {
+const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', to, target}) => {
 
     const [coords, setCoords] = useState<Coords>({x: -1, y: -1});
 
     const [isRippling, setIsRippling] = useState<boolean>(false);
 
-    const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>):void => {
+    const onClickHandler = (e: React.MouseEvent<HTMLButtonElement|HTMLAnchorElement>):void => {
         const button = e.target as HTMLButtonElement;
         const rect = button.getBoundingClientRect();
         setCoords({x: e.clientX - rect.left, y: e.clientY - rect.top});
@@ -59,8 +60,10 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', 
                 <span className="content">{children}</span>
             </button> }
 
-            { tagName === 'a' && <a href={to} target='_blank'
-                className={`ripple-button ${className}`} rel="noreferrer"
+            { tagName === 'a' && <Link href={to}
+                onClick={onClickHandler}
+                target={target ? target : '_self'}
+                className={`ripple-button ${className}`}
                 >
                 {isRippling ? (
                     <span
@@ -75,7 +78,7 @@ const RippleButton: React.FC<ButtonType> = ({onClick, children, className = '', 
                 )}
 
                 <span className="content">{children}</span>
-            </a> }
+            </Link> }
         </>
     );
 };

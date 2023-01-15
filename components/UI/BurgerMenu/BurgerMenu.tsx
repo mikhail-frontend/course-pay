@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {LinksList} from "../../Header";
 import {Link} from "../../Header";
 type BurgerMenuType = {
-    onClick: (link: string, blockPath: string) => void
+    onClick: (link: string, blockPath: string, event: React.MouseEvent<HTMLDivElement>) => void
 }
 const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
     const [links] = useState<Link[]>(LinksList.filter(link => !link.isButton));
@@ -23,7 +23,7 @@ const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
                 <div className={`menu-items ${isActive ? 'fs' : ''}`} onClick={toggleMenu}>
                     {links.map(link => {
                         return <div
-                            onClick={() => onClick(link.link, link.blockPath)}
+                            onClick={(event) => onClick(link.link, link.blockPath, event)}
                             key={link.id}>{link.text}</div>
                     })}
                 </div>

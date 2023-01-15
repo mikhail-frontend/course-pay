@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 
-const Logo: React.FC<{ className?: string, onClick?: () => void }> =
+const Logo: React.FC<{ className?: string, onClick?: (event:React.MouseEvent<HTMLImageElement>) => void }> =
     ({
          className, onClick = () => {
         }, ...rest

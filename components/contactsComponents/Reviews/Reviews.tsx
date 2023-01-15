@@ -27,6 +27,7 @@ const Reviews = () => {
             </ResponsiveMasonry>
             <LinkButton text='Написать отзыв'
                             className={styles.reviewsButton}
+                            target='_blank'
                             to='https://t.me/rus_udemy_review'/>
         </section>
     );

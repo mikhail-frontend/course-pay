@@ -78,8 +78,12 @@ const Header = () => {
 
     }
 
-    const buttonClickHandler = (link: string, blockPath: string) => {
+    const buttonClickHandler = (link: string, blockPath: string, event:React.MouseEvent<HTMLElement>) => {
         if (!blockPath) return;
+        console.log(event)
+        if(event) {
+            event.preventDefault();
+        }
         const {pathname} = router;
         if (pathname !== link) {
             router.push(link).then(() => {
@@ -92,13 +96,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={`${styles.headerContainer} container`}>
-                <Logo className={styles.headerLogo} onClick={() => buttonClickHandler('/', 'about')}/>
+                <Logo className={styles.headerLogo} onClick={(event: React.MouseEvent<HTMLImageElement>) => buttonClickHandler('/', 'about', event)}/>
                 <div className={styles['header-links']}>
                     {links.map(link => {
                         return (
                             <RippleButton
                                 key={link.id}
-                                onClick={() => buttonClickHandler(link.link, link.blockPath)}
+                                to={link.link}
+                                onClick={(event) => buttonClickHandler(link.link, link.blockPath, event)}
                                 className={`${styles.headerButton}  ${link.isButton && styles.headerMainBtn || ''}`}>
                                 {link.text}
                             </RippleButton>
