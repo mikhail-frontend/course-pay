@@ -59,7 +59,7 @@
     grid-gap: 32px;
     grid-template-columns: 1fr;
   }
-  @media (max-width: 370px) {
+  @media (max-width: 380px) {
     margin: 20px auto 70px;
     grid-gap: 30px;
   }
@@ -82,7 +82,7 @@
     @media (max-width: 767px) {
       padding: 35px 15px 30px 30px;
     }
-    @media (max-width: 370px){
+    @media (max-width: 380px){
       padding: 25px 10px 25px 15px;
     }
   }
@@ -97,7 +97,7 @@
     padding: 35px 15px 30px 30px;
   }
 
-  @media (max-width: 370px){
+  @media (max-width: 380px){
     padding: 25px 10px 25px 15px;
   }
 
@@ -116,7 +116,7 @@
   @media (max-width: 767px){
     margin-bottom: 20px;
   }
-  @media (max-width: 370px){
+  @media (max-width: 380px){
     margin-bottom: 18px;
   }
 }
@@ -149,7 +149,7 @@
     justify-content: center;
     align-items: center;
     transition: .2s ease;
-    @media (max-width: 370px){
+    @media (max-width: 380px){
       width: 18px;
       height: 18px;
       margin-left: 8px;
@@ -183,7 +183,7 @@
       margin-right: 0;
     }
   }
-  @media (max-width: 370px){
+  @media (max-width: 380px){
     padding: 4px 3px 4px 9px;
     font-size: 14px;
   }
@@ -227,7 +227,7 @@
     font-size: 16px;
     line-height: 26px;
   }
-  @media (max-width: 370px){
+  @media (max-width: 380px){
     font-size: 14px;
     line-height: 22px;
   }
@@ -255,6 +255,7 @@
     max-height: 130.42px;
     padding: 0;
   }
+
 }
 .cardContent{
   padding: 0 0 0 60px;
@@ -280,7 +281,7 @@
     top: 36px;
     right: 16px;
   }
-  @media (max-width: 370px) {
+  @media (max-width: 380px) {
     top: 26px;
     right: 15px;
   }
@@ -334,7 +335,7 @@
     line-height: 2;
     text-transform: uppercase;
   }
-  @media (max-width: 370px){
+  @media (max-width: 380px){
     padding: 8px 25px;
   }
 }

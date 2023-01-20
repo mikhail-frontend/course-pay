@@ -107,8 +107,8 @@ const SiteHead = () => {
                         `}
                 </Script>
 
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFZLZ7KE6M" strategy='lazyOnload'/>
-            <Script id="google-analytics" strategy="lazyOnload">
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFZLZ7KE6M" defer={true} strategy='lazyOnload'/>
+            <Script id="google-analytics" strategy="lazyOnload" defer={true}>
                 {`
    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

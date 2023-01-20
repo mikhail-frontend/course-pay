@@ -8,40 +8,19 @@
             Наш сервис дает тебе возможность проходить любимые курсы и прокачивать скиллы
         </description>
         <turbo:analytics type="Yandex" id="91959294"></turbo:analytics>
+        <turbo:extendedHtml>true</turbo:extendedHtml>
         <item turbo="true">
             <link>https://rusudemy.com/</link>
             <title>Udemy как купить. Udemy оплата российской картой</title>
             <author>Михаил Харитонов</author>
             <category>IT курсы</category>
-
             <pubDate>Sat, 14 Jan 2023 00:12:01 +0300</pubDate>
             <turbo:content>
                 <![CDATA[
+<div id="__next">
     <header class="Header_header__Z8PUO">
-        <div class="Header_headerContainer__ROjFP container"><img alt="RusUdemy. Udemy как купить" src="/mainLogo.svg"
-                                                                  width="150" height="48" decoding="async" data-nimg="1"
-                                                                  class="Header_headerLogo__B__kl"
-                                                                  style="color:transparent">
-            <div class="header-links">
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">о Udemy</span></button>
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Как купить ?</span>
-                </button>
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">FAQ</span></button>
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Отзывы</span></button>
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Контакты</span>
-                </button>
-                <button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  Header_headerMainBtn__pjKWl"><span
-                        class="content">Задать вопрос</span></button>
-            </div>
-        </div>
+           <img src="https://rusudemy.com/icons/icon-144x144.png" alt="RusUdemy. Udemy как купить. Udemy российской картой."/>
     </header>
-    <section class="About_about__z5I2O container" id="about">
-        <div class="About_aboutHeading__EkYGB">Купим <h1>курсы Udemy</h1> за&nbsp;вас</div>
-        <div class="About_aboutDescription__bchnJ">Наш&nbsp;сервис позволяет легко <h2> оплатить&nbsp;Udemy</h2> c
-            российской карты
-        </div>
-        <button formaction="https://t.me/rus_udemy_review" class="ripple-button About_aboutBtn__xCI3_"><span class="content">Перейти на сайт Udemy</span></button>
-    </section>
     <div class="Cards_cardsWrapper__MnP6v">
         <div class="Cards_cards__JdsjU container">
             <section class="Cards_card__7JrzO">
@@ -55,9 +34,10 @@
                 <h2 class="Cards_cardTitle__x2vSr">Большой выбор курсов</h2>
                 <p class="Cards_cardText__yi95Y">Более&nbsp;чем 213&nbsp;000&nbsp;курсов для&nbsp;получения знаний</p>
             </section>
-            <section class="Cards_card__7JrzO"><img alt="RusUdemy. Udemy как купить" src="/lighting.svg" width="165"
-                                                    height="199" decoding="async" data-nimg="1"
-                                                    class="Cards_cardImage__jDb5d" loading="lazy"
+            <section class="Cards_card__7JrzO"><img alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                    title="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                    src="/lighting.svg" width="165" height="199" decoding="async"
+                                                    data-nimg="1" class="Cards_cardImage__jDb5d" loading="lazy"
                                                     style="color: transparent;">
                 <div class="Cards_cardContent__OgDV_"><h2 class="Cards_cardTitle__x2vSr"
                                                           style="color: rgb(111, 142, 255);">Оплата любой <br>российской
@@ -68,13 +48,6 @@
             </section>
         </div>
     </div>
-    <div class="DescriptionLine_descriptionLine__8GaM7 container" style="color: rgb(64, 200, 224);">
-        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.1441 2.24899L10.1624 7.499L12.6653 7.49998C13.3375 7.49998 13.733 8.17956 13.3503 8.67697L8.35106 15.175C7.88603 15.7795 6.83285 15.4832 6.83285 14.748L6.83174 9.504L4.33465 9.50439C3.66343 9.50439 3.26771 8.82653 3.64846 8.32896L8.62469 1.82594C9.08786 1.22067 10.1415 1.51403 10.1441 2.24899Z"
-                  fill="#40C8E0"></path>
-        </svg>
-        Почему Udemy
-    </div>
     <section class="UdemyAbout_udemyAbout__O__OR container" id="udemyAbout">
         <div class="UdemyAbout_udemyAboutMain__UMGIn">
             <div class="UdemyAbout_udemyAboutHeading__KsPq6 heading">Udemy —<h2> лидер онлайн обучения</h2></div>
@@ -84,20 +57,24 @@
                 двигаясь к&nbsp;вашей цели.</p></div>
         <ul class="UdemyAbout_udemyBlocks__SUOpe">
             <li class="UdemyAbout_udemyBlock__7_IVX "><img src="/icon1.png" alt="Чем популярные российские курсы"
-                                                           width="46" height="46" class="undefined" loading="lazy">
+                                                           title="Чем популярные российские курсы" width="46"
+                                                           height="46" class="undefined" loading="lazy">
                 <h3 class="UdemyAbout_udemyBlockTitle__15Z7g">на 70% дешевле</h3>
                 <p class="UdemyAbout_udemyBlockText__WvGFy">Чем популярные российские курсы</p></li>
             <li class="UdemyAbout_udemyBlock__7_IVX "><img src="/icon2.png"
                                                            alt="Получите международный сертификат и скилл-гайд"
+                                                           title="Получите международный сертификат и скилл-гайд"
                                                            width="46" height="46" class="undefined" loading="lazy">
                 <h3 class="UdemyAbout_udemyBlockTitle__15Z7g"> Сертификат и советы по&nbsp;трудоустройству</h3>
                 <p class="UdemyAbout_udemyBlockText__WvGFy">Получите международный сертификат и скилл-гайд</p></li>
-            <li class="UdemyAbout_udemyBlock__7_IVX "><img src="/icon3.png" alt="213000 видеокурсов" width="46"
-                                                           height="46" class="undefined" loading="lazy">
+            <li class="UdemyAbout_udemyBlock__7_IVX "><img src="/icon3.png" alt="213000 видеокурсов"
+                                                           title="213000 видеокурсов" width="46" height="46"
+                                                           class="undefined" loading="lazy">
                 <h3 class="UdemyAbout_udemyBlockTitle__15Z7g">Выбор курса</h3>
                 <p class="UdemyAbout_udemyBlockText__WvGFy">213000 видеокурсов</p></li>
             <li class="UdemyAbout_udemyBlock__7_IVX "><img src="/icon3.png"
                                                            alt="Курсы от экспертов с реальным опытом работы в международных корпорациях"
+                                                           title="Курсы от экспертов с реальным опытом работы в международных корпорациях"
                                                            width="46" height="46" class="undefined" loading="lazy">
                 <h3 class="UdemyAbout_udemyBlockTitle__15Z7g">Топ-преподаватели</h3>
                 <p class="UdemyAbout_udemyBlockText__WvGFy">Курсы от экспертов с реальным опытом работы в международных
@@ -118,32 +95,34 @@
                 <p class="UdemyAbout_udemyAboutText__TUvyG">Вы можете учиться в&nbsp;своем&nbsp;собственном темпе, в&nbsp;любое
                     время и&nbsp;в&nbsp;любом месте.</p></div>
             <ul class="HowBuy_steps__3ulM4">
-                <li class="HowBuy_step__eWuYo "><img alt="RusUdemy. Udemy как купить" src="/1.svg" width="55"
-                                                     height="55" decoding="async" data-nimg="1" loading="lazy"
-                                                     style="color: transparent;">
+                <li class="HowBuy_step__eWuYo "><img title="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     src="/1.svg" width="55" height="55" decoding="async" data-nimg="1"
+                                                     loading="lazy" style="color: transparent;">
                     <h3 class="HowBuy_stepTitle__n3dJ9">Выберите курс на&nbsp;сайте Udemy.com</h3>
                     <p class="HowBuy_stepText__x5ikz">Скопируйте ссылку на&nbsp;курс, который хотите купить</p></li>
-                <li class="HowBuy_step__eWuYo "><img alt="RusUdemy. Udemy как купить" src="/2.svg" width="55"
-                                                     height="55" decoding="async" data-nimg="1" loading="lazy"
-                                                     style="color: transparent;">
-                    <h3 class="HowBuy_stepTitle__n3dJ9"> Отправьте заявку в&nbsp;telegram</h3><a
-                            href="https://t.me/rus_udemy" target="_blank"
-                            class="ripple-button HowBuy_telegramLink__j22vN" rel="noreferrer"><span class="content"><svg
-                            width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g
-                            clip-path="url(#clip0_21_364)"><path
+                <li class="HowBuy_step__eWuYo "><img title="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     src="/2.svg" width="55" height="55" decoding="async" data-nimg="1"
+                                                     loading="lazy" style="color: transparent;">
+                    <h3 class="HowBuy_stepTitle__n3dJ9"> Отправьте заявку в&nbsp;telegram</h3><a target="_blank"
+                                                                                                 class="ripple-button HowBuy_telegramLink__j22vN"
+                                                                                                 href="https://t.me/rus_udemy"><span
+                            class="content"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_21_364)"><path
                             d="M4.7085 7.59061L4.51 10.3826C4.794 10.3826 4.917 10.2606 5.0645 10.1141L6.396 8.84161L9.155 10.8621C9.661 11.1441 10.0175 10.9956 10.154 10.3966L11.965 1.91061L11.9655 1.91011C12.126 1.16211 11.695 0.869611 11.202 1.05311L0.556997 5.12861C-0.169503 5.41061 -0.158503 5.81561 0.433497 5.99911L3.155 6.84561L9.4765 2.89011C9.774 2.69311 10.0445 2.80211 9.822 2.99911L4.7085 7.59061Z"
                             fill="#039BE5"></path></g><defs><clipPath id="clip0_21_364"><rect width="12" height="12"
                                                                                               fill="white"></rect></clipPath></defs></svg>@rus_udemy</span></a>
                     <p class="HowBuy_stepText__x5ikz">Пришлите ссылку на&nbsp;курс и e‑mail, либо доступ к аккаунту
                         Udemy</p></li>
-                <li class="HowBuy_step__eWuYo "><img alt="RusUdemy. Udemy как купить" src="/3.svg" width="55"
-                                                     height="55" decoding="async" data-nimg="1" loading="lazy"
-                                                     style="color: transparent;">
+                <li class="HowBuy_step__eWuYo "><img title="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                     src="/3.svg" width="55" height="55" decoding="async" data-nimg="1"
+                                                     loading="lazy" style="color: transparent;">
                     <h3 class="HowBuy_stepTitle__n3dJ9">Приобретаем Вам курс</h3>
                     <p class="HowBuy_stepText__x5ikz"><strong>Предоплата не&nbsp;требуется</strong> Мы купим курс за
-                        Вас, вышлем подтверждение покупки
-                        и номер электронного кошелька для оплаты наших услуг. После перевода средств вы получите доступ
-                        к&nbsp;курсу.</p></li>
+                        Вас, вышлем подтверждение покупки  и номер электронного кошелька для оплаты наших услуг. После
+                        перевода средств вы получите доступ к&nbsp;курсу.</p></li>
             </ul>
         </section>
     </div>
@@ -157,16 +136,15 @@
                                                                         class="ReviewItem_reviewItemSocialLink___rluj"
                                                                         href="https://t.me/rus_udemy_review"></a><img
                                 src="/fedor.jpg" width="56" height="56" loading="lazy"
-                                alt="Отзыв от Федора RusUdemy. Udemy как купить. Udemy российской картой"
-                                class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить"
-                                                                               src="/telegram.svg" width="25"
-                                                                               height="25" decoding="async"
-                                                                               data-nimg="1"
-                                                                               class="ReviewItem_reviewSocial__kkT1o"
-                                                                               loading="lazy"
-                                                                               style="color: transparent;">
+                                title="Федор RusUdemy. Udemy как купить. Udemy российской картой"
+                                alt="Федор RusUdemy. Udemy как купить. Udemy российской картой"
+                                class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                width="25" height="25" decoding="async" data-nimg="1"
+                                class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
                             <div>
-                                <div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Федора</div>
+                                <div class="ReviewItem_reviewItemName__2EHpn">Федор</div>
                                 <div class="ReviewItem_reviewItemLink__HGQf8">@nikshinavi</div>
                             </div>
                         </div>
@@ -179,27 +157,24 @@
                                                                         class="ReviewItem_reviewItemSocialLink___rluj"
                                                                         href="https://t.me/rus_udemy_review"></a><img
                                 src="/user-default.svg" loading="lazy" width="56" height="56"
-                                alt="Отзыв от Леонида RusUdemy. Udemy как купить. Udemy российской картой"
-                                class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить"
-                                                                               src="/telegram.svg" width="25"
-                                                                               height="25" decoding="async"
-                                                                               data-nimg="1"
-                                                                               class="ReviewItem_reviewSocial__kkT1o"
-                                                                               loading="lazy"
-                                                                               style="color: transparent;">
+                                title="Леонид RusUdemy. Udemy как купить. Udemy российской картой"
+                                alt="Леонид RusUdemy. Udemy как купить. Udemy российской картой"
+                                class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                width="25" height="25" decoding="async" data-nimg="1"
+                                class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
                             <div>
-                                <div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Леонида</div>
+                                <div class="ReviewItem_reviewItemName__2EHpn">Леонид</div>
                                 <div class="ReviewItem_reviewItemLink__HGQf8">@rikser123</div>
                             </div>
                         </div>
-                        <div class="ReviewItem_reviewItemText__DByb_">
-                            <p>Знаком с Михаилом с 2018 года. </p>
-                            <p> По рекомендации Михаила обратил внимание на преподавателя Максимилиана Шварцмюллера и в
-                                итоге купил Udemy с его помощью:
-                                <strong> Docker &amp; Kubernetes: The Practical Guide [2023 Edition]</strong>, <strong>
-                                    CleanCode</strong>, и <strong> Understanding Typescript 2023.</strong></p>
-                            <p> Прохождение курсов позволило мне значительно улучшить знания по этим темам. Планирую
-                                сотрудничать с Михаилом в дальнейшем.</p>
+                        <div class="ReviewItem_reviewItemText__DByb_">  <p>Знаком с Михаилом с 2018 года. </p>  <p> По
+                            рекомендации Михаила обратил внимание на преподавателя Максимилиана Шварцмюллера и в итоге
+                            купил Udemy с его помощью:   <strong> Docker &amp; Kubernetes: The Practical Guide [2023
+                                Edition]</strong>, <strong> CleanCode</strong>, и <strong> Understanding Typescript
+                                2023.</strong></p>  <p> Прохождение курсов позволило мне значительно улучшить знания по
+                            этим темам. Планирую сотрудничать с Михаилом в дальнейшем.</p> 
                         </div>
                     </div>
                 </div>
@@ -209,37 +184,53 @@
                                                                         class="ReviewItem_reviewItemSocialLink___rluj"
                                                                         href="https://t.me/rus_udemy_review"></a><img
                                 src="/sergey.jpg" width="56" height="56" loading="lazy"
-                                alt="Отзыв от Сергея RusUdemy. Udemy как купить. Udemy российской картой"
-                                class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить"
-                                                                               src="/telegram.svg" width="25"
-                                                                               height="25" decoding="async"
-                                                                               data-nimg="1"
-                                                                               class="ReviewItem_reviewSocial__kkT1o"
-                                                                               loading="lazy"
-                                                                               style="color: transparent;">
+                                title="Сергей RusUdemy. Udemy как купить. Udemy российской картой"
+                                alt="Сергей RusUdemy. Udemy как купить. Udemy российской картой"
+                                class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                width="25" height="25" decoding="async" data-nimg="1"
+                                class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
                             <div>
-                                <div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Сергея</div>
+                                <div class="ReviewItem_reviewItemName__2EHpn">Сергей</div>
                                 <div class="ReviewItem_reviewItemLink__HGQf8">@serjleo</div>
                             </div>
                         </div>
-                        <div class="ReviewItem_reviewItemText__DByb_">
-                            <div>
-                                <p>
-                                    Поклонник Udemy c 2020 года. По началу расстроился, что из-за санкций потерял доступ
-                                    к топовым курсам.
-                                    Ведь моя цель - это получить вакансию <strong>frontend разработчика</strong> в
-                                    крупной европейской компании.
-                                </p>
-                                <p>
-                                    С Михаилом знаком 3 года. Осенью узнал от него, что он переехал заграницу и теперь
-                                    занимается "импортом" образования в Россию.
-                                </p>
-                                <p> С помощью его авторского сервиса <strong><a href="/"
-                                                                                target="_blank">rusudemy.com</a></strong>
-                                    я снова продолжаю учиться по лучшим мировым курсам. Спасибо Михаилу за
-                                    предоставленную возможность!
-                                </p>
+                        <div class="ReviewItem_reviewItemText__DByb_"> 
+                            <div> <p>  Поклонник Udemy c 2020 года. По началу расстроился, что из-за санкций потерял
+                                доступ к топовым курсам.  Ведь моя цель - это получить вакансию <strong>frontend
+                                    разработчика</strong> в крупной европейской компании.  </p>  <p>  С Михаилом
+                                знаком 3 года. Осенью узнал от него, что он переехал заграницу и теперь занимается
+                                "импортом" образования в Россию.  </p> <p> С помощью его авторского сервиса <strong><a
+                                    href="/" target="_blank">rusudemy.com</a></strong> я снова продолжаю учиться по
+                                лучшим мировым курсам. Спасибо Михаилу за предоставленную возможность! </p> 
                             </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="ReviewItem_reviewItem__FwTkg ">
+                        <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                        class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                        href="https://t.me/rus_udemy_review"></a><img
+                                src="/user-default.svg" loading="lazy" width="56" height="56"
+                                title="Alena Gordon RusUdemy. Udemy как купить. Udemy российской картой"
+                                alt="Alena Gordon RusUdemy. Udemy как купить. Udemy российской картой"
+                                class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                width="25" height="25" decoding="async" data-nimg="1"
+                                class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                            <div>
+                                <div class="ReviewItem_reviewItemName__2EHpn">Alena Gordon</div>
+                                <div class="ReviewItem_reviewItemLink__HGQf8">@Umpa_lump_oO</div>
+                            </div>
+                        </div>
+                        <div class="ReviewItem_reviewItemText__DByb_">  Использую <strong> Udemy </strong> уже года
+                            три, очень нравится доступность курсов и постоянные скидки.  И не приятно удивилась когда
+                            обнаружила, что не могу больше оплачивать ничего.  О сайте узнала от Михаила, поэтому
+                            просто перевела деньги и получила нужный мне курс. Всё честно быстро и просто.  Спасибо за
+                            помощь 🐣 
                         </div>
                     </div>
                 </div>
@@ -248,95 +239,99 @@
                         <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
                                                                         class="ReviewItem_reviewItemSocialLink___rluj"
                                                                         href="https://t.me/rus_udemy_review"></a><img
-                                src="/sashulya.jpeg" width="56" height="56" loading="lazy"
-                                alt="Отзыв от Александра RusUdemy. Udemy как купить. Udemy российской картой"
-                                class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить"
-                                                                               src="/telegram.svg" width="25"
-                                                                               height="25" decoding="async"
-                                                                               data-nimg="1"
-                                                                               class="ReviewItem_reviewSocial__kkT1o"
-                                                                               loading="lazy"
-                                                                               style="color: transparent;">
+                                src="/alex.jpg" width="56" height="56" loading="lazy"
+                                title="Александр RusUdemy. Udemy как купить. Udemy российской картой"
+                                alt="Александр RusUdemy. Udemy как купить. Udemy российской картой"
+                                class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                width="25" height="25" decoding="async" data-nimg="1"
+                                class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
                             <div>
-                                <div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Александра</div>
+                                <div class="ReviewItem_reviewItemName__2EHpn">Александр</div>
                                 <div class="ReviewItem_reviewItemLink__HGQf8">@busheswillbetrimmed</div>
                             </div>
                         </div>
                         <div class="ReviewItem_reviewItemText__DByb_"><p>Купил с помощью Михаила два курса на Udemy:
-                            <strong>«WEB-разработчик 2022»</strong>
-                            и <strong>«Верстка и создание веб сайтов 2022 - с нуля до результата!»</strong>. </p>
-                            <p>Все честно: Михаил завел мне аккаунт и купил курс, прислал скрин о покупке. </p>
-                            <p>Я перевел деньги на его кошелек и получил логин с паролем от личного кабинета. 7 минут!
-                                Рекомендую!</p></div>
+                            <strong>«WEB-разработчик 2022»</strong>   и <strong>«Верстка и создание веб сайтов 2022 - с
+                                нуля до результата!»</strong>. </p>   <p>Все честно: Михаил завел мне аккаунт и купил
+                            курс, прислал скрин о покупке. </p>  <p>Я перевел деньги на его кошелек и получил логин с
+                            паролем от личного кабинета. 7 минут! Рекомендую!</p></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span
-                class="LinkButton_pulsing__MsAcT"></span><a href="https://t.me/rus_udemy_review" target="_blank"
+                class="LinkButton_pulsing__MsAcT"></span><a target="_blank"
                                                             class="ripple-button LinkButton_linkButton__VrNzi Reviews_reviewsButton__kwz_A"
-                                                            rel="noreferrer"><span class="content">Написать отзыв<img
-                alt="RusUdemy. Udemy как купить" src="/telegaSmall.svg" width="19" height="18" decoding="async"
-                data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div>
+                                                            href="https://t.me/rus_udemy_review"><span class="content">Написать отзыв<img
+                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                title="RusUdemy. Udemy как купить. Udemy российской картой." src="/telegaSmall.svg" width="19"
+                height="18" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div>
     </section>
     <section class="container Faq_faq__KLhsM" id="faq"><h2 class="heading Faq_faqHeading__vlQYf">Часто задаваемые
         вопросы</h2>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>В чем отличие нашего сервиса от&nbsp;Udemy?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>В чем отличие нашего сервиса от&nbsp;Udemy?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">Мы знаем как <h2>купить Udemy из России. </h2> Наш сервис
-                    позволяет оплатить любимые курсы или оформить подписку на сайте Udemy.com, если у вас карта
-                    российского банка.
+                <div class="Accordion_accordion_text__OdTL0">Мы знаем как на сайте Udemy купить курсы из России. Наш
+                    сервис позволяет оплатить на сайте Udemy полный курс, если у вас карта российского банка.
                 </div>
             </div>
         </div>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Нужно ли мне  передавать свои персональные данные: номер карты, паспорта, имя и фамилию?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Какие у меня есть гарантии, что после перевода денег я получу доступ к Udemy курсы?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">Нет. От вас требуется только адрес электронной почты, на
-                    которую придет письмо-подтверждение о регистрации на сайте Udemy.com
+                <div class="Accordion_accordion_text__OdTL0">Самые надежная гарантия - это отзывы моих покупателей. Все
+                    отзывы написаны реальными людьми с открытыми контактами. Кроме того вы можете найти меня в
+                    социальных сетях и связаться со мной.
                 </div>
             </div>
         </div>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Нужно ли мне создавать аккаунт на Udemy.com?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Нужно ли мне  передавать свои персональные данные: номер карты, паспорта, имя и фамилию?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">Нет. Мы сделаем это за вас. От вас требуется только
-                    сообщить адрес вашей электронной почты в телеграмме.
-                    После оплаты и регистрации мы передадим пароль и логин нового аккаунта на Udemy. Дальше вы сможете
-                    сами изменить пароль и настроить доступ.
+                <div class="Accordion_accordion_text__OdTL0">Нет. Чтобы купить Udemy курсы через наш сервис не нужно
+                    предоставлять персональные данные.
                 </div>
             </div>
         </div>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Если у меня уже есть аккаунт на Udemy, можно ли использовать его?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Нужно ли мне создавать аккаунт на Udemy.com?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">В этом случае вам нужно предоставить доступ к данному
-                    аккаунту нам, сообщив логин и пароль.
+                <div class="Accordion_accordion_text__OdTL0">Нет. Мы сами создадим аккаунт на сайте Udemy.com за вас.  
+                    После оплаты наших услуг мы передадим пароль и логин от личного кабинета на сайте Udemy.com.  
+                    Дальше вы сможете сами изменить пароль и настроить доступ.
                 </div>
             </div>
         </div>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Udemy как купить курсы российской картой?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Если у меня уже есть аккаунт на Udemy, можно ли использовать его?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">Оплатить стоимость курса в&nbsp;рублях можно переводом на
-                    Тинькофф, Сбербанк банк или кошелек YooMoney.
-                    Возможна дополнительная комиссия согласно тарифам вашего банка
+                <div class="Accordion_accordion_text__OdTL0">Если Ваш аккаунт зарегистрирован из России, то нет. Мы
+                    работаем только с новыми аккаунтами, которые создаем специально для оплаты курсов Udemy.
                 </div>
             </div>
         </div>
         <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
-            <button formaction="https://t.me/rus_udemy_review" class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span> Сколько нужно ждать с&nbsp;момента оплаты до получения курса?</span></span>
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Udemy как купить курсы российской картой?</span></span>
             </button>
             <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
-                <div class="Accordion_accordion_text__OdTL0">После поступления денег на наш счет в течении 15 минут мы
-                    предоставим ваш новый аккаунт на Udemy c&nbsp;вашей покупкой
+                <div class="Accordion_accordion_text__OdTL0">Оплатить Udemy курсы из России можно переводом на Тинькофф,
+                    Сбербанк банк или кошелек YooMoney. Возможна дополнительная комиссия согласно тарифам вашего банка.
                 </div>
+            </div>
+        </div>
+        <div class="Accordion_accordionSection__dBwgk  Faq_faqBlock__k0sOW ">
+            <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Accordion_accordion__xzIJe "><span class="content"><span>Сколько нужно ждать с момента оплаты Udemy courses до получения доступа к личному кабинету?</span></span>
+            </button>
+            <div class="Accordion_accordion_content__jJ9gR" style="max-height: 0px;">
+                <div class="Accordion_accordion_text__OdTL0">Весь процесс покупки занимает около 10 минут.</div>
             </div>
         </div>
     </section>
@@ -344,17 +339,20 @@
             class="heading container Contacts_contactsHeading__yS5j7">Хотите задать вопрос? <br>Мы всегда доступны в
         телеграмм</h2>
         <div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span
-                class="LinkButton_pulsing__MsAcT"></span><a href="https://t.me/rus_udemy" target="_blank"
+                class="LinkButton_pulsing__MsAcT"></span><a target="_blank"
                                                             class="ripple-button LinkButton_linkButton__VrNzi "
-                                                            rel="noreferrer"><span class="content">@rus_udemy<img
-                alt="RusUdemy. Udemy как купить" src="/telegaSmall.svg" width="19" height="18" decoding="async"
-                data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div>
+                                                            href="https://t.me/rus_udemy"><span class="content">@rus_udemy<img
+                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                title="RusUdemy. Udemy как купить. Udemy российской картой." src="/telegaSmall.svg" width="19"
+                height="18" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div>
     </section>
     <footer class="Footer_footer__Dhw_9">
-        <div class="container"><img alt="RusUdemy. Udemy как купить" src="/mainLogo.svg" width="150" height="48"
-                                    decoding="async" data-nimg="1" class="Footer_footerLogo__Dz6fy"
-                                    style="color:transparent"></div>
+        <div class="container"><img alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой." src="/mainLogo.svg"
+                                    width="150" height="48" decoding="async" data-nimg="1"
+                                    class="Footer_footerLogo__Dz6fy" style="color:transparent"></div>
     </footer>
+</div>
                 ]]>
             </turbo:content>
         </item>
@@ -366,27 +364,286 @@
             <pubDate>Sat, 14 Jan 2023 00:12:01 +0300</pubDate>
             <turbo:content>
                 <![CDATA[
-<header class="Header_header__Z8PUO"><div class="Header_headerContainer__ROjFP container"><img alt="RusUdemy. Udemy как купить" src="/mainLogo.svg" width="150" height="48" decoding="async" data-nimg="1" class="Header_headerLogo__B__kl" style="color:transparent"><div class="header-links"><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">о Udemy</span></button><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Как купить ?</span></button><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">FAQ</span></button><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Отзывы</span></button><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  "><span class="content">Контакты</span></button><button formaction="https://t.me/rus_udemy_review" class="ripple-button Header_headerButton__vUqfE  Header_headerMainBtn__pjKWl"><span class="content">Задать вопрос</span></button></div></div></header><main class="contacts_contacts__TT19_ container"><section class="undefined"><h1 class="heading MainInfo_aboutHeading__npYIi">Обо мне</h1><div class="MainInfo_aboutContent__vssia"><img src="/me.jpeg" alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" class="MainInfo_aboutImage__dbzC6" loading="eager" width="300" height="375"><div class="MainInfo_aboutInfo__LWmrC"><p>Друзья, привет! Давайте знакомиться! Меня зовут Михаил Харитонов, я — создатель сервиса&nbsp;<a href="/">rusudemy.com</a> и практикующий&nbsp;<strong>Senior&nbsp;Frontend &nbsp;разработчик</strong> (Vue, React, TypeScript)</p><div class="MainInfo_extraText__Luz_o"><p>В юности я очень хотел стать программистом и даже закончил университет в России, но именно <strong> IT курсы </strong>, особенно <strong>Курсы Udemy</strong> и тяга к новым знаниям, упорство сделали из меня профессионала.</p><p>У Udemy есть масса преимуществ перед российскими аналогами: начиная от относительно низкой стоимости и заканчивая качеством и уникальностью контента. К примеру, Я долго искал курс по React на отечественном рынке, среди разрекламированных проектов, но в итоге остановил свое внимание на Udemy: 470 уроков практики почти за копейки - это самый полный гайд по теме, который когда-либо мне встречался!</p><p>Из-за санкций в России сложилась плачевная ситуация с доступом к востребованным программам образования. <strong>Купить курсы Udemy из&nbsp;России</strong> на сайте Udemy.com российской картой больше нельзя. Я считаю это несправедливым. Поэтому я создал этот сервис <a target="_blank" href="/">rusudemy.com</a>, где каждый мой соотечественник теперь может оплачивать Udemy курсы без ограничений. Больше не нужно вводить запросы Udemy торрент или Udemy free! Образование должно быть доступным для всех!</p></div></div></div></section><section class="Reviews_reviews__aIOqP MainInfo_contacts__V7s62"><h2 class="MainInfo_aboutHeading__npYIi heading">Мои контакты</h2><ul class="MainInfo_aboutSocials__7gAgD"><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="mailto:mikhail.kharitonov2016@yandex.ru" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/email.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>E-mail: <span>mikhail.kharitonov2016@yandex.ru</span></span></a></li><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><span class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/phone.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>Телефон (только WhatsApp) <span> +7(925)-516-16-92</span></span></span></li><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://t.me/chargos93" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/telegram.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>Telegram личный</span></a></li><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://t.me/rus_udemy" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/telegram.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>Telegram проекта <strong> RusUdemy</strong></span></a></li><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://vk.com/id13334433" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/vk.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>VK</span></a></li><li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://www.instagram.com/chargos1993/" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов" src="/social-icons/instagram.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"><span>Instagram</span></a></li></ul></section><section class="Reviews_reviews__aIOqP container" id="reviews"><h2 class="Reviews_reviewsHeading__JXdon heading">Отзывы</h2><div><div style="display: flex; flex-direction: row; place-content: stretch center; box-sizing: border-box; width: 100%; gap: 5px 20px;"><div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;"><div class="ReviewItem_reviewItem__FwTkg "><div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank" class="ReviewItem_reviewItemSocialLink___rluj" href="https://t.me/rus_udemy_review"></a><img src="/fedor.jpg" width="56" height="56" loading="lazy" alt="Отзыв от Федора RusUdemy. Udemy как купить. Udemy российской картой" class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить" src="/telegram.svg" width="25" height="25" decoding="async" data-nimg="1" class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;"><div><div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Федора</div><div class="ReviewItem_reviewItemLink__HGQf8">@nikshinavi</div></div></div><div class="ReviewItem_reviewItemText__DByb_">Буквально 5 минут назад Михаил помог приобрести курс на Udemy, заняло минут 10. Спасибо!</div></div><div class="ReviewItem_reviewItem__FwTkg "><div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank" class="ReviewItem_reviewItemSocialLink___rluj" href="https://t.me/rus_udemy_review"></a><img src="/user-default.svg" loading="lazy" width="56" height="56" alt="Отзыв от Леонида RusUdemy. Udemy как купить. Udemy российской картой" class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить" src="/telegram.svg" width="25" height="25" decoding="async" data-nimg="1" class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;"><div><div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Леонида</div><div class="ReviewItem_reviewItemLink__HGQf8">@rikser123</div></div></div><div class="ReviewItem_reviewItemText__DByb_">
-        <p>Знаком с Михаилом с 2018 года. </p>
-        <p>   По рекомендации Михаила обратил внимание на преподавателя Максимилиана Шварцмюллера и в итоге купил Udemy с его помощью:
-        <strong>  Docker &amp; Kubernetes: The Practical Guide [2023 Edition]</strong>, <strong> CleanCode</strong>, и <strong> Understanding Typescript 2023.</strong></p>
-         <p>  Прохождение курсов позволило мне значительно улучшить знания по этим темам. Планирую сотрудничать с Михаилом в дальнейшем.</p>
-        </div></div></div><div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;"><div class="ReviewItem_reviewItem__FwTkg "><div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank" class="ReviewItem_reviewItemSocialLink___rluj" href="https://t.me/rus_udemy_review"></a><img src="/sergey.jpg" width="56" height="56" loading="lazy" alt="Отзыв от Сергея RusUdemy. Udemy как купить. Udemy российской картой" class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить" src="/telegram.svg" width="25" height="25" decoding="async" data-nimg="1" class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;"><div><div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Сергея</div><div class="ReviewItem_reviewItemLink__HGQf8">@serjleo</div></div></div><div class="ReviewItem_reviewItemText__DByb_">
-              <div>
-<p>
-     Поклонник Udemy c 2020 года. По началу расстроился, что из-за санкций потерял доступ к топовым курсам.
-      Ведь моя цель - это получить вакансию <strong>frontend разработчика</strong> в крупной европейской компании.
-</p>
-     <p>
-     С Михаилом знаком 3 года. Осенью узнал от него, что он переехал заграницу и теперь занимается "импортом" образования в Россию.
-</p>
-<p>     С помощью его авторского сервиса <strong><a href="/" target="_blank">rusudemy.com</a></strong> я снова продолжаю учиться по лучшим мировым курсам. Спасибо Михаилу за предоставленную возможность!
-</p>
+<div id="__next">
+    <header class="Header_header__Z8PUO">
+        <div class="Header_headerContainer__ROjFP container"><img
+                alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                title="RusUdemy. Udemy как купить. Udemy российской картой." src="/mainLogo.svg" width="150" height="48"
+                decoding="async" data-nimg="1" class="Header_headerLogo__B__kl" style="color:transparent">
+            <div class="Header_header-links__iCXfx"><a target="_self" class="ripple-button Header_headerButton__vUqfE  "
+                                                       href="/"><span class="content">о Udemy</span></a><a
+                    target="_self" class="ripple-button Header_headerButton__vUqfE  " href="/"><span class="content">Как купить ?</span></a><a
+                    target="_self" class="ripple-button Header_headerButton__vUqfE  " href="/"><span
+                    class="content">FAQ</span></a><a target="_self" class="ripple-button Header_headerButton__vUqfE  "
+                                                     href="/"><span class="content">Отзывы</span></a><a target="_self"
+                                                                                                        class="ripple-button Header_headerButton__vUqfE  "
+                                                                                                        href="/contacts"><span
+                    class="content">Контакты</span></a><a target="_self"
+                                                          class="ripple-button Header_headerButton__vUqfE  Header_headerMainBtn__pjKWl"
+                                                          href="/"><span class="content">Задать вопрос</span></a></div>
+            <div class="menu-bg ">
+                <div class="menu-items ">
+                    <div>о Udemy</div>
+                    <div>Как купить ?</div>
+                    <div>FAQ</div>
+                    <div>Отзывы</div>
+                    <div>Контакты</div>
+                </div>
+            </div>
+            <div class="menu-burger "><label for="check" class="burgerLabel"><input type="checkbox" id="check"
+                                                                                    readonly=""><span></span><span></span><span></span></label>
+            </div>
         </div>
-        </div></div></div><div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;"><div class="ReviewItem_reviewItem__FwTkg "><div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank" class="ReviewItem_reviewItemSocialLink___rluj" href="https://t.me/rus_udemy_review"></a><img src="/sashulya.jpeg" width="56" height="56" loading="lazy" alt="Отзыв от Александра RusUdemy. Udemy как купить. Udemy российской картой" class="ReviewItem_reviewItemPhoto__NIXBI"><img alt="RusUdemy. Udemy как купить" src="/telegram.svg" width="25" height="25" decoding="async" data-nimg="1" class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;"><div><div class="ReviewItem_reviewItemName__2EHpn">Отзыв от Александра</div><div class="ReviewItem_reviewItemLink__HGQf8">@busheswillbetrimmed</div></div></div><div class="ReviewItem_reviewItemText__DByb_"><p>Купил с помощью Михаила два курса  на Udemy: <strong>«WEB-разработчик 2022»</strong>
-            и  <strong>«Верстка и создание веб сайтов 2022 - с нуля до результата!»</strong>. </p>
-               <p>Все честно: Михаил завел мне аккаунт и купил курс, прислал скрин о покупке. </p>
-               <p>Я перевел деньги на его кошелек и получил логин с паролем от личного кабинета. 7 минут! Рекомендую!</p></div></div></div></div></div><div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span class="LinkButton_pulsing__MsAcT"></span><a href="https://t.me/rus_udemy_review" target="_blank" class="ripple-button LinkButton_linkButton__VrNzi Reviews_reviewsButton__kwz_A" rel="noreferrer"><span class="content">Написать отзыв<img alt="RusUdemy. Udemy как купить" src="/telegaSmall.svg" width="19" height="18" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div></section><section class="Contacts_contacts__BVdHZ" id="contacts"><h2 class="heading container Contacts_contactsHeading__yS5j7">Хотите задать вопрос? <br>Я всегда доступен в Telegram</h2><div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span class="LinkButton_pulsing__MsAcT"></span><a href="https://t.me/rus_udemy" target="_blank" class="ripple-button LinkButton_linkButton__VrNzi " rel="noreferrer"><span class="content">@rus_udemy<img alt="RusUdemy. Udemy как купить" src="/telegaSmall.svg" width="19" height="18" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></span></a></div></section></main><footer class="Footer_footer__Dhw_9"><div class="container"><img alt="RusUdemy. Udemy как купить" src="/mainLogo.svg" width="150" height="48" decoding="async" data-nimg="1" class="Footer_footerLogo__Dz6fy" style="color:transparent"></div></footer>
+    </header>
+    <main class="contacts_contacts__TT19_ container">\x3Cscript
+        type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Обо
+        мне","image":["https://rusudemy.com/me.jpeg"],"datePublished":"2023-01-13T01:00:00+03:00","dateModified":"2023-01-13T01:00:00+03:00","author":[{"@type":"Person","name":"Михаил
+        Харитонов","url":"https://t.me/rus_udemy"}]}\x3C/script>
+        <article class="undefined"><h1 class="heading MainInfo_aboutHeading__npYIi">Обо мне</h1>
+            <div class="MainInfo_aboutContent__vssia"><img src="/me.jpeg"
+                                                           title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                                                           alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                                                           class="MainInfo_aboutImage__dbzC6" loading="eager"
+                                                           width="265">
+                <div class="MainInfo_aboutInfo__LWmrC"><p>Друзья, привет! Давайте знакомиться! Меня зовут Михаил
+                    Харитонов, я — создатель сервиса&nbsp;<a href="/">rusudemy.com</a> и&nbsp;практикующий<strong>
+                        Frontend &nbsp;разработчик </strong> (Vue, React, TypeScript).</p>
+                    <div class="MainInfo_extraText__Luz_o false"><p>В юности я очень хотел стать программистом и даже
+                        закончил университет в России, но именно IT курсы, особенно <strong> Курсы Udemy </strong>, а
+                        также регулярная практика сделали из меня профессионала.</p>
+                        <p>У Udemy есть масса преимуществ перед российскими аналогами: начиная от низкой стоимости и
+                            заканчивая уникальностью контента. К примеру, <a
+                                    href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                                    target="_blank" rel="noreferrer"> курс по React </a>на отечественном рынке будет
+                            стоить в пять раз дороже, чем на Udemy, где он включает 498 уроков (самый полный гайд по
+                            теме, на мой взгляд).</p>
+                        <p>Из-за санкций <strong>купить курсы Udemy из России </strong> на сайте Udemy.com российской
+                            картой больше нельзя. Поэтому я создал этот сервис <a target="_blank"
+                                                                                  href="/">rusudemy.com</a>, где каждый
+                            мой соотечественник теперь может <strong>оплатить Udemy курсы любой картой</strong> без
+                            ограничений. Больше не нужно вводить запросы Udemy торрент или Udemy free! Образование
+                            должно быть доступным для всех!</p></div>
+                    <button formaction="url:https://t.me/rus_udemy"  class="ripple-button Header_headerButton__vUqfE Header_headerMainBtn__pjKWl MainInfo_aboutBtn__18sAp">
+                        <span class="content">Читать далее</span></button>
+                </div>
+            </div>
+        </article>
+        <section class="Reviews_reviews__aIOqP MainInfo_contacts__V7s62"><h2
+                class="MainInfo_aboutHeading__npYIi heading">Мои контакты</h2>
+            <ul class="MainInfo_aboutSocials__7gAgD">
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a
+                        href="mailto:mikhail.kharitonov2016@yandex.ru" rel="noreferrer"
+                        class="MainInfo_aboutSocialItem__bhTl6"><img
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/email.svg" width="45" height="45" decoding="async" data-nimg="1"
+                        loading="lazy"
+                        style="color: transparent;"><span>E-mail: <span>mikhail.kharitonov2016@yandex.ru</span></span></a>
+                </li>
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><span
+                        class="MainInfo_aboutSocialItem__bhTl6"><img
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/phone.svg" width="45" height="45" decoding="async" data-nimg="1"
+                        loading="lazy" style="color: transparent;"><span>Телефон (только WhatsApp) <span> +7(925)-516-16-92</span></span></span>
+                </li>
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://t.me/chargos93"
+                                                                                          rel="noreferrer"
+                                                                                          class="MainInfo_aboutSocialItem__bhTl6"><img
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/telegram.svg" width="45" height="45" decoding="async" data-nimg="1"
+                        loading="lazy" style="color: transparent;"><span>Telegram личный</span></a></li>
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a href="https://t.me/rus_udemy"
+                                                                                          rel="noreferrer"
+                                                                                          class="MainInfo_aboutSocialItem__bhTl6"><img
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/telegram.svg" width="45" height="45" decoding="async" data-nimg="1"
+                        loading="lazy"
+                        style="color: transparent;"><span>Telegram проекта <strong> RusUdemy</strong></span></a></li>
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a
+                        href="https://vk.com/id13334433" rel="noreferrer" class="MainInfo_aboutSocialItem__bhTl6"><img
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/vk.svg" width="45" height="45" decoding="async" data-nimg="1" loading="lazy"
+                        style="color: transparent;"><span>VK</span></a></li>
+                <li class="MainInfo_aboutSocialsElement__Sw1XG MainInfo_active__X882r"><a
+                        href="https://www.instagram.com/chargos1993/" rel="noreferrer"
+                        class="MainInfo_aboutSocialItem__bhTl6"><img
+                        alt="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
+                        src="/social-icons/instagram.svg" width="45" height="45" decoding="async" data-nimg="1"
+                        loading="lazy" style="color: transparent;"><span>Instagram</span></a></li>
+            </ul>
+        </section>
+        <section class="Reviews_reviews__aIOqP container" id="reviews"><h2
+                class="Reviews_reviewsHeading__JXdon heading">Отзывы</h2>
+            <div>
+                <div style="display: flex; flex-direction: row; place-content: stretch center; box-sizing: border-box; width: 100%; gap: 5px 20px;">
+                    <div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;">
+                        <div class="ReviewItem_reviewItem__FwTkg ">
+                            <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                            class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                            href="https://t.me/rus_udemy_review"></a><img
+                                    src="/fedor.jpg" width="56" height="56" loading="lazy"
+                                    title="Федор RusUdemy. Udemy как купить. Udemy российской картой"
+                                    alt="Федор RusUdemy. Udemy как купить. Udemy российской картой"
+                                    class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                    width="25" height="25" decoding="async" data-nimg="1"
+                                    class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                                <div>
+                                    <div class="ReviewItem_reviewItemName__2EHpn">Федор</div>
+                                    <div class="ReviewItem_reviewItemLink__HGQf8">@nikshinavi</div>
+                                </div>
+                            </div>
+                            <div class="ReviewItem_reviewItemText__DByb_">Буквально 5 минут назад Михаил помог
+                                приобрести курс на Udemy, заняло минут 10. Спасибо!
+                            </div>
+                        </div>
+                        <div class="ReviewItem_reviewItem__FwTkg ">
+                            <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                            class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                            href="https://t.me/rus_udemy_review"></a><img
+                                    src="/user-default.svg" loading="lazy" width="56" height="56"
+                                    title="Леонид RusUdemy. Udemy как купить. Udemy российской картой"
+                                    alt="Леонид RusUdemy. Udemy как купить. Udemy российской картой"
+                                    class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                    width="25" height="25" decoding="async" data-nimg="1"
+                                    class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                                <div>
+                                    <div class="ReviewItem_reviewItemName__2EHpn">Леонид</div>
+                                    <div class="ReviewItem_reviewItemLink__HGQf8">@rikser123</div>
+                                </div>
+                            </div>
+                            <div class="ReviewItem_reviewItemText__DByb_">  <p>Знаком с Михаилом с 2018 года. </p> 
+                                <p> По рекомендации Михаила обратил внимание на преподавателя Максимилиана Шварцмюллера
+                                    и в итоге купил Udemy с его помощью:   <strong> Docker &amp; Kubernetes: The
+                                        Practical Guide [2023 Edition]</strong>, <strong> CleanCode</strong>, и <strong>
+                                        Understanding Typescript 2023.</strong></p>  <p> Прохождение курсов позволило
+                                    мне значительно улучшить знания по этим темам. Планирую сотрудничать с Михаилом в
+                                    дальнейшем.</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;">
+                        <div class="ReviewItem_reviewItem__FwTkg ">
+                            <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                            class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                            href="https://t.me/rus_udemy_review"></a><img
+                                    src="/sergey.jpg" width="56" height="56" loading="lazy"
+                                    title="Сергей RusUdemy. Udemy как купить. Udemy российской картой"
+                                    alt="Сергей RusUdemy. Udemy как купить. Udemy российской картой"
+                                    class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                    width="25" height="25" decoding="async" data-nimg="1"
+                                    class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                                <div>
+                                    <div class="ReviewItem_reviewItemName__2EHpn">Сергей</div>
+                                    <div class="ReviewItem_reviewItemLink__HGQf8">@serjleo</div>
+                                </div>
+                            </div>
+                            <div class="ReviewItem_reviewItemText__DByb_"> 
+                                <div> <p>  Поклонник Udemy c 2020 года. По началу расстроился, что из-за санкций
+                                    потерял доступ к топовым курсам.  Ведь моя цель - это получить вакансию <strong>frontend
+                                        разработчика</strong> в крупной европейской компании.  </p>  <p>  С Михаилом
+                                    знаком 3 года. Осенью узнал от него, что он переехал заграницу и теперь занимается
+                                    "импортом" образования в Россию.  </p> <p> С помощью его авторского сервиса
+                                    <strong><a href="/" target="_blank">rusudemy.com</a></strong> я снова продолжаю
+                                    учиться по лучшим мировым курсам. Спасибо Михаилу за предоставленную возможность! 
+                                </p> 
+                                </div>
+                                 
+                            </div>
+                        </div>
+                        <div class="ReviewItem_reviewItem__FwTkg ">
+                            <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                            class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                            href="https://t.me/rus_udemy_review"></a><img
+                                    src="/user-default.svg" loading="lazy" width="56" height="56"
+                                    title="Alena Gordon RusUdemy. Udemy как купить. Udemy российской картой"
+                                    alt="Alena Gordon RusUdemy. Udemy как купить. Udemy российской картой"
+                                    class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                    width="25" height="25" decoding="async" data-nimg="1"
+                                    class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                                <div>
+                                    <div class="ReviewItem_reviewItemName__2EHpn">Alena Gordon</div>
+                                    <div class="ReviewItem_reviewItemLink__HGQf8">@Umpa_lump_oO</div>
+                                </div>
+                            </div>
+                            <div class="ReviewItem_reviewItemText__DByb_">  Использую <strong> Udemy </strong> уже года
+                                три, очень нравится доступность курсов и постоянные скидки.  И не приятно удивилась
+                                когда обнаружила, что не могу больше оплачивать ничего.  О сайте узнала от Михаила,
+                                поэтому просто перевела деньги и получила нужный мне курс. Всё честно быстро и просто.
+                                 Спасибо за помощь 🐣 
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; place-content: stretch flex-start; flex: 1 1 0%; width: 0px; gap: 5px 20px;">
+                        <div class="ReviewItem_reviewItem__FwTkg ">
+                            <div class="ReviewItem_reviewItemTop__qd9BO"><a target="_blank"
+                                                                            class="ReviewItem_reviewItemSocialLink___rluj"
+                                                                            href="https://t.me/rus_udemy_review"></a><img
+                                    src="/alex.jpg" width="56" height="56" loading="lazy"
+                                    title="Александр RusUdemy. Udemy как купить. Udemy российской картой"
+                                    alt="Александр RusUdemy. Udemy как купить. Udemy российской картой"
+                                    class="ReviewItem_reviewItemPhoto__NIXBI"><img
+                                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой. " src="/telegram.svg"
+                                    width="25" height="25" decoding="async" data-nimg="1"
+                                    class="ReviewItem_reviewSocial__kkT1o" loading="lazy" style="color: transparent;">
+                                <div>
+                                    <div class="ReviewItem_reviewItemName__2EHpn">Александр</div>
+                                    <div class="ReviewItem_reviewItemLink__HGQf8">@busheswillbetrimmed</div>
+                                </div>
+                            </div>
+                            <div class="ReviewItem_reviewItemText__DByb_"><p>Купил с помощью Михаила два курса на Udemy:
+                                <strong>«WEB-разработчик 2022»</strong>   и <strong>«Верстка и создание веб сайтов 2022
+                                    - с нуля до результата!»</strong>. </p>   <p>Все честно: Михаил завел мне аккаунт и
+                                купил курс, прислал скрин о покупке. </p>  <p>Я перевел деньги на его кошелек и получил
+                                логин с паролем от личного кабинета. 7 минут! Рекомендую!</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span
+                    class="LinkButton_pulsing__MsAcT"></span><a target="_blank"
+                                                                class="ripple-button LinkButton_linkButton__VrNzi Reviews_reviewsButton__kwz_A"
+                                                                href="https://t.me/rus_udemy_review"><span
+                    class="content">Написать отзыв<img alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                       title="RusUdemy. Udemy как купить. Udemy российской картой."
+                                                       src="/telegaSmall.svg" width="19" height="18" decoding="async"
+                                                       data-nimg="1" loading="lazy" style="color: transparent;"></span></a>
+            </div>
+        </section>
+        <section class="Contacts_contacts__BVdHZ" id="contacts"><h2
+                class="heading container Contacts_contactsHeading__yS5j7">Хотите задать вопрос? <br>Я всегда доступен в
+            Telegram</h2>
+            <div class="LinkButton_pulsingButtonWrap__Bk4g6 LinkButton_buttonPulse__0BPPi"><span
+                    class="LinkButton_pulsing__MsAcT"></span><a target="_blank"
+                                                                class="ripple-button LinkButton_linkButton__VrNzi "
+                                                                href="https://t.me/rus_udemy"><span class="content">@rus_udemy<img
+                    alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                    title="RusUdemy. Udemy как купить. Udemy российской картой." src="/telegaSmall.svg" width="19"
+                    height="18" decoding="async" data-nimg="1" loading="lazy" style="color: transparent;"></span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="Footer_footer__Dhw_9">
+        <div class="container"><img alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                    title="RusUdemy. Udemy как купить. Udemy российской картой." src="/mainLogo.svg"
+                                    width="150" height="48" decoding="async" data-nimg="1"
+                                    class="Footer_footerLogo__Dz6fy" style="color:transparent"></div>
+    </footer>
+</div>
+
                   ]]>
             </turbo:content>
         </item>

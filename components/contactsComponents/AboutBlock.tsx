@@ -41,7 +41,7 @@ const AboutBlock = () => {
                         <p>
                             Друзья, привет! Давайте знакомиться! Меня зовут Михаил Харитонов, я &mdash; создатель сервиса&nbsp;
                             <Link href='/'>rusudemy.com</Link> и&nbsp;практикующий
-                            <strong>Senior&nbsp;Frontend &nbsp;разработчик</strong> (Vue, React, TypeScript).
+                            <strong> Frontend &nbsp;разработчик </strong> (Vue, React, TypeScript).
                         </p>
                         <ExtraText className={`${styles.extraText} ${showExtra && styles.visible}`}/>
                         <RippleButton

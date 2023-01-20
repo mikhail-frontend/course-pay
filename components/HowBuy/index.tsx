@@ -4,7 +4,8 @@ import styles from './HowBuy.module.scss'
 import RippleButton from "../UI/RippledButton";
 import Image from "next/image";
 import useAnimation from "../../hooks/useAnimation";
-
+import {HowTo} from "schema-dts";
+import {JsonLd} from "react-schemaorg";
 
 type howBuyStep = {
     id: number,
@@ -27,7 +28,7 @@ const howBuySteps:howBuyStep[] = [
         image: '/2.svg',
         title: ' Отправьте заявку в&nbsp;telegram',
         hasButton: true,
-        text: 'Пришлите ссылку на&nbsp;курс и e&#8209;mail, либо доступ к аккаунту Udemy'
+        text: 'Пришлите ссылку на&nbsp;курс и e&#8209;mail'
     },
     {
         id: 6,
@@ -40,10 +41,61 @@ const howBuySteps:howBuyStep[] = [
 const HowBuy = () => {
     const [steps, setSteps] = useState<howBuyStep[]>(howBuySteps);
     const wrapRef = useAnimation<howBuyStep>(steps, setSteps);
-
+    {
+    }
     return (
         <div className={styles.howBuyWrap}>
             <section className={`${styles.howBuy} container`} id='howBuy'>
+                <JsonLd<HowTo>
+                    item={{
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "Как приобрести курс?",
+                        "totalTime": "PT10M",
+                        "step": [
+
+                            {
+                                "@type": "HowToSection",
+                                "name": "Выберите курс на сайте Udemy.com",
+                                "itemListElement": [
+                                    {
+                                        "@type": "HowToStep",
+                                        "position": "1",
+                                        "image": "https://rusudemy.com/icons/icon-128x128.png",
+                                        "text": "Скопируйте ссылку на&nbsp;курс, который хотите купить"
+                                    }],
+                                "position": "1"
+                            },
+                            {
+                                "@type": "HowToSection",
+                                "name": "Отправьте заявку в telegram",
+                                "url": "https://t.me/rus_udemy",
+                                "itemListElement": [
+                                    {
+                                        "@type": "HowToStep",
+                                        "position": "1",
+
+                                        "text": "Пришлите ссылку на курс и e-mail"
+                                    }],
+
+                                "position": "2"
+                            },
+
+                            {
+                                "@type": "HowToSection",
+                                "name": "Приобретаем Вам курс",
+                                "itemListElement": [
+                                    {
+                                        "@type": "HowToStep",
+                                        "position": "1",
+                                        "text": "<strong>Предоплата не&nbsp;требуется</strong> Мы купим курс за Вас, вышлем подтверждение покупки и номер электронного кошелька для оплаты наших услуг.  После перевода средств вы получите доступ к курсу.",
+                                    }],
+                                "position": "3"
+                            },
+
+                        ]
+                    }}
+                />
                 <div className={aboutStyles.udemyAboutMain}>
                     <h2 className={`${aboutStyles.udemyAboutHeading} heading`}>
                         Как приобрести курс?

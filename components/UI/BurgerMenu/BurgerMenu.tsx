@@ -7,7 +7,8 @@ type BurgerMenuType = {
 const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
     const [links] = useState<Link[]>(LinksList.filter(link => !link.isButton));
     const [isActive, setIsActive] = useState(false);
-    const toggleMenu  = () => {
+    const toggleMenu  = (event) => {
+        event.preventDefault();
         setIsActive(prev => !prev);
         if(!isActive) {
             document.documentElement.style.overflow = 'hidden';
@@ -28,7 +29,14 @@ const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
                     })}
                 </div>
             </div>
-            <div className={`menu-burger ${isActive ? 'fs' : ''}`} onClick={toggleMenu}>{!isActive ? '☰' : '✕'}</div>
+            <div className={`menu-burger ${isActive ? 'fs' : ''}`} onClick={toggleMenu}>
+                <label htmlFor="check" className='burgerLabel'>
+                    <input type="checkbox" id="check" checked={isActive} readOnly={true}/>
+                    <span/>
+                    <span/>
+                    <span/>
+                </label>
+            </div>
 
         </>
     );

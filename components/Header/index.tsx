@@ -80,7 +80,6 @@ const Header = () => {
 
     const buttonClickHandler = (link: string, blockPath: string, event:React.MouseEvent<HTMLElement>) => {
         if (!blockPath) return;
-        console.log(event)
         if(event) {
             event.preventDefault();
         }
