@@ -73,7 +73,7 @@ const Header = () => {
         } else {
             const element: HTMLElement | null = document.getElementById(blockPath);
             if (!element) return;
-            element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+            element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
     }

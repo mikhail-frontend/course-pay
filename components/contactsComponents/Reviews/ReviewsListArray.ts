@@ -11,6 +11,14 @@ const reviewsListArray: ReviewItemType[] = [
 
     },
     {
+        id: 7,
+        name: 'Рустам',
+        text: `Огонь, ребят! Искал <strong> курс по автоматизации на Java Леши Маршала на всех площадках… </strong> но он был только на <strong>Юдеми</strong>. И вот, благодаря вам, наконец смогу его пройти) Спасибо ❤️  `,
+        link: '@rustam_yolo',
+        photo: '/rustam.jpg',
+        publishDate: '2023-01-21T09:54:00.649Z'
+    },
+    {
         id: 1,
         name: 'Сергей',
         text: `
@@ -59,6 +67,16 @@ const reviewsListArray: ReviewItemType[] = [
         publishDate: '2023-01-17T18:11:00.649Z'
     },
 
+    {
+        id: 8,
+        name: 'Ivan',
+        text: `
+        Искал, как купить курсы на udemy по Python Django. Спасибо <strong> RusUdemy </strong>, всё сделали хорошо.
+        `,
+        link: '@van_van1',
+        photo: null,
+        publishDate: '2023-01-26T16:24:00.649Z'
+    },
     {
         id: 3,
         name: 'Леонид',
