@@ -7,10 +7,11 @@ type LinkButtonType = {
     text: string
     className?: string
     target?: string
+    wrapClass?: string
 }
-const LinkButton:React.FC<LinkButtonType> = ({text, to, className = '', target}) => {
+const LinkButton:React.FC<LinkButtonType> = ({text, to, className = '', target, wrapClass}) => {
     return (
-        <div className={`${styles.pulsingButtonWrap} ${styles.buttonPulse}`}>
+        <div className={`${styles.pulsingButtonWrap} ${styles.buttonPulse} ${wrapClass || ''}`}>
             <span className={styles.pulsing}/>
             <RippleButton to={to} className={`${styles.linkButton} ${className}`} target={target}>
                 {text}

@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+
   opacity: 0;
   transform: translateY(40px) scale(1.1) ;
   &.active{
@@ -59,22 +60,34 @@
   }
 }
 
-.reviewItemName, .reviewItemLink {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  min-height: 20px;
-  margin-bottom: 4px;
-}
+
 .reviewItemName{
+  font-weight: 700;
   color: #fff;
+  font-size: 16px;
+  line-height: 22px;
 }
 .reviewItemLink{
   font-weight: 500;
-  margin-top: 3px;
   color: #5b60e5;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 22px;
 }
 
+.reviewItemDate{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  margin-top: 15px;
+  strong{
+    font-size: 16px;
+    margin-right: 4px;
+    font-weight: 500;
+    color: #5b60e5;
+  }
+}
 
 
 .reviewItemPhoto {

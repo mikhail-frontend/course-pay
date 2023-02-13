@@ -1,6 +1,6 @@
 import React from 'react';
 import MainInfo from "../../components/contactsComponents/MainInfo/MainInfo";
-import Reviews from "../../components/contactsComponents/Reviews/Reviews";
+import Reviews from "../../components/Reviews/Reviews";
 import ContactsBlock from "../../components/Contacts";
 import styles from './styles/contacts.module.scss';
 import Head from "next/head";

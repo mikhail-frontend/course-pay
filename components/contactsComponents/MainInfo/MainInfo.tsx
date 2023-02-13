@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './MainInfo.module.scss';
 import Image from "next/image";
-import reviewStyles from '../Reviews/Reviews.module.scss'
+import reviewStyles from '../../Reviews/Reviews.module.scss'
 import type {contactLink} from "../ContactLinks";
 import contactLinks from "../ContactLinks";
 import useAnimation from "../../../hooks/useAnimation";

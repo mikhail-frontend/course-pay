@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Review } from "schema-dts";
 import { JsonLd } from "react-schemaorg";
-import stripTags from "../../../helpers/stripTags";
+import stripTags from "../../helpers/stripTags";
+import buildDate from "../../helpers/buildDate";
 
 export type ReviewItemType = {
     name: string
@@ -83,6 +84,11 @@ const ReviewItem =
                    </div>
                </div>
                <div className={styles.reviewItemText} dangerouslySetInnerHTML={{__html: text}}/>
+               <div className={styles.reviewItemDate}>
+                   <strong>Отзыв от: </strong> {buildDate(publishDate, {
+                   showTime: true
+               }).rusDate}
+               </div>
            </div>
        </>
     );

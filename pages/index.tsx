@@ -6,7 +6,7 @@ import DescriptionLine from "../components/UI/DescriptionLine";
 import HowBuy from "../components/HowBuy";
 import Faq from "../components/Faq";
 import Contacts from "../components/Contacts";
-import Reviews from "../components/contactsComponents/Reviews/Reviews";
+import Reviews from "../components/Reviews/Reviews";
 
 
 export default function Home() {
