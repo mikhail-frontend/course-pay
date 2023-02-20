@@ -1,5 +1,5 @@
 import {ReviewItemType} from "../ReviewItem/ReviewItem";
-
+//https://www.reduceimages.com/
 const reviewsListArray: ReviewItemType[] = [
     {
         id: 6,
@@ -36,7 +36,7 @@ const reviewsListArray: ReviewItemType[] = [
 Очень благодарная Михаилу из <strong>rusUdemy</strong> за помощь в покупке курсов по <strong> JavaScript и React с сервиса Udemy </strong>. Теперь нет ни единого шанса не стать Фронтенд разработчиком😁
         `,
         link: '@olga_madonova',
-        photo: '/olga.jpeg',
+        photo: '/olga.jpg',
         publishDate: '2023-01-28T09:18:00.649Z'
     },
     {
@@ -53,7 +53,7 @@ const reviewsListArray: ReviewItemType[] = [
 Успехов в деятельности, больше клиентов!👍👏👏
 </p>        `,
         link: '@mikhailkurakhtanov',
-        photo: '/mikhail.jpeg',
+        photo: '/mikhail.jpg',
         publishDate: '2023-01-17T18:11:00.649Z'
     },
     {
@@ -122,7 +122,7 @@ const reviewsListArray: ReviewItemType[] = [
 <p> Ещё раз спасибо!</p>
         `,
         link: '@OvitalyO',
-        photo: '/vitaliy.jpeg',
+        photo: '/vitaliy.jpg',
         publishDate: '2023-02-01T11:10:00.649Z'
     },
     {
@@ -153,7 +153,7 @@ const reviewsListArray: ReviewItemType[] = [
 Купила сразу несколько курсов, без переплаты, что очень сильно порадовало. Спасибо большое <strong> RusUdemy </strong>, рекомендую!
         `,
         link: '@ksenia_kap_1',
-        photo: '/ksenia.jpeg',
+        photo: '/ksenia.jpg',
         publishDate: '2023-02-11T17:13:00.649Z'
     },
     {
@@ -167,8 +167,28 @@ const reviewsListArray: ReviewItemType[] = [
 <p>То есть я  практически наблюдал процесс создания  аккаунта. Спасибо </p>
         `,
         link: '@dmitry_coach_tri',
-        photo: '/dmitriy.jpeg',
+        photo: '/dmitriy.jpg',
         publishDate: '2023-02-12T07:57:00.649Z'
+    },
+    {
+        id: 15,
+        name: 'Евгений',
+        text: `
+ <p>Отличный сервис. 5 минут - и нужный курс уже у меня, спасибо за оперативность!</p>
+  <p>Обязательно воспользуюсь ещё.</p>
+        `,
+        link: '@Sloppy_Joe',
+        photo: null,
+        publishDate: '2023-02-17T14:06:00.649Z'
+    },
+    {
+        id: 16,
+        name: 'Андрей Гребенкин',
+        text: `Доступ к курсу получен) Большое спасибо, все работает!
+        `,
+        link: '@Skylark1985',
+        photo: '/andrey.jpg',
+        publishDate: '2023-02-19T08:53:00.649Z'
     },
 ];
 export default reviewsListArray
