@@ -190,5 +190,15 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/andrey.jpg',
         publishDate: '2023-02-19T08:53:00.649Z'
     },
+    {
+        id: 17,
+        name: 'Ruslan',
+        text: `
+Да, могу лишь подтвердить все вышеописанное, доступ к курсу получил так, как и было описано на сайте. Благодарю!!!! 😊
+        `,
+        link: '@R63_ZabVO',
+        photo: null,
+        publishDate: '2023-02-21T12:52:00.649Z'
+    },
 ];
 export default reviewsListArray
