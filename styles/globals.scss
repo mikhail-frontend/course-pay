@@ -65,5 +65,10 @@ html, body{
 a {
   text-decoration: none;
 }
+
+::selection{
+  background: #5b60e5;
+  color: #fff;
+}
 @import "RippleButton";
 @import "BurgerMenu";

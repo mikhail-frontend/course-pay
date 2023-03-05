@@ -39,10 +39,9 @@ const howBuySteps:howBuyStep[] = [
     },
 ]
 const HowBuy = () => {
+
     const [steps, setSteps] = useState<howBuyStep[]>(howBuySteps);
     const wrapRef = useAnimation<howBuyStep>(steps, setSteps);
-    {
-    }
     return (
         <div className={styles.howBuyWrap}>
             <section className={`${styles.howBuy} container`} id='howBuy'>

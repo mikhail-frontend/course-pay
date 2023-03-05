@@ -243,5 +243,25 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/maxim.jpg',
         publishDate: '2023-02-27T17:46:00.649Z'
     },
+    {
+        id: 22,
+        name: 'Olga Lesnaya',
+        text: `
+Купил курс, ответили на все вопросы, все прошло хорошо, доступ получил.
+        `,
+        link: 'скрыто',
+        photo: null,
+        publishDate: '2023-03-03T19:25:00.649Z'
+    },
+    {
+        id: 23,
+        name: 'Степан',
+        text: `
+Купил курс, все прошло отлично. Рекомендую👍
+        `,
+        link: 'скрыто',
+        photo: null,
+        publishDate: '2023-03-04T17:19:00.649Z'
+    },
 ];
 export default reviewsListArray

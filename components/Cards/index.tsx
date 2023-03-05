@@ -18,7 +18,7 @@ type Cart = {
 const courses:Course[] = [
     {
         id: 1,
-        text: 'Python',
+        text: 'Udemy Python',
         openLink: 'https://www.udemy.com/ru/topic/python/'
     },
     {
@@ -40,6 +40,16 @@ const courses:Course[] = [
         id: 5,
         text: 'Обработка и анализ данных',
         openLink: 'https://www.udemy.com/ru/topic/data-science/'
+    },
+    {
+        id: 6,
+        text: 'Udemy Unreal',
+        openLink: 'https://www.udemy.com/course/unrealcourse/'
+    },
+    {
+        id: 7,
+        text: 'Udemy на русском',
+        openLink: 'https://www.udemy.com/courses/search/?lang=ru&q=%D0%BD%D0%B0+%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC&sort=relevance&src=ukw'
     },
 ];
 const Carts:Cart[] = [

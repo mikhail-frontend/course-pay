@@ -40,9 +40,10 @@ const aboutItems:AboutItem[] = [
 ]
 
 const UdemyAbout = () => {
+    const isMobile = useMobile();
     const [aboutList, setAboutList] = useState<AboutItem[]>(aboutItems);
     const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
-    const isMobile = useMobile();
+
     return (
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
@@ -50,10 +51,10 @@ const UdemyAbout = () => {
                     Udemy &mdash;<h2> лидер онлайн обучения</h2>
                 </div>
                 <p className={styles.udemyAboutText}>
-                    Udemy предоставляет доступ к&nbsp;востребованным программам обучения,
-                    которые расширят ваши карьерные возможности.
-                    Из-за санкций Udemy не&nbsp;принимает карты российских банков к оплате.
-                    Поэтому мы создали этот&nbsp;сервис, чтобы вы совершали покупки на Udemy, двигаясь к&nbsp;вашей цели.
+                    Для многих курсы Udemy открыли новые карьерные возможности.
+                    Более 57&nbsp;миллионов пользователей полюбили Udemy.com именно за&nbsp;их&nbsp;доступность.
+                    Увы, из-за санкций Udemy больше не&nbsp;принимает карты российских банков.
+                    Наш&nbsp;сервис знает как купить на&nbsp;Udemy любимые курсы из России и сделает&nbsp;это&nbsp;за&nbsp;Вас.
                 </p>
             </div>
             <ul className={styles.udemyBlocks} ref={wrapRef}>

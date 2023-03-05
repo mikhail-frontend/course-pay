@@ -122,6 +122,10 @@
     opacity: 1;
     transform: none;
   }
+  @media (max-width: 1023px) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 .udemyBlockTitle{
   font-weight: 500;
