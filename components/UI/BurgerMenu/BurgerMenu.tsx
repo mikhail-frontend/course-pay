@@ -18,6 +18,11 @@ const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
             document.body.removeAttribute('style')
         }
     }
+    const changePrevent = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        return false
+    }
     return (
         <>
             <div className={`menu-bg ${isActive ? 'fs' : ''}`}>
@@ -30,14 +35,13 @@ const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
                 </div>
             </div>
             <div className={`menu-burger ${isActive ? 'fs' : ''}`} onClick={toggleMenu}>
-                <label htmlFor="check" className='burgerLabel'>
-                    <input type="checkbox" id="check" checked={isActive} readOnly={true}/>
+                <label htmlFor="check" className='burgerLabel' >
+                    <input type="checkbox" id="check" onChange={changePrevent} checked={isActive}/>
                     <span/>
                     <span/>
                     <span/>
                 </label>
             </div>
-
         </>
     );
 };

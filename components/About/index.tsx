@@ -3,9 +3,7 @@ import RippleButton from "../UI/RippledButton";
 import styles from './About.module.scss'
 type AboutType = {children?: React.ReactNode}
 const About:React.FC<AboutType> = () => {
-    const openUdemyLink = () => {
-        window.open('https://www.udemy.com/')
-    }
+
 
     return (
         <section className={`${styles.about} container`} id='about'>
@@ -19,7 +17,7 @@ const About:React.FC<AboutType> = () => {
             <div className={`${styles.aboutDescription}`}>
                 Наш&nbsp;сервис позволяет легко <h2> оплатить&nbsp;Udemy</h2> c российской карты
             </div>
-            <RippleButton className={styles.aboutBtn} onClick={openUdemyLink}>Перейти на сайт Udemy</RippleButton>
+            <RippleButton className={styles.aboutBtn} to='https://www.udemy.com/' target='_blank'>Перейти на сайт Udemy</RippleButton>
         </section>
     );
 };

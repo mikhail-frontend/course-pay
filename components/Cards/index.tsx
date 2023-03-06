@@ -70,7 +70,6 @@ const Cards:React.FC<CardsType> = () => {
     const [coursesList] = useState<Course[]>(courses);
     const [cartsList] = useState<Cart[]>(Carts);
 
-    const openCourse = (url:string = '') => window.open(url)
 
     return (
         <div className={styles.cardsWrapper}>
@@ -79,12 +78,15 @@ const Cards:React.FC<CardsType> = () => {
                     <div className={styles.cardCourses}>
                         {coursesList.map(course => {
                             return (
-                                <div key={course.id}
-                                     className={styles.cardCourse}
-                                     onClick={() => openCourse(course.openLink)}>
+                                <a key={course.id}
+                                   rel="noreferrer"
+                                   href={course.openLink}
+                                   target='_blank'
+                                   className={styles.cardCourse}
+                                    >
                                     {course.text}
                                     <span>→</span>
-                                </div>
+                                </a>
                             )
                         })}
                     </div>

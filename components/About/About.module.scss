@@ -146,6 +146,9 @@
 }
 .aboutBtn{
   width: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   background: linear-gradient(90deg, #4460B0 0%, #4C50BE 30.73%, #5F4BD0 100%);
   font-weight: 400;
@@ -153,7 +156,6 @@
   line-height: 22px;
   color: #FFFFFF;
   margin: 0 auto;
-  display: block;
   position: relative;
   z-index: 2;
   @media (max-width: 767px){
