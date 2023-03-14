@@ -69,9 +69,31 @@
     transform-origin: right center;
   }
 }
-
+.reviewsButtons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 60px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .reviewsButton{
   min-width: 210px;
 }
 
+.loadButton{
+  min-width: 240px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
 
+.loadButtonPulse{
+  min-width: 240px;
+}

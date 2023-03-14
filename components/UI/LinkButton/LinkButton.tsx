@@ -8,16 +8,19 @@ type LinkButtonType = {
     className?: string
     target?: string
     wrapClass?: string
+    onCLick?: (ev) => void
+    showImage?: boolean
 }
-const LinkButton:React.FC<LinkButtonType> = ({text, to, className = '', target, wrapClass}) => {
+const LinkButton:React.FC<LinkButtonType> = ({text, showImage = true, to, className = '', target, wrapClass,
+                                                 onCLick = (ev) => {}}) => {
     return (
-        <div className={`${styles.pulsingButtonWrap} ${styles.buttonPulse} ${wrapClass || ''}`}>
+        <div className={`${styles.pulsingButtonWrap} ${styles.buttonPulse} ${wrapClass || ''}`} onClick={onCLick}>
             <span className={styles.pulsing}/>
             <RippleButton to={to} className={`${styles.linkButton} ${className}`} target={target}>
                 {text}
-                <Image src='/telegaSmall.svg'
-                       alt="RusUdemy. Udemy как купить. Udemy российской картой."
-                       title="RusUdemy. Udemy как купить. Udemy российской картой." width={19} height={18} priority={false}/>
+                {showImage &&        <Image src='/telegaSmall.svg'
+                                            alt="RusUdemy. Udemy как купить. Udemy российской картой."
+                                            title="RusUdemy. Udemy как купить. Udemy российской картой." width={19} height={18} priority={false}/>}
             </RippleButton>
         </div>
     );

@@ -94,4 +94,4 @@ const ReviewItem =
     );
 };
 
-export default ReviewItem;
+export default React.memo(ReviewItem);

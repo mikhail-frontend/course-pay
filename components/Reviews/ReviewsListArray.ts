@@ -359,5 +359,21 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-03-11T09:47:00.649Z'
     },
+    {
+        id: 35,
+        name: 'Никита Кибирев',
+        text: `Быстро и качественно! Спасибо!`,
+        link: '@nick978',
+        photo: '/nikita.jpg',
+        publishDate: '2023-03-13T11:33:00.649Z'
+    },
+    {
+        id: 36,
+        name: 'Nikita Golubev',
+        text: `Очень быстро, качественно! Круто, что я нашёл такой сервис)`,
+        link: '@nikkosup',
+        photo: null,
+        publishDate: '2023-03-13T17:15:00.649Z'
+    },
 ];
 export default reviewsListArray
