@@ -375,5 +375,13 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-03-13T17:15:00.649Z'
     },
+    {
+        id: 37,
+        name: 'Андрей',
+        text: `Помогли купить! Ответили быстро, сразу всё купили! Большое спасибо, рекомендую!`,
+        link: '@Decarator',
+        photo: null,
+        publishDate: '2023-03-15T11:01:00.649Z'
+    },
 ];
 export default reviewsListArray

@@ -9,7 +9,7 @@ import RippleButton from "../UI/RippledButton";
 import buttonStyles from '../UI/LinkButton/LinkButton.module.scss'
 
 
-const shownCount = 20;
+const shownCount = 21;
 
 const sortedReviews: ReviewItemType[] = reviewsListArray.sort((a, b) => {
     const aPublish = a.publishDate;
