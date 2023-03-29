@@ -18,7 +18,7 @@ const sortedReviews: ReviewItemType[] = reviewsListArray.sort((a, b) => {
 });
 
 const firstScreenReviews = [...sortedReviews].slice(0, shownCount);
-const restReviews = [...sortedReviews].slice(shownCount -1, sortedReviews.length).map(el => ({
+const restReviews = [...sortedReviews].slice(shownCount, sortedReviews.length).map(el => ({
     ...el,
     animated: true
 }));
