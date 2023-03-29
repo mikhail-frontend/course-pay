@@ -456,5 +456,37 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-03-27T15:23:00.649Z'
     },
+    {
+        id: 47,
+        name: 'Ольга',
+        text: `Спасибо, быстро купили! Без обмана!`,
+        link: '@OlgaSor1983',
+        photo: null,
+        publishDate: '2023-03-27T17:15:00.649Z'
+    },
+    {
+        id: 48,
+        name: 'Марк Томский',
+        text: `Спасибо, быстро купили! Без обмана!`,
+        link: '@tomskym',
+        photo: '/mark.jpg',
+        publishDate: '2023-03-28T06:23:00.649Z'
+    },
+    {
+        id: 49,
+        name: 'Airat Mingazov',
+        text: `Быстро , и качественно.  Молодцы ! 👍`,
+        link: '@Med0k26',
+        photo: '/ayrat.jpg',
+        publishDate: '2023-03-28T18:04:00.649Z'
+    },
+    {
+        id: 50,
+        name: 'Alexander Polozov',
+        text: `Реально все работает! Быстро и без всяких предоплат)) Рекомендую, кароч)`,
+        link: '@gatchin',
+        photo: null,
+        publishDate: '2023-03-29T10:24:00.649Z'
+    },
 ];
 export default reviewsListArray
