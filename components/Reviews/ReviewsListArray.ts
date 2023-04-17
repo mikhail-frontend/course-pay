@@ -560,10 +560,14 @@ const reviewsListArray: ReviewItemType[] = [
         text: `
         <p> 
         Всем привет. 2 недели самостоятельно пытался купить курс на юдеми разными карточками,
-         завести кошелек на paypal и т.п., но оплата не проходила. Потом начал искать другие возможности
-         . Rusudemy купил мне курс Java Reactive Programming за 10 минут и предоставили доступ.
+         завести кошелек на paypal и т.п., но оплата не проходила. 
          Я боялся, что обманут и т.п. Но оказалось все честно))  Как раз смотрю новый курс! Спасибо ребятам, очень выручили!
         </p>
+            <p> 
+             Потом начал искать другие возможности. <br/>
+             <strong>Rusudemy </strong> 
+             купил мне <strong> курс Java Reactive Programming </strong> за 10 минут и предоставили доступ.
+             </p>
         <p> Я из Минска</p>
 `,
         link: '@Dmitry_Berzhanin',
@@ -579,6 +583,88 @@ const reviewsListArray: ReviewItemType[] = [
         link: '@Deniskaponchik',
         photo: '/denis2.jpg',
         publishDate: '2023-04-07T13:02:00.649Z'
+    },
+    {
+        id: 60,
+        name: 'Дмитрий Владимирович',
+        text: `
+Курс подключили за 10 мин, все оперативно, спасибо`,
+        link: '@Ampilog',
+        photo: null,
+        publishDate: '2023-04-10T10:09:00.649Z'
+    },
+    {
+        id: 61,
+        name: 'Denis',
+        text: `Все прошло отлично! Курсы получены в течении 10 минут. Буду обращаться еще!`,
+        link: 'Скрыто',
+        photo: '/denis3.jpg',
+        publishDate: '2023-04-11T09:38:00.649Z'
+    },
+    {
+        id: 62,
+        name: 'Ilnur Galiullin',
+        text: `Все отлично! Курсы были получены за 10 минут. Приду еще!`,
+        link: '@humouzy3233',
+        photo: '/ilnur.jpg',
+        publishDate: '2023-04-11T10:41:00.649Z'
+    },
+    {
+        id: 63,
+        name: '@VitaliyDvoeglazov',
+        text: `Все супер! Курсы на месте, пароль от учетки и почту сменил. Обращусь еще!`,
+        link: '@VitaliyDvoeglazov',
+        photo: '/vitaliy2.jpg',
+        publishDate: '2023-04-11T12:07:00.649Z'
+    },
+    {
+        id: 64,
+        name: 'Alexandr Marchenko',
+        text: `Добрый день! Отличный сервис, а самое главное низкая комиссия, спасибо ещё раз огромное данному проекту. Обязательно воспользуюсь ещё раз!`,
+        link: '@alexmathers',
+        photo: '/alexm.jpg',
+        publishDate: '2023-04-11T19:39:00.649Z'
+    },
+    {
+        id: 65,
+        name: 'Violetta',
+        text: `Добрый вечер! Наконец-то смогла получить очень нужный курс. Спасибо большое проекту и его создателям!)`,
+        link: '@Vivivilkaa',
+        photo: '/violetta.jpg',
+        publishDate: '2023-04-15T17:12:00.649Z'
+    },
+    {
+        id: 66,
+        name: 'Ivan',
+        text: `Все прошло быстро, отлично и качественно! <br/>
+Обязательно воспользуюсь ещё раз!`,
+        link: '@BanyaSm',
+        photo: null,
+        publishDate: '2023-04-16T17:11:00.649Z'
+    },
+    {
+        id: 67,
+        name: 'Леонид',
+        text: `Всем привет, За 5 минут получил нужный курс! Спасибо большое!)`,
+        link: '@leo_063',
+        photo: null,
+        publishDate: '2023-04-17T07:56:00.649Z'
+    },
+    {
+        id: 68,
+        name: 'Никита Кибирев',
+        text: `Всем привет, получил нужный курс! Спасибо большое!)`,
+        link: '@nick978',
+        photo: '/nikita.jpg',
+        publishDate: '2023-04-17T08:45:00.649Z'
+    },
+    {
+        id: 69,
+        name: 'Dmitry Berzhanin',
+        text: `Сперва купил один курс, а сегодня еще 2. Все работает, доступ есть. Спасибо большое ребятам-волшебникам!`,
+        link: '@Dmitry_Berzhanin',
+        photo: null,
+        publishDate: '2023-04-17T09:26:00.649Z'
     },
 ];
 export default reviewsListArray
