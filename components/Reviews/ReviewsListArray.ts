@@ -666,5 +666,29 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-04-17T09:26:00.649Z'
     },
+    {
+        id: 70,
+        name: 'Ivan Popyvanov',
+        text: `Все отлично ! Огромное Спасибо за предоставленный сервис ! Все работает и очень оперативно !`,
+        link: 'Скрыто',
+        photo: '/ivanp.jpg',
+        publishDate: '2023-04-18T08:42:00.649Z'
+    },
+    {
+        id: 71,
+        name: 'Dima',
+        text: `Быстрая выдача товара, рекомендую ❤️`,
+        link: '@licarro',
+        photo: null,
+        publishDate: '2023-04-18T09:40:00.649Z'
+    },
+    {
+        id: 72,
+        name: 'Dmitry Berzhanin',
+        text: `Сегодня побил рекорд и купил через ребят сразу 5 курсов, пока скидка на udemy. Спасибо большое!`,
+        link: '@Dmitry_Berzhanin',
+        photo: null,
+        publishDate: '2023-04-20T07:41:00.649Z'
+    },
 ];
 export default reviewsListArray
