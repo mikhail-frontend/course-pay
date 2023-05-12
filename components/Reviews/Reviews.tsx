@@ -67,7 +67,7 @@ const Reviews = () => {
                         Загрузить еще отзывы
                     </RippleButton>
                 </div>}
-                <LinkButton text='Написать отзыв'
+                <LinkButton text='Читать в Telegram'
                             className={styles.reviewsButton}
                             target='_blank'
                             to='https://t.me/rus_udemy_review'/>
