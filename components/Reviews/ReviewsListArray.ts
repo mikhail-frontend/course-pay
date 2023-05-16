@@ -851,7 +851,7 @@ const reviewsListArray: ReviewItemType[] = [
         publishDate: '2023-05-09T13:50:00.649Z'
     },
     {
-        id: 90,
+        id: 91,
         name: 'Павел',
         text: `Спасибо большое, купил <strong> курс по Java Spring </strong>. Не обманули, всё сделали быстро`,
         link: '@selipasha',
@@ -859,12 +859,28 @@ const reviewsListArray: ReviewItemType[] = [
         publishDate: '2023-05-10T17:50:00.649Z'
     },
     {
-        id: 91,
+        id: 92,
         name: 'назар )))',
         text: `очень долго сомневался покупать ли через данный сервис ,но все же решился и не пожалел ,после оплаты быстро получил данные от аккаунта с курсом`,
         link: 'Скрыто',
         photo: '/nazar.jpg',
         publishDate: '2023-05-10T18:23:00.649Z'
+    },
+    {
+        id: 93,
+        name: 'Алексей',
+        text: `Сомневался, но никакого мошенничества, все отлично, быстро и небольшой процент переплаты!!!Советую!!!!`,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-05-12T14:00:00.649Z'
+    },
+    {
+        id: 94,
+        name: 'Eduard Pyatnitsyn',
+        text: `Спасибо большое! Быстро приобрел курс`,
+        link: '@sudri',
+        photo: '/eduard.jpg',
+        publishDate: '2023-05-15T13:33:00.649Z'
     },
 ];
 export default reviewsListArray
