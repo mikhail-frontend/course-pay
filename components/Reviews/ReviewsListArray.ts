@@ -906,5 +906,13 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-05-16T13:49:00.649Z'
     },
+    {
+        id: 98,
+        name: 'Дима',
+        text: `Купил только что 3 хороших курса по разработке игр, все сделано быстро, очень доволен, обращусь еще раз в следующий раз обязательно!`,
+        link: '@thomas_in_the_dark',
+        photo: null,
+        publishDate: '2023-05-17T08:20:00.649Z'
+    },
 ];
 export default reviewsListArray
