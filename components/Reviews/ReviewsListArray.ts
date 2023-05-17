@@ -882,5 +882,29 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/eduard.jpg',
         publishDate: '2023-05-15T13:33:00.649Z'
     },
+    {
+        id: 95,
+        name: 'Дим',
+        text: `Всё работает!`,
+        link: '@ijdhhbdh',
+        photo: '/dim.jpg',
+        publishDate: '2023-05-16T09:45:00.649Z'
+    },
+    {
+        id: 96,
+        name: 'Tyrgeneva',
+        text: `Снова воспользовалась сервисом) все быстро и без лишних хлопот`,
+        link: 'Скрыто',
+        photo: '/tyrgeneva.jpg',
+        publishDate: '2023-05-16T12:37:00.649Z'
+    },
+    {
+        id: 97,
+        name: 'A.N.N.A',
+        text: `Только что получила доступ к своим курсам! Спасибо за такую возможность. И спасибо за оперативность)`,
+        link: '@hanna_work',
+        photo: null,
+        publishDate: '2023-05-16T13:49:00.649Z'
+    },
 ];
 export default reviewsListArray
