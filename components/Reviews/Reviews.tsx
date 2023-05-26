@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useMemo, useState} from 'react';
 import ReviewItem, {ReviewItemType} from "../ReviewItem/ReviewItem";
 import useAnimation from "../../hooks/useAnimation";
 import styles from './Reviews.module.scss';
@@ -17,26 +17,58 @@ const sortedReviews: ReviewItemType[] = reviewsListArray.sort((a, b) => {
     return Number(new Date(bPublish)) - Number(new Date(aPublish))
 });
 
-const firstScreenReviews = [...sortedReviews].slice(0, shownCount);
-const restReviews = [...sortedReviews].slice(shownCount, sortedReviews.length).map(el => ({
-    ...el,
-    animated: true
-}));
+const getPartOfReviews = (index: number) => {
+    const start = shownCount * index;
+    const end = start + shownCount;
+    return sortedReviews.slice(start, end)
+};
+const setReviewsChunks = () => {
+    const chunksCount = Math.ceil(sortedReviews.length / shownCount);
+    let resultedChunks = [];
+    for (let i = 1; i< chunksCount; i++) {
+        const part = getPartOfReviews(i);
+        resultedChunks.push(part);
+    }
+    return resultedChunks;
+}
+
+
+
+const firstScreenReviews = sortedReviews.slice(0, shownCount);
 
 const Reviews = () => {
     const [reviewsList, setReviewsList] = useState<ReviewItemType[]>(firstScreenReviews);
     const [showButton, setShowButton] = useState<boolean>(true);
-    const wrapRef = useAnimation<ReviewItemType>(reviewsList, setReviewsList);
+    const [reviewPartIndex, setReviewsPartIndex] = useState<number>(0);
+    const reviewsChunks = useMemo(setReviewsChunks, []);
 
-    const loadReviews = () => {
-        setReviewsList(prev => {
-            return [...prev, ...restReviews]
-        })
-        setShowButton(prev => !prev)
+    const wrapRef = useAnimation<ReviewItemType>(reviewsList, setReviewsList);
+    
+    const pushReviewWithDelay = (review:ReviewItemType, delay = 0) => {
+        if(!review) return;
+        setTimeout(() => {
+            setReviewsList(prevState => [...prevState, review])
+        }, delay || 0)
     }
 
+    const loadReviews = useCallback(() => {
+        const reviewsForPush = reviewsChunks[reviewPartIndex];
+        const nextReviews = reviewsChunks[reviewPartIndex + 1];
+        reviewsForPush.forEach((item, index) => {
+            const timer = (index + 1) * 30;
+            pushReviewWithDelay(reviewsForPush[index],timer - 20)
+            setTimeout(() => {
+                setReviewsList(prevState => prevState.map(el => ({...el, animated: true})))
+            }, timer)
+        })
+        setReviewsPartIndex(prev => prev + 1);
+        if(!nextReviews) setShowButton(prev => !prev);
+    }, [reviewsChunks, reviewPartIndex])
+
     return (
-        <section ref={wrapRef} className={`${styles.reviews} container`} id='reviews'>
+        <section ref={wrapRef}
+                 className={`${styles.reviews} container`}
+                 id='reviews'>
             <div className={`${styles.reviewsHeading} `}>
                 <h2 className={` heading`}>Отзывы</h2>
                 <LinkButton text='Написать отзыв'

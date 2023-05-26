@@ -5,7 +5,7 @@ type BurgerMenuType = {
     onClick: (link: string, blockPath: string, event: React.MouseEvent<HTMLDivElement>) => void
 }
 const BurgerMenu:React.FC<BurgerMenuType> = ({onClick}) => {
-    const [links] = useState<Link[]>(LinksList.filter(link => !link.isButton));
+    const [links] = useState<Link[]>(LinksList);
     const [isActive, setIsActive] = useState(false);
     const toggleMenu  = (event) => {
         event.preventDefault();

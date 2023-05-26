@@ -26,4 +26,4 @@ const LinkButton:React.FC<LinkButtonType> = ({text, showImage = true, to, classN
     );
 };
 
-export default LinkButton;
+export default React.memo(LinkButton);
