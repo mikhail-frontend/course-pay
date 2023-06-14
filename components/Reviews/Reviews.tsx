@@ -11,6 +11,7 @@ import buttonStyles from '../UI/LinkButton/LinkButton.module.scss'
 
 const shownCount = 21;
 
+
 const sortedReviews: ReviewItemType[] = reviewsListArray.sort((a, b) => {
     const aPublish = a.publishDate;
     const bPublish = b.publishDate;
