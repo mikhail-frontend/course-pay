@@ -1316,6 +1316,16 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/andrey.jpg',
         publishDate: '2023-06-15T11:12:00.649Z'
     },
+    {
+        id: 143,
+        name: 'Konstantin Abramov',
+        text: `Скинул две ссылки, не успел написать приветствие как мне уже первым написал менеджер. 
+        Очень вежливые и доброжелательные по отношению к клиенту. Все быстро и чётко, доступ получил за 10-12 минут. Спасибо.
+        `,
+        link: '@CRXWW',
+        photo: null,
+        publishDate: '2023-06-15T11:55:00.649Z'
+    },
 ];
 
 export default reviewsListArray
