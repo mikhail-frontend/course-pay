@@ -1326,6 +1326,25 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-06-15T11:55:00.649Z'
     },
+    {
+        id: 144,
+        name: 'Алексей Рытов',
+        text: `Скорость на высоте! Рекомендую!
+        `,
+        link: '@ALower35',
+        photo: null,
+        publishDate: '2023-06-16T14:41:00.649Z'
+    },
+    {
+        id: 146,
+        name: 'Катрин',
+        text: `Это действительно работает! С помощью Михаила приобрела курс  <strong>на Udemy </strong> 
+        легко и быстро, не более 10 минут занял весь процесс. Спасибо. Ваше дело несомненно приносит пользу))
+        `,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-06-17T20:35:00.649Z'
+    },
 ];
 
 export default reviewsListArray
