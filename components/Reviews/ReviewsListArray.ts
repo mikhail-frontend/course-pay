@@ -1629,6 +1629,23 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-07-16T09:57:00.649Z'
     },
+
+    {
+        id: 178,
+        name: 'Valeria Ivanova',
+        text: `Спасибо. Первый раз заказала курс, оплата через юмани, все быстро и удобно. Добавили новый аккаунт, курс там уже куплен.`,
+        link: '@jigeojis',
+        photo: '/ivanova.jpg',
+        publishDate: '2023-07-17T11:30:00.649Z'
+    },
+    {
+        id: 179,
+        name: 'Oleg',
+        text: `Большое спасибо, процесс покупки очень быстрый, очень доволен, буду и дальше покупать курсы тут)`,
+        link: '@Krause19',
+        photo: '/oleg2.jpg',
+        publishDate: '2023-07-18T18:19:00.649Z'
+    },
 ];
 
 export default reviewsListArray

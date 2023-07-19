@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "rimraf out && rimraf .next && next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prod": "yarn build && firebase deploy"
   },
   "browserslist": [
     "defaults and supports es6-module",
