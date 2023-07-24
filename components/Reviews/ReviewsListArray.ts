@@ -1646,6 +1646,22 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/oleg2.jpg',
         publishDate: '2023-07-18T18:19:00.649Z'
     },
+    {
+        id: 180,
+        name: 'Светлана Роговцова',
+        text: `Всё чётко и быстро, без обманов. Курс и аккаунт рабочие 👍🏻`,
+        link: '@lopefre',
+        photo: '/svetlana.jpg',
+        publishDate: '2023-07-19T20:14:00.649Z'
+    },
+    {
+        id: 181,
+        name: 'Alexey Kuzmin',
+        text: `Большое спасибо, купил курс быстро и без головной боли.`,
+        link: '@AlekseyKuzmin33',
+        photo: null,
+        publishDate: '2023-07-19T22:03:00.649Z'
+    },
 ];
 
 export default reviewsListArray
