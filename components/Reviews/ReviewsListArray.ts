@@ -1670,6 +1670,14 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-07-21T14:45:00.649Z'
     },
+    {
+        id: 183,
+        name: 'S K',
+        text: `все прошло хорошо, хоть я и относился с некоторым подозрением. в результате удалось приобрести курс еще дешевле, чем он продается в россии`,
+        link: 'Скрыто',
+        photo: '/sk.jpg',
+        publishDate: '2023-07-24T10:48:00.649Z'
+    },
 ];
 
 export default reviewsListArray
