@@ -1662,6 +1662,14 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-07-19T22:03:00.649Z'
     },
+    {
+        id: 182,
+        name: 'Kir',
+        text: `Все быстро и по делу , без обмана , буду обращаться ещё 😊`,
+        link: '@kiiirushka',
+        photo: null,
+        publishDate: '2023-07-21T14:45:00.649Z'
+    },
 ];
 
 export default reviewsListArray
