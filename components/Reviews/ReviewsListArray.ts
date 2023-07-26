@@ -1678,6 +1678,14 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/sk.jpg',
         publishDate: '2023-07-24T10:48:00.649Z'
     },
+    {
+        id: 184,
+        name: 'vladimir biziukov',
+        text: `norm👍`,
+        link: '@kittanb',
+        photo: '/biziukov.jpg',
+        publishDate: '2023-07-25T17:00:00.649Z'
+    },
 ];
 
 export default reviewsListArray
