@@ -1686,6 +1686,23 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/biziukov.jpg',
         publishDate: '2023-07-25T17:00:00.649Z'
     },
+    {
+        id: 185,
+        name: 'Антон Малыгин',
+        text: `Все прошло оперативно. За 10 минут получил доступ к курсу. Обращусь позже еще раз. Спасибо`,
+        link: '@mcslesar',
+        photo: '/anton.jpg',
+        publishDate: '2023-07-26T18:12:00.649Z'
+    },
+    {
+        id: 186,
+        name: 'Dmitry Timofeev',
+        text: `Здравствуйте! Приобрел через Вас курс 28.07.2023. 
+            Как и выше отзывались-все оперативно и честно. Предоставлен доступ спустя 10…15 мин. Спасибо!`,
+        link: '@DDTimofeev',
+        photo: '/timofeev.jpg',
+        publishDate: '2023-07-28T06:02:00.649Z'
+    },
 ];
 
 export default reviewsListArray
