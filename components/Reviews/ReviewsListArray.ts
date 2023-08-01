@@ -1703,6 +1703,16 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/timofeev.jpg',
         publishDate: '2023-07-28T06:02:00.649Z'
     },
+    {
+        id: 187,
+        name: 'Denis',
+        text: `31.07.2023 приобрел 8 курсов. Все прошло быстро. Перевел деньги на юмани. Получил личный кабинет с курсами.
+         Комиссия 4 евро за курс. <strong>
+         Намного дешевле, чем через других посредников. </strong> Все понравилось. Спасибо`,
+        link: '@PrinceOfCSharp',
+        photo: '/prince.jpg',
+        publishDate: '2023-07-31T16:16:00.649Z'
+    },
 ];
 
 export default reviewsListArray
