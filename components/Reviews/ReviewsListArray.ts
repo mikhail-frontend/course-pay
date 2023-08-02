@@ -1713,6 +1713,14 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/prince.jpg',
         publishDate: '2023-07-31T16:16:00.649Z'
     },
+    {
+        id: 188,
+        name: 'Alexey',
+        text: `Все хорошо, быстро и без обмана) Покупал 02.08.2023 курс, все прошло отлично, аккаунт с купленным курсом получен) Спасибо!`,
+        link: '@backend_ninja96',
+        photo: '/alexeyb.jpg',
+        publishDate: '2023-08-02T04:15:00.649Z'
+    },
 ];
 
 export default reviewsListArray
