@@ -1721,6 +1721,22 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/alexeyb.jpg',
         publishDate: '2023-08-02T04:15:00.649Z'
     },
+    {
+        id: 189,
+        name: 'Alexs333 Alexs',
+        text: `Все исполнено быстро и качественно. Рекомендую всем.`,
+        link: '@Alexs333',
+        photo: '/alexs333.jpg',
+        publishDate: '2023-08-05T08:51:00.649Z'
+    },
+    {
+        id: 190,
+        name: 'Марсель',
+        text: `Приобрел курс, все честно и быстро, спасибо, рекомендую всем! 👍`,
+        link: '@Marselbi',
+        photo: '/marselbi.jpg',
+        publishDate: '2023-08-06T09:32:00.649Z'
+    },
 ];
 
 export default reviewsListArray
