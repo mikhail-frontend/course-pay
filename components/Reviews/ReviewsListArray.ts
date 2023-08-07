@@ -1737,6 +1737,24 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/marselbi.jpg',
         publishDate: '2023-08-06T09:32:00.649Z'
     },
+    {
+        id: 191,
+        name: 'Oleg Khrustalev',
+        text: `Приобрёл необходимый курс очень быстро и со скидкой, рекомендую!`,
+        link: '@OlegKhrustalev',
+        photo: '/khrustalev.jpg',
+        publishDate: '2023-08-06T16:39:00.649Z'
+    },
+    {
+        id: 192,
+        name: 'Олег',
+        text: `Супер! 👍 <br/>
+Спасибо! <br/>
+Постоянный клиент ))`,
+        link: '@a8904200074',
+        photo: null,
+        publishDate: '2023-08-06T16:39:00.649Z'
+    },
 ];
 
 export default reviewsListArray
