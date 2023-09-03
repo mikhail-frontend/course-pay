@@ -23,15 +23,15 @@ const MainInfo = () => {
                                     link.href
                                         ? <a href={link.href} rel='noreferrer' className={styles.aboutSocialItem}>
                                             <Image src={link.icon} width={45} height={45}
-                                                   alt='RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов'
-                                                   title='RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов'
+                                                   alt='RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Михаил Харитонов'
+                                                   title='RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Михаил Харитонов'
                                             />
                                             <span dangerouslySetInnerHTML={{__html: link.text}}/>
                                         </a>
                                         : <span className={styles.aboutSocialItem}>
                                     <Image src={link.icon} width={45} height={45}
-                                           title="RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов"
-                                           alt='RusUdemy. Udemy как купить. Udemy российской картой. Михаил Харитонов'/>
+                                           title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Михаил Харитонов"
+                                           alt='RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Михаил Харитонов'/>
                                    <span dangerouslySetInnerHTML={{__html: link.text}}/>
                                 </span>
                                 }

@@ -97,8 +97,8 @@ const Cards:React.FC<CardsType> = () => {
                     <Image
                         src="/lighting.svg"
                         className={styles.cardImage}
-                        alt="RusUdemy. Udemy как купить. Udemy российской картой."
-                        title="RusUdemy. Udemy как купить. Udemy российской картой."
+                        alt="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
+                        title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
                         width={165}
                         height={199}
                     />

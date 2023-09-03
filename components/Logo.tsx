@@ -8,8 +8,8 @@ const Logo: React.FC<{ className?: string, onClick?: (event:React.MouseEvent<HTM
      }) => {
 
         return <Image src='/mainLogo.svg'
-                      alt="RusUdemy. Udemy как купить. Udemy российской картой."
-                      title="RusUdemy. Udemy как купить. Udemy российской картой."
+                      alt="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
+                      title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
                       width={150}
                       height={48}
                       priority={true}

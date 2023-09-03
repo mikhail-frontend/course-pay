@@ -110,8 +110,8 @@ const HowBuy = () => {
                             return (
                                 <li key={step.id} className={`${styles.step} ${step.animated ? styles.active : ''}`}>
                                     <Image src={step.image}
-                                           title="RusUdemy. Udemy как купить. Udemy российской картой."
-                                           alt='RusUdemy. Udemy как купить. Udemy российской картой.'
+                                           title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
+                                           alt='RusUdemy. Udemy как купить. Udemy как оплатить российской картой.'
                                            width={55} height={55} loading={'lazy'}/>
                                     <h3 className={styles.stepTitle} dangerouslySetInnerHTML={{__html: step.title}}/>
                                     {!!step.hasButton &&  <RippleButton to="https://t.me/rus_udemy" className={styles.telegramLink} target='_blank'>

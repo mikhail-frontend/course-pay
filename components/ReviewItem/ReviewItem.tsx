@@ -59,14 +59,14 @@ const ReviewItem =
                         <img src={setPhoto(photo)}
                              width={56} height={56}
                              loading='lazy'
-                             title={`${name} RusUdemy. Udemy как купить. Udemy российской картой. Как оплатить Udemy`}
-                             alt={`${name} RusUdemy. Udemy как купить. Udemy российской картой. Как оплатить Udemy`}
+                             title={`${name} RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Как оплатить Udemy`}
+                             alt={`${name} RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Как оплатить Udemy`}
                              className={styles.reviewItemPhoto}/>
                         <Image
                             src="/telegram.svg"
                             priority={false}
-                            alt="RusUdemy. Udemy как купить. Udemy российской картой. Как оплатить Udemy"
-                            title="RusUdemy. Udemy как купить. Udemy российской картой. Как оплатить Udemy"
+                            alt="RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Как оплатить Udemy"
+                            title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой. Как оплатить Udemy"
                             className={styles.reviewSocial}
                             width={25}
                             height={25}

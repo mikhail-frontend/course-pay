@@ -19,8 +19,8 @@ const LinkButton:React.FC<LinkButtonType> = ({text, showImage = true, to, classN
             <RippleButton to={to} className={`${styles.linkButton} ${className}`} target={target}>
                 {text}
                 {showImage &&        <Image src='/telegaSmall.svg'
-                                            alt="RusUdemy. Udemy как купить. Udemy российской картой."
-                                            title="RusUdemy. Udemy как купить. Udemy российской картой." width={19} height={18} priority={false}/>}
+                                            alt="RusUdemy. Udemy как купить. Udemy как оплатить российской картой."
+                                            title="RusUdemy. Udemy как купить. Udemy как оплатить российской картой." width={19} height={18} priority={false}/>}
             </RippleButton>
         </div>
     );
