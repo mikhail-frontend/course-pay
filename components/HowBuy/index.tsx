@@ -28,7 +28,7 @@ const howBuySteps:howBuyStep[] = [
         image: '/2.svg',
         title: ' Отправьте заявку в&nbsp;telegram',
         hasButton: true,
-        text: 'Пришлите ссылку на&nbsp;курс и e&#8209;mail'
+        text: 'Пришлите ссылку на курс, а дальше будем действовать мы⚡️'
     },
     {
         id: 6,
