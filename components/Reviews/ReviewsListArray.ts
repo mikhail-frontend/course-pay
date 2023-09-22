@@ -2078,6 +2078,25 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-09-12T16:37:00.649Z'
     },
+    {
+        id: 228,
+        name: 'Алексей',
+        text: `Отличный сервис, все быстро и удобно. Весь процесс занял менее 10 минут со всеми уточнениями и деталями,
+         по итогу есть аккаунт, на который в дальнейшем можно докупать остальные курсы - Рекомендую✌️.
+        `,
+        link: '@AngryButton',
+        photo: '/angry.jpg',
+        publishDate: '2023-09-17T13:37:00.649Z'
+    },
+    {
+        id: 229,
+        name: 'BTC&ETH',
+        text: `Ребята! Все превосходно. Очень советую =)
+        `,
+        link: '@badgerJ',
+        photo: '/btc.jpg',
+        publishDate: '2023-09-17T17:07:00.649Z'
+    },
 ];
 
 export default reviewsListArray
