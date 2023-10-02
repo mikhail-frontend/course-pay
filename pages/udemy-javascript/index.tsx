@@ -1,9 +1,8 @@
 import React from 'react';
-import Reviews from "../../components/Reviews/Reviews";
-import ContactsBlock from "../../components/Contacts";
+
 import PageTemplate from "../../components/PageTemplate";
 import Head from "next/head";
-import {description, title, image, courseDescription, courses, bigDescription} from "./entities/PageData";
+import {description, title, image, courseDescription, courses, bigDescription} from "../../helpers/entities/udemy-javascript/PageData";
 
 const UdemyJavaScript = () => {
     return (

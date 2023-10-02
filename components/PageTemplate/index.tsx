@@ -4,7 +4,7 @@ import styles from './styles/pageTemplate.module.scss';
 import aboutStyles from '../UdemyAbout/UdemyAbout.module.scss';
 import headerStyles from '../Header/Header.module.scss'
 import DescriptionLine from "../UI/DescriptionLine";
-import type {CourseType} from "../../pages/udemy-javascript/entities/PageData";
+import type {CourseType} from "../../helpers/entities/udemy-javascript/PageData";
 import RippleButton from "../UI/RippledButton";
 import useAnimation from "../../hooks/useAnimation";
 import Reviews from "../Reviews/Reviews";
