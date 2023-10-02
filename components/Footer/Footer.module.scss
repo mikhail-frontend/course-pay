@@ -17,7 +17,44 @@
   display: block;
   transition: .2s ease;
   cursor: pointer;
+  margin-left: 0;
+  margin-right: auto;
   &:hover{
     transform: scale(1.02);
+  }
+}
+
+.footerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+
+.footerNavItem{
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-size: 16px;
+  &:hover, &.active{
+    background: #5F4BD0;
+    transform: scale(1.03);
+  }
+  @media (max-width: 1023px){
+    background-color: transparent !important;
+    transform: none !important;
   }
 }

@@ -1,5 +1,9 @@
 import React from 'react';
 import Logo from "../Logo";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
 import styles from './Footer.module.scss'
 const Footer = () => {
     const scrollToTop = () => {
@@ -7,11 +11,17 @@ const Footer = () => {
             top: 0,
             behavior: 'smooth'
         })
-    }
+    };
+    const router = useRouter();
     return (
         <footer className={styles.footer}>
-            <div className="container">
+            <div className={`container ${styles.footerContainer}`}>
                 <Logo onClick={scrollToTop} className={styles.footerLogo}/>
+                <nav className={styles.footerNav}>
+                    <Link href='/udemy-javascript'
+                          className={`${styles.footerNavItem} ${router.pathname.includes('javascript') ? styles.active : ''}`}>
+                        Udemy JavaScript</Link>
+                </nav>
             </div>
         </footer>
     );

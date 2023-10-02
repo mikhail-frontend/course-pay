@@ -2,7 +2,8 @@ import React, {useCallback, useEffect, useRef, useState} from "react";
 
 export default function useAnimation<T>(list: T[], setList: React.Dispatch<React.SetStateAction<T[]>>): React.RefObject<HTMLUListElement>  {
     const [animated, setAnimated] = useState<boolean>(false);
-    const wrapRef = useRef<HTMLUListElement>(null)
+    const wrapRef = useRef<HTMLUListElement>(null);
+
 
     const setElementIsAnimated:React.EffectCallback = useCallback(() => {
         const globalCopy:T[] = list.slice();

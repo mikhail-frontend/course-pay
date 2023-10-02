@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import useAnimation from "../../hooks/useAnimation";
 import useMobile from "../../hooks/useMobile";
 import styles from './UdemyAbout.module.scss';
@@ -11,7 +11,7 @@ type AboutItem = {
     mobileTitle?: string,
     animated?: boolean
 }
-const aboutItems:AboutItem[] = [
+const aboutItems: AboutItem[] = [
     {
         id: 1,
         title: 'на 70% дешевле',
@@ -42,7 +42,8 @@ const aboutItems:AboutItem[] = [
 const UdemyAbout = () => {
     const isMobile = useMobile();
     const [aboutList, setAboutList] = useState<AboutItem[]>(aboutItems);
-    const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList)
+    const wrapRef = useAnimation<AboutItem>(aboutList, setAboutList);
+
 
     return (
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
@@ -54,7 +55,8 @@ const UdemyAbout = () => {
                     Для многих курсы Udemy открыли новые карьерные возможности.
                     Более 57&nbsp;миллионов пользователей полюбили Udemy.com именно за&nbsp;их&nbsp;доступность.
                     Увы, из-за санкций Udemy больше не&nbsp;принимает карты российских банков.
-                    Наш&nbsp;сервис знает как купить на&nbsp;Udemy любимые курсы из России и сделает&nbsp;это&nbsp;за&nbsp;Вас.
+                    Наш&nbsp;сервис знает как купить на&nbsp;Udemy любимые курсы из России и
+                    сделает&nbsp;это&nbsp;за&nbsp;Вас.
                 </p>
             </div>
             <ul className={styles.udemyBlocks} ref={wrapRef}>
@@ -62,7 +64,7 @@ const UdemyAbout = () => {
                     return (
                         <li className={`${styles.udemyBlock} ${item.animated ? styles.active : ''}`} key={item.id}>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            x<img src={item.icon}
+                            <img src={item.icon}
                                  alt={item.text}
                                  title={item.text}
                                  width={46}

@@ -6,7 +6,10 @@ const About:React.FC<AboutType> = ({customTitle, description, maxWidth}) => {
 
 
     return (
-        <section className={`${styles.about} container`} id='about'>
+        <section className={`${styles.about} container`} id='about'
+                 style={{
+            maxWidth: maxWidth ? `${maxWidth}px` : `705px`
+        }}>
             <div className={`${styles.aboutHeading}`} dangerouslySetInnerHTML={{__html: customTitle || ''}}/>
             <div className={`${styles.aboutDescription}`}
                  dangerouslySetInnerHTML={{__html: description || ''}}
