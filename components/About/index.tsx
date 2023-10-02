@@ -1,23 +1,22 @@
 import React from 'react';
 import RippleButton from "../UI/RippledButton";
 import styles from './About.module.scss'
-type AboutType = {children?: React.ReactNode}
-const About:React.FC<AboutType> = () => {
+type AboutType = {children?: React.ReactNode, customTitle?: string, description?: string, maxWidth?: number }
+const About:React.FC<AboutType> = ({customTitle, description, maxWidth}) => {
 
 
     return (
         <section className={`${styles.about} container`} id='about'>
-            {/*<div className={styles.aboutLabel}>*/}
-            {/*    комиссия за покупку курса от 20-30 % <span>→</span>*/}
-            {/*</div>*/}
-            <div className={`${styles.aboutHeading}`}>
-                Купим  <h1>курсы
-                Udemy</h1>  за&nbsp;вас
-            </div>
-            <div className={`${styles.aboutDescription}`}>
-                Наш&nbsp;сервис позволяет легко <h2> оплатить&nbsp;Udemy</h2> c российской карты
-            </div>
-            <RippleButton className={styles.aboutBtn} to='https://www.udemy.com/' target='_blank'>Перейти на сайт Udemy</RippleButton>
+            <div className={`${styles.aboutHeading}`} dangerouslySetInnerHTML={{__html: customTitle || ''}}/>
+            <div className={`${styles.aboutDescription}`}
+                 dangerouslySetInnerHTML={{__html: description || ''}}
+                 style={{
+                     maxWidth: maxWidth ? `${maxWidth}px` : `500px`
+                 }}
+            />
+            <RippleButton className={styles.aboutBtn} to='https://www.udemy.com/' target='_blank'>
+                Перейти на сайт Udemy
+            </RippleButton>
         </section>
     );
 };

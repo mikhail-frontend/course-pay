@@ -48,7 +48,7 @@ const UdemyAbout = () => {
         <section className={`${styles.udemyAbout} container`} id='udemyAbout'>
             <div className={styles.udemyAboutMain}>
                 <div className={`${styles.udemyAboutHeading} heading`}>
-                    Udemy &mdash;<h2> лидер онлайн обучения</h2>
+                    <h2> Udemy </h2> &mdash; лидер онлайн обучения
                 </div>
                 <p className={styles.udemyAboutText}>
                     Для многих курсы Udemy открыли новые карьерные возможности.
@@ -62,7 +62,7 @@ const UdemyAbout = () => {
                     return (
                         <li className={`${styles.udemyBlock} ${item.animated ? styles.active : ''}`} key={item.id}>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={item.icon}
+                            x<img src={item.icon}
                                  alt={item.text}
                                  title={item.text}
                                  width={46}

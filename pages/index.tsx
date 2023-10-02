@@ -13,7 +13,9 @@ export default function Home() {
   return (
     <>
 
-        <About/>
+        <About customTitle={`Купим  <h1>курсы Udemy</h1>  за&nbsp;вас`}
+               description={` Наш&nbsp;сервис позволяет легко <h2> оплатить&nbsp;Udemy</h2> c российской карты`}
+        />
         <Cards/>
         <DescriptionLine text='Почему Udemy' color='#40C8E0'/>
         <UdemyAbout/>

@@ -12,7 +12,7 @@ const MainInfo = () => {
     const wrapRef = useAnimation<contactLink>(links, setLinks)
     return (
         <>
-            <AboutBlock/>
+            <AboutBlock />
             <section className={`${reviewStyles.reviews} ${styles.contacts}`}>
                 <h2 className={`${styles.aboutHeading} heading`}>Мои контакты</h2>
                 <ul className={styles.aboutSocials} ref={wrapRef}>
