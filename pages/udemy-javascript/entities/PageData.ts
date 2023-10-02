@@ -1,3 +1,9 @@
+export type CourseType = {
+    id: number
+    image: string
+    link: string
+    title: string
+}
 export const title = `
                 Лучшие курсы  <h1>Udemy JavaScript</h1>  мы&nbsp;купим за&nbsp;вас`;
 export const description = `Начни изучать <h2>курсы Udemy </h2> JavaScript прямо сейчас!
@@ -6,7 +12,7 @@ export const description = `Начни изучать <h2>курсы Udemy </h2>
 
 export const image = `/js-main.jpg`
 
-export const courses = [
+export const courses:CourseType[] = [
     {
         id: 1,
         image: '/js1.jpeg',
@@ -48,4 +54,7 @@ export const courses = [
         title: `Современный JavaScript - с Нуля до Junior Специалиста
 `
     },
-]
+];
+
+export const courseDescription = `Выбирайте курсы Udemy JavaScript и присылайте ссылки на курсы
+ в <a href="https://t.me/rus_udemy" target="_blank"> наш телеграм </a> чтобы узнать стоимость`

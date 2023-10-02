@@ -1,23 +1,69 @@
 import React from "react";
 import About from "../About";
-import styles from './styles/pageTemplate.module.scss'
+import styles from './styles/pageTemplate.module.scss';
+import aboutStyles from '../UdemyAbout/UdemyAbout.module.scss';
+import headerStyles from '../Header/Header.module.scss'
+import DescriptionLine from "../UI/DescriptionLine";
+import type {CourseType} from "../../pages/udemy-javascript/entities/PageData";
+import RippleButton from "../UI/RippledButton";
+
 
 type PageTemplateProps = {
-    courses?: any[],
-    customTitle?: string,
-    description?: string,
-    image: string,
+    courses: CourseType[]
+    customTitle: string
+    description: string
+    image: string
+    courseDescription: string
     maxWidth?: number
 }
-const PageTemplate: React.FC<PageTemplateProps> = ({customTitle, description, image, maxWidth}) => {
+const PageTemplate: React.FC<PageTemplateProps> = ({
+                                                       customTitle,
+                                                       description,
+                                                       image,
+                                                       maxWidth,
+                                                       courseDescription,
+                                                       courses
+                                                   }) => {
     return (
         <>
             <About customTitle={customTitle}
                    description={description}
                    maxWidth={maxWidth || 775}
             />
-            <section className={styles.imageSection}>
+            <div className={styles.imageSection}>
                 <img src={image} alt={customTitle} title={customTitle} className={styles.mainImage}/>
+            </div>
+            <section className={styles.coursesSection}>
+                <DescriptionLine text='И много других курсов' color='#40C8E0'/>
+                <div className={aboutStyles.udemyAboutMain}>
+                    <div className={`${aboutStyles.udemyAboutHeading} heading`}>
+                        Курсы <h2> Udemy JS
+                    </h2>
+                    </div>
+                    <p className={aboutStyles.udemyAboutText}
+                       dangerouslySetInnerHTML={{__html: courseDescription || ''}}/>
+                </div>
+
+                <ul className={styles.coursesList}>
+                    {courses.map(item => {
+                        return (
+                            <li key={item.id} className={styles.courseItem}>
+                                <img src={item.image}
+                                     alt={item.title}
+                                     title={item.title}
+                                     loading={'lazy'}
+                                     className={styles.courseItemImage}
+                                />
+                                <h3 className={styles.courseItemTitle}>{item.title}</h3>
+                                <RippleButton
+                                    to={item.link}
+                                    target={'_blank'}
+                                    className={`${headerStyles.headerButton}  ${headerStyles.headerMainBtn || ''}`}>
+                                    Ознакомиться
+                                </RippleButton>
+                            </li>)
+                    })}
+                </ul>
             </section>
 
         </>

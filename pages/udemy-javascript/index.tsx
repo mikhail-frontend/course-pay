@@ -3,7 +3,7 @@ import Reviews from "../../components/Reviews/Reviews";
 import ContactsBlock from "../../components/Contacts";
 import PageTemplate from "../../components/PageTemplate";
 import Head from "next/head";
-import {description, title, image} from "./entities/PageData";
+import {description, title, image, courseDescription, courses} from "./entities/PageData";
 
 const UdemyJavaScript = () => {
     return (
@@ -25,7 +25,9 @@ const UdemyJavaScript = () => {
                 <PageTemplate description={description}
                               customTitle={title}
                               image={image}
+                              courseDescription={courseDescription}
                               maxWidth={775}
+                              courses={courses}
                 />
                 <Reviews/>
                 <ContactsBlock text='Я всегда доступен в Telegram'/>
