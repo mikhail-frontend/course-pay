@@ -21,6 +21,9 @@ const Footer = () => {
                     <Link href='/udemy-javascript'
                           className={`${styles.footerNavItem} ${router.pathname.includes('javascript') ? styles.active : ''}`}>
                         Udemy JavaScript</Link>
+                    <Link href='/udemy-python'
+                          className={`${styles.footerNavItem} ${router.pathname.includes('python') ? styles.active : ''}`}>
+                        Udemy Python</Link>
                 </nav>
             </div>
         </footer>
