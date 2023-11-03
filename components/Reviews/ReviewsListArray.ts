@@ -2530,6 +2530,42 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-10-30T14:49:00.649Z'
     },
+    {
+        id: 272,
+        name: 'Олег Васильев',
+        text: `
+Купил курс по JS. Все прошло быстро, если понадобятся еще курсы обязательно обращусь.
+   `,
+        link: '@Vasilev_OA',
+        photo: '/oleg1.jpg',
+        publishDate: '2023-11-01T19:00:00.649Z'
+    },
+    {
+        id: 273,
+        name: 'Aleksei',
+        text: `
+Ребята помогли купить курс польского на UDEMY.  всё быстро и чётко. 
+Особенно порадовала коммуникация. Никаких проблем. Невысокая комиссия в  сравнении с остальными вариантами оплаты!   `,
+        link: '@MojoRisingx',
+        photo: null,
+        publishDate: '2023-11-02T11:25:00.649Z'
+    },
+    {
+        id: 274,
+        name: 'Danya Debnam',
+        text: `Купил курс, все быстро и удобно, очень терпимо отнеслись к моей кипе вопросов, спасибо!`,
+        link: '@Debnam',
+        photo: '/danya.jpg',
+        publishDate: '2023-11-02T12:26:00.649Z'
+    },
+    {
+        id: 275,
+        name: 'Егор',
+        text: `Успели купить курс со скидкой, спасибо!`,
+        link: '@serzhantov7',
+        photo: '/egor1.jpg',
+        publishDate: '2023-11-03T07:33:00.649Z'
+    },
 ];
 
 export default reviewsListArray
