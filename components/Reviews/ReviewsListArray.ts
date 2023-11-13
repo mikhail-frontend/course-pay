@@ -2566,6 +2566,71 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/egor1.jpg',
         publishDate: '2023-11-03T07:33:00.649Z'
     },
+    {
+        id: 276,
+        name: 'Airat Kh',
+        text: `только что купил курс, все быстро и четко. Спасибо!`,
+        link: '@airatinfo',
+        photo: null,
+        publishDate: '2023-11-06T07:56:00.649Z'
+    },
+    {
+        id: 277,
+        name: 'Timofey',
+        text: `Все быстро и понятно! Супер, рекомендую.`,
+        link: '@Kortium',
+        photo: '/tim.jpg',
+        publishDate: '2023-11-06T13:26:00.649Z'
+    },
+    {
+        id: 278,
+        name: 'LucifēƦ MøƦηiηgstaƦ',
+        text: `Все отлично. Быстро. Удобно. <br/>
+Рекомендую.`,
+        link: '@lmorningstar',
+        photo: '/lucifer.jpg',
+        publishDate: '2023-11-08T11:35:00.649Z'
+    },
+    {
+        id: 279,
+        name: 'Denis Fatkhi',
+        text: `Заказ выполнен в кратчайшие сроки. Очень удобно. Рекомендую!`,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-11-10T16:12:00.649Z'
+    },
+    {
+        id: 280,
+        name: 'Anton Bogachenko',
+        text: `Курс купил, не обманули. Заняло 10 мин`,
+        link: '@antbogach',
+        photo: '/bogach.jpg',
+        publishDate: '2023-11-12T07:24:00.649Z'
+    },
+    {
+        id: 281,
+        name: '~',
+        text: `Курс купил, не обманули. Заняло 10 мин`,
+        link: '@idkwhh',
+        photo: '/tilda.jpg',
+        publishDate: '2023-11-12T13:54:00.649Z'
+    },
+    {
+        id: 282,
+        name: 'Natalia Pavlova',
+        text: `курс быстро купили, спасибо!!`,
+        link: '@natalja1912',
+        photo: '/pavlova.jpg',
+        publishDate: '2023-11-12T14:38:00.649Z'
+    },
+    {
+        id: 283,
+        name: 'rzdpasha',
+        text: `Всё чётко, быстро, даже не было времени для сомнений)`,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-11-13T07:01:00.649Z'
+    },
 ];
 
 export default reviewsListArray
