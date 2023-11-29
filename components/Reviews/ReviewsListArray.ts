@@ -2702,7 +2702,79 @@ const reviewsListArray: ReviewItemType[] = [
         text: `Быстро, соответствует описанию. Заняло 10-15 минут.`,
         link: '@NikTimo',
         photo: null,
-        publishDate: '2023-11-20T20:25:00.649Z'
+        publishDate: '2023-11-21T20:25:00.649Z'
+    },
+    {
+        id: 293,
+        name: 'aleksan',
+        text: `Спасибо, оплатил курс, доступ получил. Всё работает. Осталось самое легкое - выучить курс ;)`,
+        link: 'Скрыто',
+        photo: '/aleksan-u.jpg',
+        publishDate: '2023-11-22T12:15:00.649Z'
+    },
+    {
+        id: 294,
+        name: 'Andrey',
+        text: `Спасибо, цена у Михаила синхронизирована с сайтом udemy, так как сейчас черная пятница курс урвал по сладкой цене!`,
+        link: '@andrej27022',
+        photo: '/andrey-u.jpg',
+        publishDate: '2023-11-22T19:08:00.649Z'
+    },
+    {
+        id: 295,
+        name: 'Валентин',
+        text: `Спасибо огромное Михаилу, всё чётко и грамотно сделано. за 10 минут и у меня новый курс).`,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-11-23T10:11:00.649Z'
+    },
+    {
+        id: 296,
+        name: 'Ivan Popyvanov',
+        text: `Огромное Спасибо , Михаилу! Обращался не в первый раз - всё прошло оперативно и очень удобно ! Всем рекомендую !`,
+        link: 'Скрыто',
+        photo: '/ivanp.jpg',
+        publishDate: '2023-11-24T12:56:00.649Z'
+    },
+    {
+        id: 297,
+        name: 'Alexey Gulkin',
+        text: `Спасибо! Покупал курс по медицине, оперативно. За 10 мин все купили, нужна только почта)`,
+        link: '@alexey_gulkin_nlp',
+        photo: null,
+        publishDate: '2023-11-24T15:44:00.649Z'
+    },
+    {
+        id: 298,
+        name: 'Alexandr Potapov',
+        text: `быстро четко. сначала скриншот был с покупкой.`,
+        link: '@greyICH',
+        photo: '/alexandr-u.jpg',
+        publishDate: '2023-11-24T16:39:00.649Z'
+    },
+    {
+        id: 299,
+        name: 'Anna',
+        text: `Все быстро, по делу и с объяснениями, прямо как сверху говорят, советую)`,
+        link: '@ann_jay_dev',
+        photo: '/anna-u.jpg',
+        publishDate: '2023-11-24T18:01:00.649Z'
+    },
+    {
+        id: 300,
+        name: 'Alexey Kopylov',
+        text: `В очередной раз купил курсы, всё быстро и чётко. Спасибо Вам за ваш сервис!`,
+        link: 'Скрыто',
+        photo: '/kopylov.jpg',
+        publishDate: '2023-11-25T13:55:00.649Z'
+    },
+    {
+        id: 301,
+        name: 'Lublu_Serfing .',
+        text: `купил курс, всё оперативно, вежливо, доволен покупкой`,
+        link: '@Dyadya_Leps',
+        photo: '/lublu.jpg',
+        publishDate: '2023-11-26T19:16:00.649Z'
     },
 ];
 
