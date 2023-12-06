@@ -15,7 +15,7 @@ export const description = `Начни изучать <h2>курсы Udemy </h2>
  Udemy Java Script и многие другие.
 `;
 
-export const image = `/r-main.jpg`
+export const image = `/ue-main.jpg`
 
 export const courses: CourseType[] = [
     {
@@ -38,7 +38,7 @@ export const courses: CourseType[] = [
         animated: false,
         image: `/r3.jpg`,
         link: `https://www.udemy.com/course/pro-react-redux/`,
-        title: `https://www.udemy.com/course/pro-react-redux/`
+        title: `React + Redux - Профессиональная Разработка`
     },
     {
         id: 4,

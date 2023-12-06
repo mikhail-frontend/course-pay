@@ -19,6 +19,7 @@ type PageTemplateProps = {
     courseDescription: string
     maxWidth?: number
     bigDescription: string
+    titleClass?: string
 }
 const PageTemplate: React.FC<PageTemplateProps> = ({
                                                        customTitle,
@@ -27,7 +28,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                                                        maxWidth,
                                                        courseDescription,
                                                        courses,
-                                                       bigDescription
+                                                       bigDescription,
+                                                       titleClass
                                                    }) => {
     const [coursesList, setCoursesList] = useState<CourseType[]>(courses);
 
@@ -38,6 +40,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
             <About customTitle={customTitle}
                    description={description}
                    maxWidth={maxWidth || 775}
+                   titleClass={titleClass || ''}
             />
             <div className={styles.imageSection}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -65,7 +68,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                                      loading={'lazy'}
                                      className={styles.courseItemImage}
                                 />
-                                <h3 className={styles.courseItemTitle}>{item.title} {item.animated ? 1 : 2}</h3>
+                                <h3 className={styles.courseItemTitle}>{item.title}</h3>
                                 <RippleButton
                                     to={item.link}
                                     target={'_blank'}
