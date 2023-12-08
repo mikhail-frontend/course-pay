@@ -2905,6 +2905,23 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2023-12-06T08:20:00.649Z'
     },
+    {
+        id: 317,
+        name: 'Airen',
+        text: `Покупал ночью, все прошло очень быстро, около 15 минут) Буду обращаться еще в будущем)`,
+        link: '@AirenCat',
+        photo: '/airen.jpg',
+        publishDate: '2023-12-06T20:22:00.649Z'
+    },
+    {
+        id: 318,
+        name: 'Саша Лавров',
+        text: `Купил два курса. Все прошло быстро и честно. 
+        Комиссия по цене чашки кофе за потраченное время, спасибо большое Михаилу за возможность учиться)`,
+        link: '@Lavrov654',
+        photo: '/lavrov.jpg',
+        publishDate: '2023-12-06T20:25:00.649Z'
+    },
 ];
 
 export default reviewsListArray
