@@ -10,11 +10,11 @@ import buildDate from "../../helpers/buildDate";
 export type ReviewItemType = {
     name: string
     text: string
-    photo?: string | null
+    photo: string | null
     id: string | number
     link: string | number
-    animated?: boolean,
     publishDate: string
+    animated?: boolean
 }
 
 const setPhoto = (photo) => photo || '/user-default.svg'
