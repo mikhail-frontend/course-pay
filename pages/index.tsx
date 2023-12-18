@@ -6,6 +6,7 @@ import DescriptionLine from "../components/UI/DescriptionLine";
 import HowBuy from "../components/HowBuy";
 import Faq from "../components/Faq";
 import Contacts from "../components/Contacts";
+import WarningUdemy from "../components/WarningUdemy";
 import Reviews from "../components/Reviews/Reviews";
 
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Cards/>
         <DescriptionLine text='Почему Udemy' color='#40C8E0'/>
         <UdemyAbout/>
+        <WarningUdemy/>
         <DescriptionLine text='Шаги оплаты' color='#B59AFF'/>
         <HowBuy/>
         <Reviews/>
