@@ -3013,6 +3013,14 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/cyber.jpg',
         publishDate: '2023-12-14T10:32:00.649Z'
     },
+    {
+        id: 331,
+        name: 'Grigory Glushko',
+        text: `Рекомендую, всё что нужно оплачено`,
+        link: '@generhab',
+        photo: '/glushko.jpg',
+        publishDate: '2023-12-17T19:51:00.649Z'
+    },
 ];
 
 export default reviewsListArray
