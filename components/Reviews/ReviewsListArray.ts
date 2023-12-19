@@ -3021,6 +3021,23 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/glushko.jpg',
         publishDate: '2023-12-17T19:51:00.649Z'
     },
+    {
+        id: 332,
+        name: 'Shahzad Karimbayev',
+        text: `Все супер!`,
+        link: '@KarimbayevShahzodbek',
+        photo: '/shahzad.jpg',
+        publishDate: '2023-12-18T15:13:00.649Z'
+    },
+    {
+        id: 333,
+        name: 'Valery',
+        text: `Спасибо, быстро и оперативно помогли`,
+        link: 'Скрыто',
+        photo: null,
+        publishDate: '2023-12-18T19:45:00.649Z'
+    },
+
 ];
 
 export default reviewsListArray
