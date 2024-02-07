@@ -3387,6 +3387,30 @@ const reviewsListArray: ReviewItemType[] = [
         photo: null,
         publishDate: '2024-01-30T10:12:00.649Z'
     },
+    {
+        id: 395,
+        name: 'wei',
+        text: `Привет, приобрёл курс)  всё быстро, безопасно) Спасибо большое вам!!!`,
+        link: 'Скрыто',
+        photo: '/wei.jpg',
+        publishDate: '2024-02-01T15:07:00.649Z'
+    },
+    {
+        id: 396,
+        name: 'DMR',
+        text: `Оставлю положительный отзыв, всё быстро, качественно.`,
+        link: '@a7812345',
+        photo: null,
+        publishDate: '2024-02-03T04:40:00.649Z'
+    },
+    {
+        id: 397,
+        name: 'Akashiya',
+        text: `купили курс на мой акк. всё вежливо и быстро. надёжно. зайду ещё :)`,
+        link: '@akashiya_ashe',
+        photo: '/akashiya.jpg',
+        publishDate: '2024-02-07T08:43:00.649Z'
+    },
 ];
 
 export default reviewsListArray
