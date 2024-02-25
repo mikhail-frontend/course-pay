@@ -1,0 +1,33 @@
+[debug] [2024-02-25T13:08:28.030Z] ----------------------------------------------------------------------
+[debug] [2024-02-25T13:08:28.030Z] Command:       /usr/local/bin/node /Users/mihailharitonov/Desktop/course-pay/node_modules/.bin/firebase deploy
+[debug] [2024-02-25T13:08:28.031Z] CLI Version:   12.4.0
+[debug] [2024-02-25T13:08:28.031Z] Platform:      darwin
+[debug] [2024-02-25T13:08:28.031Z] Node Version:  v16.16.0
+[debug] [2024-02-25T13:08:28.033Z] Time:          Sun Feb 25 2024 20:08:28 GMT+0700 (Indochina Time)
+[debug] [2024-02-25T13:08:28.033Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-25T13:08:28.034Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-25T13:08:28.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-25T13:08:28.070Z] > authorizing via signed-in user (belovedoff@gmail.com)
+[debug] [2024-02-25T13:08:28.070Z] [iam] checking project course-pay-1ac3e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-25T13:08:28.070Z] > refreshing access token with scopes: []
+[debug] [2024-02-25T13:08:28.071Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-25T13:08:28.071Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-25T13:08:28.506Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-25T13:08:28.507Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-25T13:08:28.528Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/course-pay-1ac3e:testIamPermissions [none]
+[debug] [2024-02-25T13:08:28.528Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/course-pay-1ac3e:testIamPermissions x-goog-quota-user=projects/course-pay-1ac3e
+[debug] [2024-02-25T13:08:28.529Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/course-pay-1ac3e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-25T13:08:28.750Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-25T13:08:28.750Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-25T13:08:29.821Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/course-pay-1ac3e:testIamPermissions 200
+[debug] [2024-02-25T13:08:29.821Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/course-pay-1ac3e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-25T13:08:29.823Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/course-pay-1ac3e [none]
+[debug] [2024-02-25T13:08:30.478Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/course-pay-1ac3e 200
+[debug] [2024-02-25T13:08:30.478Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/course-pay-1ac3e {"projectId":"course-pay-1ac3e","projectNumber":"73962609011","displayName":"course-pay","name":"projects/course-pay-1ac3e","resources":{"hostingSite":"course-pay-1ac3e"},"state":"ACTIVE","etag":"1_0841c82f-0aed-43c8-a32f-e01df92b3f13"}
+[info] 
+[info] === Deploying to 'course-pay-1ac3e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-02-25T13:08:30.485Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/course-pay-1ac3e/versions [none]
+[debug] [2024-02-25T13:08:30.486Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/course-pay-1ac3e/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
