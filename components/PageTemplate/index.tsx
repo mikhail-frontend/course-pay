@@ -20,6 +20,7 @@ type PageTemplateProps = {
     maxWidth?: number
     bigDescription: string
     titleClass?: string
+    shortTitle?: string
 }
 const PageTemplate: React.FC<PageTemplateProps> = ({
                                                        customTitle,
@@ -29,7 +30,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                                                        courseDescription,
                                                        courses,
                                                        bigDescription,
-                                                       titleClass
+                                                       titleClass,
+                                                       shortTitle = 'Udemy JS'
                                                    }) => {
     const [coursesList, setCoursesList] = useState<CourseType[]>(courses);
 
@@ -50,7 +52,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                 <DescriptionLine text='И много других курсов' color='#40C8E0'/>
                 <div className={aboutStyles.udemyAboutMain}>
                     <div className={`${aboutStyles.udemyAboutHeading} heading`}>
-                        Курсы <h2> Udemy JS </h2>
+                        Курсы <h2> {shortTitle} </h2>
                     </div>
                     <p className={aboutStyles.udemyAboutText}
                        dangerouslySetInnerHTML={{__html: courseDescription || ''}}/>

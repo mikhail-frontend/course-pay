@@ -17,6 +17,8 @@ Unity и Udemy Unreal. На udemy.com найдется более 4000 тыся�
 export const image = `/r-main.jpg`
 
 
+export const shortTitle = 'Udemy Unreal'
+
 export const courses: CourseType[] = [
     {
         id: 1,

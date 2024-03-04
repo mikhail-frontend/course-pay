@@ -14,7 +14,9 @@ export const description = `Начни изучать <h2>курсы Udemy </h2>
 На udemy.com более 10000 тысяч курсов Udemy Python в твоем распоряжении, а также курсы Udemy Django, Udemy Unreal Engine, 
 курсы Петриченко Udemy, Udemy Java Script и многие другие.`;
 
-export const image = `/p-main.jpg`
+export const image = `/p-main.jpg`;
+
+export const shortTitle = `Udemy Python`
 
 export const courses:CourseType[] = [
     {

@@ -17,6 +17,8 @@ export const description = `Начни изучать <h2>курсы Udemy </h2>
 
 export const image = `/ue-main.jpg`
 
+export const shortTitle = `Udemy React`;
+
 export const courses: CourseType[] = [
     {
         id: 1,

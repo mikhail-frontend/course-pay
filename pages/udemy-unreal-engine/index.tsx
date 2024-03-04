@@ -2,7 +2,15 @@ import React from 'react';
 
 import PageTemplate from "../../components/PageTemplate";
 import Head from "next/head";
-import {description, title, image, courseDescription, courses, bigDescription} from "../../helpers/entities/udemy-unreal-engine/PageData";
+import {
+    bigDescription,
+    courseDescription,
+    courses,
+    description,
+    image,
+    title,
+    shortTitle
+} from "../../helpers/entities/udemy-unreal-engine/PageData";
 
 const UdemyPython = () => {
     return (
@@ -29,6 +37,7 @@ const UdemyPython = () => {
                               maxWidth={775}
                               courses={courses}
                               bigDescription={bigDescription}
+                              shortTitle={shortTitle}
                 />
 
             </main>
