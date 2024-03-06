@@ -3667,6 +3667,49 @@ const reviewsListArray: ReviewItemType[] = [
         photo: '/rudenko.jpg',
         publishDate: '2024-03-01T16:20:00.649Z'
     },
+    {
+        id: 429,
+        name: 'Alex K',
+        text: `Купил курс, получил в качестве подарка на свой аккаунт (не российский), все курсы на одном аккаунте. быстро и удобно!`,
+        link: '@mstr_alex',
+        photo: null,
+        publishDate: '2024-03-04T15:46:00.649Z'
+    },
+    {
+        id: 430,
+        name: 'Nothing',
+        text: `
+<p>Все прошло отлично и быстро </p>
+
+<p>Рекомендую </p>`,
+        link: '@Nothing_non',
+        photo: '/nothing.jpg',
+        publishDate: '2024-03-04T18:45:00.649Z'
+    },
+    {
+        id: 431,
+        name: 'notiiiok',
+        text: `Все прошло отлично! Покупаю уже 2 раз и без проблем. Благодарю!`,
+        link: '@uukeyi',
+        photo: null,
+        publishDate: '2024-03-05T11:50:00.649Z'
+    },
+    {
+        id: 432,
+        name: 'Nikolai Akimov',
+        text: `В очередной раз покупаю курс и в очередной раз все очень быстро и без каких либо трудностей, ещё раз спасибо большое`,
+        link: '@akimov93',
+        photo: null,
+        publishDate: '2024-03-05T13:50:00.649Z'
+    },
+    {
+        id: 433,
+        name: 'Maxim Stierlitz Isaev',
+        text: `Все было быстро и максимально удобно, каждый шаг проговаривали. Рекомендую`,
+        link: '@Stierlitz_lol',
+        photo: '/isaev.jpg',
+        publishDate: '2024-03-06T08:42:00.649Z'
+    },
 ];
 
 
