@@ -12,19 +12,13 @@ import buttonStyles from '../UI/LinkButton/LinkButton.module.scss'
 const shownCount = 21;
 
 
-const sortedReviews: ReviewItemType[] = reviewsListArray.sort((a, b) => {
-    const aPublish = a.publishDate;
-    const bPublish = b.publishDate;
-    return Number(new Date(bPublish)) - Number(new Date(aPublish))
-});
-
 const getPartOfReviews = (index: number) => {
     const start = shownCount * index;
     const end = start + shownCount;
-    return sortedReviews.slice(start, end)
+    return reviewsListArray.slice(start, end)
 };
 const setReviewsChunks = () => {
-    const chunksCount = Math.ceil(sortedReviews.length / shownCount);
+    const chunksCount = Math.ceil(reviewsListArray.length / shownCount);
     let resultedChunks = [];
     for (let i = 1; i< chunksCount; i++) {
         const part = getPartOfReviews(i);
@@ -35,12 +29,12 @@ const setReviewsChunks = () => {
 
 
 
-const firstScreenReviews = sortedReviews.slice(0, shownCount);
+const firstScreenReviews = reviewsListArray.slice(0, shownCount);
 
 const Reviews = () => {
     const [reviewsList, setReviewsList] = useState<ReviewItemType[]>(firstScreenReviews);
-    const [showButton, setShowButton] = useState<boolean>(true);
-    const [reviewPartIndex, setReviewsPartIndex] = useState<number>(0);
+    const [showButton, setShowButton] = useState(true);
+    const [reviewPartIndex, setReviewsPartIndex] = useState(0);
     const reviewsChunks = useMemo(setReviewsChunks, []);
 
     const wrapRef = useAnimation<ReviewItemType>(reviewsList, setReviewsList);
