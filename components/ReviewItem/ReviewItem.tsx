@@ -17,7 +17,7 @@ export type ReviewItemType = {
     animated?: boolean
 }
 
-const setPhoto = (photo) => photo || '/user-default.svg'
+const setPhoto = (photo:string) => photo || '/user-default.svg'
 const ReviewItem =
     ({name, text, photo, animated, link, publishDate}) => {
         return (
@@ -82,9 +82,7 @@ const ReviewItem =
                     </div>
                     <div className={styles.reviewItemText} dangerouslySetInnerHTML={{__html: text}}/>
                     <div className={styles.reviewItemDate}>
-                        <strong>Отзыв от: </strong> {buildDate(publishDate, {
-                        showTime: true
-                    }).rusDate}
+                        <strong>Отзыв от: </strong> {buildDate(publishDate)}
                     </div>
                 </div>
             </>

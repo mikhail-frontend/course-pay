@@ -10,7 +10,7 @@ import WarningUdemy from "../components/WarningUdemy";
 import Reviews from "../components/Reviews/Reviews";
 
 
-export default function Home() {
+export default function RusUdemy() {
   return (
     <>
 

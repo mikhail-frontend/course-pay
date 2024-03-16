@@ -1,4 +1,4 @@
-export default (originalString:string) => {
+export default function stripTags (originalString:string)  {
     if (!originalString || typeof originalString !== 'string') {
         return { result: '' }
     }

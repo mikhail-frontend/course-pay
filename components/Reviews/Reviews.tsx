@@ -49,7 +49,7 @@ const Reviews = () => {
     const loadReviews = useCallback(() => {
         const reviewsForPush = reviewsChunks[reviewPartIndex];
         const nextReviews = reviewsChunks[reviewPartIndex + 1];
-        reviewsForPush.forEach((item, index) => {
+        reviewsForPush.forEach((item, index:number) => {
             const timer = (index + 1) * 30;
             pushReviewWithDelay(reviewsForPush[index],timer - 20)
             setTimeout(() => {
