@@ -2,6 +2,14 @@ import {ReviewItemType} from "../ReviewItem/ReviewItem";
 //https://www.reduceimages.com/
 const reviewsListArray:ReviewItemType[] = [
     {
+        "id": 444,
+        "name": "Denis Fatkhi",
+        "text": "Заказ выполнен в кратчайшие сроки. Очень удобно. Рекомендую!",
+        "link": "@FatkhiDenis",
+        "photo": null,
+        "publishDate": "2024-03-15T10:45:00.649Z"
+    },
+    {
         "id": 443,
         "name": "verneyan",
         "text": `Все очень быстро! Спасибо большое!!!`,
