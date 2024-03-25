@@ -80,12 +80,17 @@ export default function buildDate(date: string): string {
 
     // Получаем компоненты даты и времени
     const day = jsDate.getDate();
-    const month = jsDate.toLocaleString('ru-RU', { month: 'long' });
+    const monthNames = [
+        'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+        'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+    ];
+    const month = monthNames[jsDate.getMonth()];
     const year = jsDate.getFullYear();
     const hours = jsDate.getHours().toString().padStart(2, '0');
     const minutes = jsDate.getMinutes().toString().padStart(2, '0');
 
-    // Формируем строку с местным временем
+    // Формируем строку с местным временем и правильным падежом для месяца
     return `${day} ${month} ${year} ${hours}:${minutes}`;
 
 }
+
