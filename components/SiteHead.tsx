@@ -35,6 +35,10 @@ const SiteHead = () => {
                 <meta property="og:image" content="/logo.jpg"/>
                 <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
                 <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://lp9.ru/widget"/>
+                <link rel="dns-prefetch" href="https://lp9.ru/widget"/>
                 <link rel="canonical" href={`https://rusudemy.com${pathname}`}/>
                 <link rel="manifest" href="/manifest.json"/>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
@@ -91,7 +95,7 @@ const SiteHead = () => {
                     }}
                 />
             </Head>
-            <Script type="text/javascript" strategy='lazyOnload' id='yandex'>
+            <Script type="text/javascript" strategy='lazyOnload' id='yandex' async={true} defer={true}>
                 {`
                      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -108,9 +112,12 @@ const SiteHead = () => {
                   `}
             </Script>
 
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFZLZ7KE6M" defer={true}
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZFZLZ7KE6M"
+                    async={true} defer={true}
                     strategy='lazyOnload'/>
-            <Script id="google-analytics" strategy="lazyOnload" defer={true}>
+            <Script id="google-analytics" strategy="lazyOnload"
+                    async={true}
+                    defer={true}>
                 {`
    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -118,6 +125,9 @@ const SiteHead = () => {
 
   gtag('config', 'G-ZFZLZ7KE6M');
         `}
+            </Script>
+            <Script id='competition' async={true} defer={true} strategy='lazyOnload'>
+                {`(function competition(d, w){ w.lp9 = 'fohedu97'; var s = d.createElement('script'); s.async = true; s.src = 'https://lp9.ru/widget/'+w.lp9+'.js?'+Date.now(); s.charset = 'UTF-8'; if (d.head) d.head.appendChild(s); })(document, window);`}
             </Script>
         </>
     );
